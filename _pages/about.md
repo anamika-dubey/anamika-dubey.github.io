@@ -20,21 +20,3 @@ social: true  # includes social icons at the bottom of the page
 
 I am Huie-Rogers Endowed Chair Associate Professor of Electrical Engineering in the School of EECS at Washington State University (WSU), Pullman. I also hold a joint appointment as a Research Scientist at the Pacific Northwest National Laboratory (PNNL). At WSU, I am affiliated with Energy Systems Innovation Center (ESIC). I received her MSE and Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin in 2012 and 2015, respectively. My research focuses on the model-based and data-driven methods for decision-support in active power distribution systems for improved efficiency, operational flexibility, and resilience.
 
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
