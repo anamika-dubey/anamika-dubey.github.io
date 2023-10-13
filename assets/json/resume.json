@@ -22,28 +22,38 @@
   },
   "work": [
     {
-      "name": "Washington State University",
-      "position": "Huei-Rogers Associate Professor, School of Electrical Engineering and Computer Science",
+      "name": "School of Electrical Engineering and Computer Science, Washington State University",
+      "position": "Huei-Rogers Associate Professor",
       "startDate": "2022-08-15",
       "summary": "Research and Teaching: Electric Power Systems",
-      "highlights": [
-        "Grid-edge Resources"
-      ]
+    }
+    {
+      "name": "Pacific Northwest National Lab (PNNL)",
+      "position": "Research Scientist",
+      "startDate": "2022-04-15",
+    }
+    {
+      "name": "School of Electrical Engineering and Computer Science, Washington State University",
+      "position": "Assistant Professor",
+      "startDate": "2022-08-15",
+      "endDate": "2016-01-01",
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Texas at Austin",
+      "area": "Department of Electrical Engineering and Computer Science",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "startDate": "2015-12-31",
+      "endDate": "2012-08-15",
+    }
+     {
+      "institution": "University of Texas at Austin",
+      "area": "Department of Electrical Engineering and Computer Science",
+      "studyType": "MSE",
+      "startDate": "2010-08-15",
+      "endDate": "2012-08-15",
     }
   ],
   "awards": [
