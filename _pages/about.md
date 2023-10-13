@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lab Director: Anamika Dubey, Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pullman (WA). anamika.dubey@wsu.edu.
+subtitle: Lab Director- Anamika Dubey, Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pullman (WA). anamika.dubey@wsu.edu.
 
 profile:
   align: right
