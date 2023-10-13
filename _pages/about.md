@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Sustainable Climate-resilient Analytics for Large-scale Energy Systems. Contact. anamika.dubey@wsu.edu.
+subtitle: Contact. Anamika Dubey. anamika.dubey@wsu.edu.
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p> Director: Anamika Dubey </p>  
-    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State University </p>
+    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State Univ. </p>
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p> 
 
