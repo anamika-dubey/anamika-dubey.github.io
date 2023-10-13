@@ -34,7 +34,8 @@
       institution: School of Electrical Engineering and Computer Science, Washington State University
       year: 2016 - 2022
     - title: Visiting Reseracher
-    
+      institution: Pacific Northwest National Lab (PNNL)
+      year: 2023
 
 - title: Honors and Awards
   type: time_table
@@ -44,21 +45,30 @@
         - <a href='https://ieee-pes.org/about-pes/awards-scholarships/ieee-pes-outstanding-young-engineer-award/'>IEEE PES Outstanding Young Engineer Award</a>.
     - year: 2022
       items: 
-        - Huie-Rogers Endowed Chair Associate Professor of Electrical Engineering
-
+        - <a href='https://news.wsu.edu/news/2022/07/28/two-professors-named-huie-rogers-endowed-chairs/'> Huie-Rogers Endowed Chair Associate Professor of Electrical Engineering</a>.
+    - year: 2021
+      items: 
+        - <a href='https://news.wsu.edu/news/2021/10/18/research-week-celebrates-outstanding-faculty-and-staff/'> Pacesetter Award in Physical Sciences and Engineering</a>.
+        - Voiland College of Engineering and Architecture (VCEA) Jr. Faculty Research Award, WSU Pullman
+    - year: 2020
+        - EECS Early Career Award in the School of Electrical Engineering and Computer Science, WSU Pullman 
+        - <a href='https://news.wsu.edu/news/2020/02/04/researchers-receive-nsf-career-awards-2/'> NSF CAREER Award (2/1/20-1/31/25) </a>.
+    -year: 2019
+        - IEEE Transactions on Smart Grid Best Reviewer Award.
+    -year: 2018
+        - Best paper award, NAPS 2018, Second Prize (Optimal Positioning of Mobile Emergency Resources for Resilient Restoration)
+        - Best paper award, NAPS 2018, Second Prize (Transmission-Distribution Co-simulation Model validation with standalone simulation)
+    - year: 2015
+        - U.S. patent, “Locating Multi-Phase Faults in Ungrounded Power Distribution Systems,” Patent US 20150226780 A1, 13 Aug. 2015.
+    - year: 2013
+        - U.S. patent, “Decoupled Three-Phase Power Flow Analysis Method for Unbalanced Power Distribution Systems,” Patent US 20130226482 A1, 29th Aug. 2013.
+    
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Electric Power Systems – Control and Optimization
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Resilience to High-Impact Low-Probability Events
+        - Integration of Variable and Uncertain Distributed Energy Resources
+        - Optimization of Active Power Distribution Systems for Grid-edge Interfacing
+        
