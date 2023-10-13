@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p> Lab Director - Anamika Dubey </p>  
-    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State University (WSU) </p>
+    <p> Director: Anamika Dubey </p>  
+    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State University </p>
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p> 
 
