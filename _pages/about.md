@@ -2,13 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lab Director. Anamika Dubey. Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pullman (WA). anamika.dubey@wsu.edu.
+subtitle: Sustainable Climate-resilient Analytics for Large-scale Energy Systems. Contact. anamika.dubey@wsu.edu.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p> Lab Director - Anamika Dubey </p>  
+    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State University (WSU) </p>
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p> 
 
