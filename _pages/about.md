@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Huie-Rogers Endowed Chair Associate Professor. <a href='https://esic.wsu.edu/'>ESIC, WSU</a>. Pullman (WA). anamika.dubey@wsu.edu.
 
 profile:
   align: right
@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am Huie-Rogers Endowed Chair Associate Professor of Electrical Engineering in the School of EECS at Washington State University (WSU), Pullman. I also hold a joint appointment as a Research Scientist at the Pacific Northwest National Laboratory (PNNL). At WSU, I am affiliated with Energy Systems Innovation Center (ESIC). I received her MSE and Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin in 2012 and 2015, respectively. My research focuses on the model-based and data-driven methods for decision-support in active power distribution systems for improved efficiency, operational flexibility, and resilience.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
