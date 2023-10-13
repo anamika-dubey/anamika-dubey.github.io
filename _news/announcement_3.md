@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Anamika presented at the WSU Power Professorship Program 50th Anniversary Celebration. 
+Anamika spoke at the WSU Power Professorship Program 50th Anniversary Celebration. 
 
