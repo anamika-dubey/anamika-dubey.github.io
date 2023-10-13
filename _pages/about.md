@@ -6,7 +6,7 @@ subtitle: Lab Director. Anamika Dubey. Associate Professor. <a href='https://esi
 
 profile:
   align: right
-  image: group.png
+  image: prof_pic.png
   content: about_lab.md
   image_circular: false # crops the image to make it circular
   more_info: >
