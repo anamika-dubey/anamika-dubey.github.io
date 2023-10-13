@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: **Sustainable Climate-resilient Analytics for Large-scale Energy Systems**. Contact. anamika.dubey@wsu.edu.
+subtitle: Sustainable Climate-resilient Analytics for Large-scale Energy Systems. Contact. anamika.dubey@wsu.edu.
 
 profile:
   align: right
