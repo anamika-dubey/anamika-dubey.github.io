@@ -6,7 +6,7 @@ subtitle: Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pu
 
 profile:
   align: right
-  image: Anamika Dubey_4505.JPG
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>EME 23, 355 NE Spokane St</p>
