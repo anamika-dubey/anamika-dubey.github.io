@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pullman (WA). anamika.dubey@wsu.edu.
 
-profiles:
+profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
