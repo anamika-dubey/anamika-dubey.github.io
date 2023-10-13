@@ -35,7 +35,7 @@
       year: 2016 - 2022
     - title: Visiting Reseracher
       institution: Pacific Northwest National Lab (PNNL)
-      year: 2023
+      year: 2023 
 
 - title: Honors and Awards
   type: time_table
@@ -51,16 +51,21 @@
         - <a href='https://news.wsu.edu/news/2021/10/18/research-week-celebrates-outstanding-faculty-and-staff/'> Pacesetter Award in Physical Sciences and Engineering</a>.
         - Voiland College of Engineering and Architecture (VCEA) Jr. Faculty Research Award, WSU Pullman
     - year: 2020
+      items: 
         - EECS Early Career Award in the School of Electrical Engineering and Computer Science, WSU Pullman 
         - <a href='https://news.wsu.edu/news/2020/02/04/researchers-receive-nsf-career-awards-2/'> NSF CAREER Award (2/1/20-1/31/25) </a>.
-    -year: 2019
+    - year: 2019
+      items: 
         - IEEE Transactions on Smart Grid Best Reviewer Award.
-    -year: 2018
+    - year: 2018
+      items: 
         - Best paper award, NAPS 2018, Second Prize (Optimal Positioning of Mobile Emergency Resources for Resilient Restoration)
         - Best paper award, NAPS 2018, Second Prize (Transmission-Distribution Co-simulation Model validation with standalone simulation)
     - year: 2015
+      items: 
         - U.S. patent, “Locating Multi-Phase Faults in Ungrounded Power Distribution Systems,” Patent US 20150226780 A1, 13 Aug. 2015.
     - year: 2013
+      items: 
         - U.S. patent, “Decoupled Three-Phase Power Flow Analysis Method for Unbalanced Power Distribution Systems,” Patent US 20130226482 A1, 29th Aug. 2013.
     
 - title: Academic Interests
