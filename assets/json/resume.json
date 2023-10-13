@@ -1,37 +1,33 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Anamika Dubey",
+    "label": "Associate Professor",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "anamika.dubey@wsu.edu",
+    "phone": "(509) 335-1865",
+    "summary": "Electrical engineer by training on a mission to solve the ever-growing problem of providing a resilient, adaptable, and economically viable power supply with distributed generation resources ",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "EME 23, 355 NE Spokane St",
+      "postalCode": "WA 99163",
+      "city": "Pullman",
       "countryCode": "US",
-      "region": "California"
+      "region": "Washington"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/anamika-dubey-316a8a11/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Washington State University",
+      "position": "Huei-Rogers Associate Professor, School of Electrical Engineering and Computer Science",
+      "startDate": "2022-08-15",
+      "summary": "Research and Teaching: Electric Power Systems",
       "highlights": [
-        "Relativity"
+        "Grid-edge Resources"
       ]
     }
   ],
