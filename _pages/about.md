@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>EME 23, 355 NE Spokane St</p>
-    <p>Pullman, WA 99164</p>
+    <p>Pullman, WA 99164</p> 
     
 With rapid decarbonization goals and ambitious urban electrification targets, the electric power grid is undergoing unprecedented changes. SCALE Lab is at the forefront of addressing the new requirements for improved efficiency, operational flexibility, and resilience in response to the grid’s changing nature and extreme weather events. Our mission is to solve the ever-growing problem of providing a resilient, adaptable, and economically viable power supply with distributed generation resources. We focus on scalable methods that integrate model and data information to provide better decision support for increasingly complex power grids.
 
