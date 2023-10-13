@@ -6,7 +6,7 @@ subtitle: Lab Director. Anamika Dubey. Associate Professor. <a href='https://esi
 
 profile:
   align: right
-  image: group.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>EME 23, 355 NE Spokane St</p>
