@@ -4,22 +4,15 @@ title: about
 permalink: /
 subtitle: Lab Director. Anamika Dubey. Associate Professor. <a href='https://esic.wsu.edu/'>ESIC</a>. WSU. Pullman (WA). anamika.dubey@wsu.edu.
 
-profiles:
- - align: right
+profile:
+ align: right
   image: group.png
   content: about_lab.md
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p>
- - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+
     
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
