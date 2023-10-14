@@ -24,6 +24,13 @@ profiles:
     Email: sajjaduddin.mahmud@wsu.edu
     github_username: sajjad30148
     social: true  # includes social icons at the bottom of the page
+    - align: right
+    image: prof_pic.jpg
+    content: Shishir.md
+    image_circular: false # crops the image to make it circular
+    Email: shishir.lamichhane@wsu.edu
+    github_username: 
+    social: true  # includes social icons at the bottom of the page
 
   
 ---
