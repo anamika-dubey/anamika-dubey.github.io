@@ -22,7 +22,5 @@ profiles:
     image_circular: false # crops the image to make it circular
     Email: sajjaduddin.mahmud@wsu.edu
     github_username: sajjad30148
-    more_info: >
-    <p> <a href='https://sites.google.com/view/sajjadmahmud'>Personal Website</a>. </p>
-    
+     
 ---
