@@ -14,6 +14,8 @@ profiles:
     content: Aryan.md
     image_circular: false # crops the image to make it circular
     Email: aryan.r.jha@wsu.edu
+    github_username: https://github.com/Realife-Brahmin
+    LinkedIn: aryan-r-jha
   - align: left
     image: prof_pic.jpg
     content: about_einstein.md
