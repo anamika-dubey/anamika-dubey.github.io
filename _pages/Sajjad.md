@@ -1,2 +1,2 @@
 **Sajjad Uddin Mahmud (PhD, Spring 2021)** - My current research focuses on devising efficient techniques and solutions to ensure the resilience of power grids and uphold the consistent delivery of energy, especially under severe weather conditions. Besides, I gained extensive experience in designing and implementing grid-integrated rooftop solar systems, solar irrigation systems, and solar home systems in Bangladesh. I obtained my Master of Science (M.Sc.) and Bachelor of Science (B.Sc.) degrees from Bangladesh University of Engineering and Technology, Bangladesh, in 2020 and 2015, respectively.  
-<a href='https://sites.google.com/view/sajjadmahmud'>Personal Website:<\a>
+
