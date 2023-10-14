@@ -13,22 +13,15 @@ profiles:
     image: group.png
     content: Aryan.md
     image_circular: false # crops the image to make it circular
-    Email: aryan.r.jha@wsu.edu
-    github_username: Realife-Brahmin
-    LinkedIn: aryan-r-jha
     - align: left
     image: prof_pic.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
-    Email: sajjaduddin.mahmud@wsu.edu
-    github_username: sajjad30148
     - align: right
     image: prof_pic.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
-    Email: shishir.lamichhane@wsu.edu
-    github_username: 
-  
+    
   
 ---
 
