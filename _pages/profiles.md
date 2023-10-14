@@ -14,14 +14,13 @@ profiles:
     content: Aryan.md
     image_circular: false # crops the image to make it circular
     Email: aryan.r.jha@wsu.edu
-    github_username: https://github.com/Realife-Brahmin
+    github_username: Realife-Brahmin
     LinkedIn: aryan-r-jha
   - align: left
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: Sajjad.md
     image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+    Email: sajjaduddin.mahmud@wsu.edu
+    github_username: sajjad30148
+
 ---
