@@ -15,6 +15,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     Email: aryan.r.jha@wsu.edu
     github_username: Realife-Brahmin
+    social: true  # includes social icons at the bottom of the page   
     LinkedIn: aryan-r-jha
   - align: left
     image: prof_pic.jpg
@@ -23,7 +24,7 @@ profiles:
     Email: sajjaduddin.mahmud@wsu.edu
     github_username: sajjad30148
 
-  social: true  # includes social icons at the bottom of the page   
+  
 ---
 
 
