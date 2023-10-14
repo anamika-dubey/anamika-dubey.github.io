@@ -13,6 +13,7 @@ profiles:
     image: group.png
     content: Aryan.md
     image_circular: false # crops the image to make it circular
+    Email: aryan.r.jha@wsu.edu
   - align: left
     image: prof_pic.jpg
     content: about_einstein.md
