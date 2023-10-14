@@ -13,11 +13,11 @@ profiles:
     image: group.png
     content: Aryan.md
     image_circular: false # crops the image to make it circular
-    - align: left
+  - align: left
     image: prof_pic.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
-    - align: right
+  - align: right
     image: prof_pic.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
