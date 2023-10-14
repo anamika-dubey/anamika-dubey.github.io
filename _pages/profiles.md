@@ -23,7 +23,7 @@ profiles:
     Email: sajjaduddin.mahmud@wsu.edu
     github_username: sajjad30148
 
-     
+  social: true  # includes social icons at the bottom of the page   
 ---
-social: true  # includes social icons at the bottom of the page
+
 
