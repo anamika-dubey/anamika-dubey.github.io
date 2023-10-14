@@ -16,22 +16,19 @@ profiles:
     Email: aryan.r.jha@wsu.edu
     github_username: Realife-Brahmin
     LinkedIn: aryan-r-jha
-    social: true  # includes social icons at the bottom of the page   
-  - align: left
+    - align: left
     image: prof_pic.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
     Email: sajjaduddin.mahmud@wsu.edu
     github_username: sajjad30148
-    social: true  # includes social icons at the bottom of the page
     - align: right
     image: prof_pic.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
     Email: shishir.lamichhane@wsu.edu
     github_username: 
-    social: true  # includes social icons at the bottom of the page
-
+  
   
 ---
 
