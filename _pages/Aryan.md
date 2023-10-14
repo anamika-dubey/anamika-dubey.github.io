@@ -1,4 +1,4 @@
-I'm Aryan Ritwajeet Jha, currently pursuing my PhD under the guidance of Prof. Anamika Dubey at Washington State University (WSU), Pullman. My academic background includes a BE in EEE from BITS Pilani, Hyderabad Campus in 2020 and graduate work in Power System Operation and Control at IIT Delhi between 2020-22. 
+**Aryan Ritwajeet Jha** - I'm Aryan Ritwajeet Jha, currently pursuing my PhD under the guidance of Prof. Anamika Dubey at Washington State University (WSU), Pullman. My academic background includes a BE in EEE from BITS Pilani, Hyderabad Campus in 2020 and graduate work in Power System Operation and Control at IIT Delhi between 2020-22. 
 
 My current research focuses on Multi-Period Optimization in Power Distribution Networks with temporally coupling constraints such as those introduced by energy storage systems. I put a strong emphasis on translating research into practical solutions through programming, mathematical modeling, and scientific computing. My aim is to empower power system engineers by simplifying complex analyses and facilitating the transformation of mathematical concepts into accessible, user-friendly tools.
 
