@@ -26,6 +26,10 @@ profiles:
     content: Shishir.md
     image_circular: false # crops the image to make it circular
   - align: right
+    image: Charlotte.jpg
+    content: Charlotte.md
+    image_circular: false # crops the image to make it circular
+  - align: left
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
