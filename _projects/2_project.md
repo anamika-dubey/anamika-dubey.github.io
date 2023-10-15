@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DER/Grid-Edge Coordination 
-description: a project with a background image and giscus comments
+description: Optimization and Control of DERs for grid-services
 img: assets/img/3.jpg
 importance: 2
 category: work
