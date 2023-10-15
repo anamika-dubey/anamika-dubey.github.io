@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Reserach
+title: reserach
 permalink: /projects/
 description: 
 nav: true
