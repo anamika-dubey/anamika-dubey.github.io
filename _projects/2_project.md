@@ -5,7 +5,6 @@ description: Optimization and Control of DERs for grid-services
 img: assets/img/Optimization.jpg
 importance: 2
 category: work
-giscus_comments: true
 ---
 
 A conscious move towards a sustainable energy future with transportation electrification and building automation is continuing to push for more intelligence at the grid edge, necessitating new methods to reliably integrate millions of grid-edge devices. Our group’s research in this domain aims at developing computationally tractable and accurate grid-edge optimization algorithms. Key contributions include (1) accurate and scalable centralized three-phase unbalanced optimal power flow algorithms, (2) scalable distributed algorithms for computational tractability, and (3) online optimization and use of reinforcement learning to manage fast-varying scenarios. Our unifying theme is to systematically leverage the physics of the electric power flow to develop domain-specific provably convergent approximation, relaxation, and decomposition techniques with superior performance compared to generic optimization algorithms. We are also working on an algorithmic fraemwork for grid-edge coordination under limited data, compute and communication. 
