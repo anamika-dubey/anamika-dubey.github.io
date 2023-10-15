@@ -2,7 +2,7 @@
 layout: page
 title: Grid Resilience Theme
 description: Improve weather resilience of the decarbonized grid via climate change adaptation solutions.
-img: assets/img/12.jpg
+img: assets/img/Resilience.jpg
 importance: 1
 category: work
 related_publications: 
