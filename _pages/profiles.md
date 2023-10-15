@@ -25,6 +25,10 @@ profiles:
     image: shishir.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
+  - align: right
+    image: Subho.jpg
+    content: Subho.md
+    image_circular: false # crops the image to make it circular
     
   
 ---
