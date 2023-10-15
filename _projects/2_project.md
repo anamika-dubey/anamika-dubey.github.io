@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 2
+title: DER Coordination: Optimization and Control 
 description: a project with a background image and giscus comments
 img: assets/img/3.jpg
 importance: 2
@@ -8,74 +8,14 @@ category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+A conscious move towards a sustainable energy future with transportation electrification and building automation is continuing to push for more intelligence at the grid edge, necessitating new methods to reliably integrate millions of grid-edge devices. Our group’s research in this domain aims at developing computationally tractable and accurate grid-edge optimization algorithms. Key contributions include (1) accurate and scalable centralized three-phase unbalanced optimal power flow algorithms, (2) scalable distributed algorithms for computational tractability, and (3) online optimization and use of reinforcement learning to manage fast-varying scenarios. Our unifying theme is to systematically leverage the physics of the electric power flow to develop domain-specific provably convergent approximation, relaxation, and decomposition techniques with superior performance compared to generic optimization algorithms. We are also working on an algorithmic fraemwork for grid-edge coordination under limited data, compute and communication. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Our ongoing and past funded efforts include:
+- Grid-Ready Energy Analytics Training with Data, Department of Energy, Project Lead: EPRI, WSU’s support - $195,000, 8/16/19 – 5/15/24.
+- GridAPPS-D - Layered Architecture for Distributed Applications, Subcontract agency - BATTELLE/PNNL, Awarding agency - Department of Energy (DOE), WSU’s support - $ 250,000, 3/1/21 – 8/31/23.
+- CITADELS, Subcontract agency - BATTELLE/PNNL, Awarding agency - Department of Energy (DOE), WSU’s support - $495,000, 1/1/2020-7/31/2023. **Completed**
+- Robust Distributed Control for Power Sharing in Islanded Industrial Microgrids, Schweitzer Engineering Laboratories, $267,770, 5/15/2019-12/31/2022. **Completed**
+- Bilateral Contract Design and Retail Market Development for Flexible Electric Power Systems with Residential Demand-side Participation, Alfred P. Sloan Foundation, $249,785, 1/1/19 – 8/15/22. **Completed**
+- Development of an Open-Source Advanced Distribution Management System (ADMS), Subcontract agency – BATTELLE - PNNL, Awarding agency - Department of Energy (DOE), WSU’s support - $ 1,052,902, 8/16/16 – 12/31/20. **Completed**
+- Economical and engineering aspects of proactive demand-participation: Hierarchical versus bilateral control structure, Funding agency - Department of Energy (DOE), $360,000 (WSU’s support - $210,000), 10/1/16 – 6/30/19. **Completed**
+- Framework to analyze interactions between transmission and distributions systems with high distributed energy resources (DERs) penetrations, Power Systems Engineering Research Center (PSERC), $150,000, 07/01/17-08/31/19. **Completed**
