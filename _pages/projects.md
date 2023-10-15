@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
+title: Reserach Themes
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: 
 nav: true
 nav_order: 4
 display_categories: [work, fun]
