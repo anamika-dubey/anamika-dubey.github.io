@@ -2,7 +2,7 @@
 layout: page
 title: DER/Grid-Edge Coordination 
 description: Optimization and Control of DERs for grid-services
-img: assets/img/3.jpg
+img: assets/img/Optimization.jpg
 importance: 2
 category: work
 giscus_comments: true
