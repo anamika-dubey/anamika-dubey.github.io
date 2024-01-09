@@ -17,23 +17,23 @@ profiles:
     image: Sajjad.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: NKG_Professional_Pic.jpg
     content: Ninad.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: aryan.png
     content: Aryan.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: shishir.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: Charlotte.jpg
     content: Charlotte.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
