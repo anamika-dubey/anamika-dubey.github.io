@@ -17,6 +17,10 @@ profiles:
     image: Sajjad.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
+  - align: left
+    image: NKG_Professional_Pic.jpg
+    content: Ninad.md
+    image_circular: false # crops the image to make it circular
   - align: right
     image: aryan.png
     content: Aryan.md
