@@ -41,7 +41,7 @@ profiles:
     image: Anup_Pic.jpg
     content: Anup.md
     image_circular: false # crops the image to make it circular
-   align: right
+  - align: right
     image: Kasey_Pic.jpg
     content: Kasey.md
     image_circular: false # crops the image to make it circular 
