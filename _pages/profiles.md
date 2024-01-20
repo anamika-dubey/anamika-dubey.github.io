@@ -22,7 +22,7 @@ profiles:
     content: Ninad.md
     image_circular: false # crops the image to make it circular
   - align: left
-    image: aryan.png
+    image: aryan.jpg
     content: Aryan.md
     image_circular: false # crops the image to make it circular
   - align: right
