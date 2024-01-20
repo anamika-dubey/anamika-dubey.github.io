@@ -34,6 +34,18 @@ profiles:
     content: Charlotte.md
     image_circular: false # crops the image to make it circular
   - align: right
+    image: Athul_Pic.png
+    content: Athul.md
+    image_circular: false # crops the image to make it circular
+  - align: left
+    image: Anup_Pic.jpg
+    content: Anup.md
+    image_circular: false # crops the image to make it circular
+   align: right
+    image: Kasey_Pic.jpg
+    content: Kasey.md
+    image_circular: false # crops the image to make it circular 
+  - align: left
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
