@@ -1,5 +1,5 @@
 ---
-title: job
+title: Resilient Energy Systems
 permalink: /research_resiliency_detail/
 layout: page
 ---
