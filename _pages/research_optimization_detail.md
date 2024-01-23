@@ -1,5 +1,5 @@
 ---
-title: job
+title: DER/Grid-Edge Coordination
 permalink: /research_optimization_detail/
 layout: page
 ---
