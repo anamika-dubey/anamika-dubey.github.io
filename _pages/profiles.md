@@ -42,10 +42,14 @@ profiles:
     content: Anup.md
     image_circular: false # crops the image to make it circular
   - align: right
+    image: Kunal_Pic.jpg
+    content: Kunal.md
+    image_circular: false # crops the image to make it circular
+  - align: left
     image: Kasey_Pic.jpg
     content: Kasey.md
     image_circular: false # crops the image to make it circular 
-  - align: left
+  - align: right
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
