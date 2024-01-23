@@ -1,3 +1,8 @@
+---
+title: job
+permalink: /research_resiliency_detail/
+layout: page
+---
 Our ongoing and past funded efforts include:
 - NSF SAI: Strengthening Energy Infrastructure Resilience and Equity During Extreme Cold Weather Events, awarded by National Science Foundation (NSF), $500,002, 2/1/20-1/31/25. [Project Abstract](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2324544).
 - Resilient Communities via Risk-driven Infrastructure Planning and Automated Restoration (Recuperat), awarded by the U.S. Department of Energy (DOE) Solar Energy Technologies Office, $4 million, 3/1/2023 – 28/2/2026. [Project Abstract](https://www.energy.gov/eere/solar/renewables-advancing-community-energy-resilience-racer-funding-program). [Introductory Video](https://www.youtube.com/watch?v=VTV_OWQY0C4).
