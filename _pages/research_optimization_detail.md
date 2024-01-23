@@ -1,3 +1,8 @@
+---
+title: job
+permalink: /research_optimization_detail/
+layout: page
+---
 Our ongoing and past funded efforts include:
 - Collaborative Research: CPS: Medium: Adaptive, Human-centric Demand-side Flexibility Coordination At-scale in Electric Power Networks, National Science Foundation (NSF), Cyber-physical System, $1 million, 9/1/22-8/31/25. [Project Abstract](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208783).
 - Grid-Ready Energy Analytics Training with Data, Department of Energy, Project Lead: EPRI, WSU’s support - $195,000, 8/16/19 – 5/15/24.
