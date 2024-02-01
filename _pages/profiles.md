@@ -14,42 +14,46 @@ profiles:
     content: Abodh.md
     image_circular: false # crops the image to make it circular
   - align: left
+    image: Daniel_Pic.jfif
+    content: Daniel.md
+    image_circular: false # crops the image to make it circular
+  - align: lright
     image: Sajjad.jpg
     content: Sajjad.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: NKG_Professional_Pic.jpg
     content: Ninad.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: aryan.jpg
     content: Aryan.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: shishir.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: Charlotte.jpg
     content: Charlotte.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: Athul_Pic.png
     content: Athul.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: Anup_Pic.jpg
     content: Anup.md
     image_circular: false # crops the image to make it circular
-  - align: right
+  - align: left
     image: Kunal_Pic.jpeg
     content: Kunal.md
     image_circular: false # crops the image to make it circular
-  - align: left
+  - align: right
     image: Kasey_Pic.jpg
     content: Kasey.md
     image_circular: false # crops the image to make it circular 
-  - align: right
+  - align: left
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
