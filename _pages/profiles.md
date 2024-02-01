@@ -10,6 +10,10 @@ nav_order: 2
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
+  - align: left
+    image: 
+    content: CurrentPhDStudents_Filler.md
+    image_circular: false # crops the image to make it circular
   - align: right
     image: abodh.JPG
     content: Abodh.md
@@ -50,10 +54,22 @@ profiles:
     image: Kunal_Pic.jpeg
     content: Kunal.md
     image_circular: false # crops the image to make it circular
+  - align: left
+    image: 
+    content: CurrentMastersStudents_Filler.md
+    image_circular: false # crops the image to make it circular
+  - align: left
+    image: 
+    content: CurrentUnderGradStudents_Filler.md
+    image_circular: false # crops the image to make it circular
   - align: right
     image: Kasey_Pic.jpg
     content: Kasey.md
-    image_circular: false # crops the image to make it circular 
+    image_circular: false # crops the image to make it circular
+  - align: left
+    image: 
+    content: CurrentPostDocStudents_Filler.md
+    image_circular: false # crops the image to make it circular
   - align: left
     image: Subho.jpg
     content: Subho.md
