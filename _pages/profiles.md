@@ -58,7 +58,7 @@ profiles:
     image: Subho.jpg
     content: Subho.md
     image_circular: false # crops the image to make it circular
-- align: left
+  - align: left
     image: 
     content: Past_Students.md
     image_circular: false # crops the image to make it circular
