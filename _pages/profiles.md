@@ -14,10 +14,6 @@ profiles:
     image: 
     content: CurrentPhDStudents_Filler.md
     image_circular: false # crops the image to make it circular
-  - align: right
-    image: abodh.JPG
-    content: Abodh.md
-    image_circular: false # crops the image to make it circular
   - align: left
     image: Daniel_Pic.jfif
     content: Daniel.md
@@ -69,10 +65,6 @@ profiles:
   - align: left
     image: 
     content: CurrentPostDocStudents_Filler.md
-    image_circular: false # crops the image to make it circular
-  - align: left
-    image: Subho.jpg
-    content: Subho.md
     image_circular: false # crops the image to make it circular
   - align: left
     image: 
