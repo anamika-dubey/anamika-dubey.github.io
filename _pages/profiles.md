@@ -67,6 +67,10 @@ profiles:
     content: CurrentPostDocStudents_Filler.md
     image_circular: false # crops the image to make it circular
   - align: left
+    image: chandra.jpg
+    content: chandra.md
+    image_circular: false # crops the image to make it circular
+  - align: left
     image: 
     content: Past_Students.md
     image_circular: false # crops the image to make it circular
