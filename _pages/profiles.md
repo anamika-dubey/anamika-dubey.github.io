@@ -125,7 +125,7 @@ profiles:
   - name: Subho Paul
     align: left
     content: Subho.md
-    career: Assistant Professor at IIT BHU.
+    career: Assistant Professor, Department of Electrical Engineering, Indian Institute of Technology (BHU) Varanasi.
     updates:
       - label: Joining SCALE Lab
         url: https://www.linkedin.com/posts/subho-paul-873163193_im-happy-to-share-that-im-starting-a-new-activity-6986072568491323392-BEut
