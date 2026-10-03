@@ -340,6 +340,7 @@ imagemagick:
   input_formats:
     - ".jpg"
     - ".jpeg"
+    - ".jfif"
     - ".png"
     - ".tiff"
   output_formats:
