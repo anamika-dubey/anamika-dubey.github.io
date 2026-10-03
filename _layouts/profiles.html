@@ -6,8 +6,20 @@ layout: page
       <div class="post">
 
         <article>
+          {% if page.profile_navigation %}
+          <nav aria-label="Member sections" class="mb-4">
+            {% for profile in page.profiles %}
+              {% if profile.section %}
+                <a href="#{{ profile.section | slugify }}" class="mr-3">{{ profile.section | escape }}</a>
+              {% endif %}
+            {% endfor %}
+          </nav>
+          {% endif %}
           {% if page.profiles -%}
           {% for profile in page.profiles %}
+          {% if profile.section %}
+          <h2 id="{{ profile.section | slugify }}" class="mt-5">{{ profile.section | escape }}</h2>
+          {% endif %}
           <hr>
           <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if profile.image %}
