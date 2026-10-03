@@ -53,15 +53,17 @@ layout: page
           </div>
 
           {% if profile.milestones %}
-          <div class="profile-milestones mt-4 mb-4">
+          <div class="profile-milestones mt-3 mb-4" role="group" aria-label="Milestone photos">
             {% for milestone in profile.milestones %}
-            <h3>{{ milestone.title | escape }}</h3>
+            <div class="profile-milestone">
+            <a href="{{ milestone.image | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size photo: {{ milestone.alt | escape }}">
             {% include figure.html
               path=milestone.image
-              class="img-fluid rounded z-depth-1"
-              alt=milestone.alt
-              caption=milestone.caption
-              zoomable=true %}
+              class="rounded z-depth-1"
+              alt=milestone.alt %}
+            </a>
+            <p class="small mt-2 mb-0">{{ milestone.title | escape }} · <a href="{{ milestone.image | relative_url }}" target="_blank" rel="noopener">View photo<span class="sr-only">: {{ milestone.alt | escape }}</span></a></p>
+            </div>
             {% endfor %}
           </div>
           {% endif %}
