@@ -57,6 +57,22 @@ layout: page
             {%- endif %}
           </div>
 
+          {% if profile.career or profile.updates %}
+          <aside class="profile-updates mt-3 mb-3" aria-label="Career and announcements">
+            {% if profile.career %}
+            <p class="small mb-2"><strong>Career:</strong> {{ profile.career | escape }}</p>
+            {% endif %}
+            {% if profile.updates %}
+            <p class="small mb-1"><strong>Announcements</strong></p>
+            <ul class="small mb-0">
+              {% for update in profile.updates %}
+              <li><a href="{{ update.url | escape }}">{{ update.label | escape }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </aside>
+          {% endif %}
+
           {% if profile.milestones %}
           <div class="profile-milestones mt-3 mb-4" role="group" aria-label="Milestone photos">
             {% for milestone in profile.milestones %}
