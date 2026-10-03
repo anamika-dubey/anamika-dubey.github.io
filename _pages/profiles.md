@@ -44,13 +44,9 @@ profiles:
     image: Kunal_Pic.png
     content: Kunal.md
     image_circular: false # crops the image to make it circular
-  - align: left
-    image: 
-    content: CurrentUnderGradStudents_Filler.md
-    image_circular: false # crops the image to make it circular
   - align: right
-    image: Kasey_Pic.jpg
-    content: Kasey.md
+    image: Casey_Pic.jpg
+    content: Casey.md
     image_circular: false # crops the image to make it circular
   - section: Alumni
     align: left
