@@ -336,9 +336,11 @@ imagemagick:
     - 1400
   input_directories:
     - assets/img/
+    - assets/img/milestones/
   input_formats:
     - ".jpg"
     - ".jpeg"
+    - ".jfif"
     - ".png"
     - ".tiff"
   output_formats:

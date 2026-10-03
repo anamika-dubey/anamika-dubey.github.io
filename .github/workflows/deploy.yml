@@ -33,17 +33,45 @@ jobs:
         valueFile: '_config.yml'
         propertyPath: 'giscus.repo'
         value: ${{ github.repository }}
+    - name: Install image tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick
     - name: Install and Build 🔧
+      env:
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+        PREVIEW_PR_URL: ${{ github.event.pull_request.html_url }}
       run: |
         pip3 install --upgrade jupyter
         npm install -g mermaid.cli
         npm install -g purgecss
         export JEKYLL_ENV=production
-        bundle exec jekyll build --lsi
+        if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+          printf 'preview: true\npreview_pr_url: "%s"\n' "$PREVIEW_PR_URL" > _config_preview.yml
+          bundle exec jekyll build --lsi --baseurl "/previews/pr-$PR_NUMBER" --config _config.yml,_config_preview.yml
+        else
+          bundle exec jekyll build --lsi
+        fi
         purgecss -c purgecss.config.js
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
+        clean-exclude: previews/**
+    - name: Publish pull request preview
+      if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: _site
+        target-folder: previews/pr-${{ github.event.pull_request.number }}
+        force: false
+        commit-message: Publish preview for PR ${{ github.event.pull_request.number }}
+    - name: Preview link
+      if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+      env:
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+      run: |
+        echo "### Website preview" >> "$GITHUB_STEP_SUMMARY"
+        echo "[View the People page](https://anamika-dubey.github.io/previews/pr-$PR_NUMBER/people/)" >> "$GITHUB_STEP_SUMMARY"
 
