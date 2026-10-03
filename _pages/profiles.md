@@ -132,6 +132,10 @@ profiles:
   - name: Surendra Bajagain
     align: right
     content: Surendra.md
+    milestones:
+      - title: Final defense
+        image: assets/img/milestones/surendra-final-defense.png
+        alt: Surendra Bajagain at his PhD final defense with his committee attending in person and remotely
     career: Power Engineer at Dominion Energy.
     updates:
       - label: 'Career update: joining Dominion Energy'
