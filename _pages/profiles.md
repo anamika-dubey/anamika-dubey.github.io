@@ -111,7 +111,7 @@ profiles:
   - align: right
     image: abodh.jpg
     content: Abodh.md
-    career: Electric Power Engineers (EPE); previously a research engineer at NREL.
+    career: Senior Software Power Systems Engineer at Electric Power Engineers (EPE).
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/abodhpoudyal_phd-electricalengineering-powersystems-activity-7184209550034493440-dHFF
