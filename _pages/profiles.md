@@ -103,6 +103,10 @@ profiles:
   - align: left
     image: chandra.jpg
     content: chandra.md
+    career: EPRI.
+    updates:
+      - label: Joining EPRI
+        url: https://www.linkedin.com/posts/chandra-kant-jat_happy-to-share-that-i-have-joined-epri-in-activity-7436915580684742657-GZCc
     image_circular: false # crops the image to make it circular
   - align: right
     image: abodh.jpg
