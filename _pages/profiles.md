@@ -53,6 +53,11 @@ profiles:
     image: Daniel_Pic.jfif
     content: Daniel.md
     image_circular: false # crops the image to make it circular
+    milestones:
+      - title: Final defense
+        image: assets/img/milestones/daniel-final-defense.png
+        alt: Daniel Glover with his committee at his PhD final defense
+        caption: Daniel Glover with his committee at his PhD final defense.
   - align: right
     image: shishir.jpg
     content: Shishir.md
