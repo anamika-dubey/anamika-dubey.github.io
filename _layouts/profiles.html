@@ -35,6 +35,11 @@ layout: page
               path=profile_image_path
               class=profile_image_class
               alt=profile.image -%}
+            {% elsif profile.image_placeholder %}
+            <div class="profile-placeholder rounded" role="img" aria-label="Portrait placeholder for {{ profile.name | escape }}">
+              <span class="profile-placeholder-initials" aria-hidden="true">{{ profile.initials | escape }}</span>
+              <span class="small" aria-hidden="true">Photo</span>
+            </div>
             {% endif -%}
             {%- if profile.more_info %}
             <div class="more-info">

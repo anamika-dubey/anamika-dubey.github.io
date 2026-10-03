@@ -33,6 +33,24 @@ body.sticky-bottom-footer {
   }
 }
 
+.profile-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px dashed var(--global-divider-color);
+  color: var(--global-text-color);
+
+  .profile-placeholder-initials {
+    font-size: 2.5rem;
+    font-weight: 300;
+    opacity: 0.5;
+  }
+}
+
 .profile-milestones {
   display: flex;
   flex-wrap: wrap;
