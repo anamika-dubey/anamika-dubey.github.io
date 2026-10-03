@@ -52,6 +52,20 @@ layout: page
             {%- endif %}
           </div>
 
+          {% if profile.milestones %}
+          <div class="profile-milestones mt-4 mb-4">
+            {% for milestone in profile.milestones %}
+            <h3>{{ milestone.title | escape }}</h3>
+            {% include figure.html
+              path=milestone.image
+              class="img-fluid rounded z-depth-1"
+              alt=milestone.alt
+              caption=milestone.caption
+              zoomable=true %}
+            {% endfor %}
+          </div>
+          {% endif %}
+
           {% endfor %}
           {%- endif %}
         </article>
