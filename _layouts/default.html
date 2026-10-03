@@ -3,6 +3,9 @@
 
   <!-- Head -->
   <head>
+  {% if site.preview %}
+    <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
   {%- if page.redirect -%}
     <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
   {%- endif -%}
@@ -17,6 +20,13 @@
 
     <!-- Content -->
     <div class="container mt-5">
+      {% if site.preview %}
+      <div class="alert alert-info" role="note">
+        <strong>Preview:</strong> unpublished changes for
+        <a href="{{ site.preview_pr_url | escape }}">this pull request</a>.
+        <a href="{{ site.url }}/people/">View the live People page</a>.
+      </div>
+      {% endif %}
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
