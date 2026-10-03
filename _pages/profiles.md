@@ -66,6 +66,16 @@ profiles:
     image: Casey_Pic.jpg
     content: Casey.md
     image_circular: false # crops the image to make it circular
+  - name: Yashvardhan Singh Raghuwanshi
+    align: left
+    image: Yash_Pic.png
+    content: Yash.md
+    image_circular: false
+  - name: Apsara Adhikari
+    align: right
+    content: Apsara.md
+    image_placeholder: true
+    initials: AA
   - section: Alumni
     align: left
     image: Daniel_Pic.jfif
