@@ -18,7 +18,7 @@ layout: page
           {% if page.profiles -%}
           {% for profile in page.profiles %}
           {% if profile.section %}
-          <h2 id="{{ profile.section | slugify }}" class="mt-5">{{ profile.section | escape }}</h2>
+          <h2 id="{{ profile.section | slugify }}" class="mt-5" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
           {% endif %}
           <hr>
           <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
