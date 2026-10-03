@@ -62,10 +62,22 @@ profiles:
     image: shishir.jpg
     content: Shishir.md
     image_circular: false # crops the image to make it circular
+    milestones:
+      - title: Final defense
+        image: assets/img/milestones/shishir-final-defense.png
+        alt: Shishir Lamichhane with his committee at his PhD final defense
   - align: left
     image: chandra.jpg
     content: chandra.md
     image_circular: false # crops the image to make it circular
+  - align: right
+    image: abodh.jpg
+    content: Abodh.md
+    image_circular: false
+    milestones:
+      - title: Final defense
+        image: assets/img/milestones/abodh-final-defense.png
+        alt: Abodh Poudyal with Anamika Dubey at his PhD final defense
   - align: left
     image: 
     content: Past_Students.md

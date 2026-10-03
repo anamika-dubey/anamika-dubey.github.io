@@ -4,7 +4,6 @@
 - Dr. Subho Paul, (Assistant Professor at IIT BHU) [Email](subho.paul@wsu.edu). [Linkedin](https://www.linkedin.com/in/dr-subho-paul-873163193/). [Github](https://www.github.com/SubhoKol) 
 
 **PhD and master's alumni:**
-- Abodh Poudyal, Ph.D., Fall 2024 (Reserach Engineer at NREL). [website](https://abodh.github.io/). [github](https://github.com/abodh). [E-mail](mailto:abodh.poudyal@wsu.edu). 
 - Surendra Bajagain, Ph.D., Dec 2023, “Enhancing Distribution System Situational Awareness Using Smart Meters” (Power Engineer at Dominion Energy). [LinkedIn](https://www.linkedin.com/in/surendra-bajagain-25789211b/). [Career update: joining Dominion Energy](https://www.linkedin.com/posts/activity-7158300617122238464-oZ6l).
 - Rabayet Sadnan, Ph.D., May 2023, “Distributed Computation and Optimization for Electric Power Distribution Systems,” (Research Scientist at Pacific Northwest National Laboratories). [LinkedIn](https://www.linkedin.com/in/rabayet-sadnan/). [Defense announcement](https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-dr-rabayet-sadnan-for-activity-7054761786331299840-koew).
 - Lusha Wang, Ph.D. May 2022, (co-advised with Dr. Noel Schulz), “Optimal Planning and Operation of Distribution Systems with Massive Electric Vehicles,” (Assistant Professor at University of Alabama). [LinkedIn](https://www.linkedin.com/in/lusha-wang-23389615b/)
