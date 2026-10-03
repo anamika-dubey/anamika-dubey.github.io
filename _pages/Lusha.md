@@ -6,6 +6,4 @@
 
 Co-advised with Dr. Noel Schulz.
 
-**Career:** Assistant Professor at University of Alabama.
-
 [LinkedIn](https://www.linkedin.com/in/lusha-wang-23389615b/)
