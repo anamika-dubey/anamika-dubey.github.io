@@ -37,6 +37,13 @@ profiles:
   - align: right
     image: aryan-blue-shirt.jpg
     content: Aryan.md
+    milestones:
+      - title: Preliminary exam — lab photo
+        image: assets/img/milestones/aryan-preliminary-exam-lab.png
+        alt: Aryan with SCALE Lab members at his preliminary exam on 5 November 2025
+      - title: Preliminary exam — committee photo
+        image: assets/img/milestones/aryan-preliminary-exam-committee.png
+        alt: Aryan with his committee at his preliminary exam on 5 November 2025
     image_circular: false # crops the image to make it circular
   - align: right
     image: Charlotte.jpg
