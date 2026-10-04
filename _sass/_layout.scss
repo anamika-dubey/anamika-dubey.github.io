@@ -72,6 +72,40 @@ body.sticky-bottom-footer {
   }
 }
 
+.profile-gallery {
+  width: min(1100px, 94vw);
+  max-width: 94vw;
+  max-height: 94vh;
+  padding: 2.5rem 1rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+
+  &::backdrop { background: rgba(0, 0, 0, 0.8); }
+  button {
+    background: transparent;
+    color: inherit;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.25rem;
+    font-size: 2rem;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+  }
+  .gallery-close { position: absolute; top: 0.25rem; right: 0.5rem; }
+  .gallery-image-row { display: flex; align-items: center; gap: 0.5rem; }
+  .gallery-image {
+    min-width: 0;
+    flex: 1;
+    width: 0;
+    max-height: 68vh;
+    object-fit: contain;
+  }
+  .gallery-caption { margin: 0.75rem 0 0.25rem; font-size: 0.9rem; }
+  .gallery-original { font-size: 0.85rem; }
+}
+
 // TODO: redefine content layout.
 
 
