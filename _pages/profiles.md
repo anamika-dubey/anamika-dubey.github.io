@@ -35,7 +35,7 @@ profiles:
         url: https://www.linkedin.com/posts/energy-systems-innovation-center_studentspotlight-powerengineering-cyberphysicalsystems-ugcPost-7242628620920221698-PDXG
     image_circular: false # crops the image to make it circular
   - align: right
-    image: aryan.jpg
+    image: aryan-blue-shirt.jpg
     content: Aryan.md
     image_circular: false # crops the image to make it circular
   - align: right
