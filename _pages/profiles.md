@@ -69,10 +69,6 @@ profiles:
       - label: Preliminary defense
         url: https://www.linkedin.com/posts/kunalshankar760_phdcandidate-powersystems-demandresponse-activity-7480774375143591936-dXDp
     image_circular: false # crops the image to make it circular
-  - align: right
-    image: Casey_Pic.jpg
-    content: Casey.md
-    image_circular: false # crops the image to make it circular
   - name: Yashvardhan Singh Raghuwanshi
     align: left
     image: Yash_Pic.png
@@ -83,10 +79,15 @@ profiles:
     content: Apsara.md
     image_placeholder: true
     initials: AA
+  - align: right
+    image: Casey_Pic.jpg
+    content: Casey.md
+    image_circular: false # crops the image to make it circular
   - section: Alumni
     align: left
     image: Daniel_Pic.jfif
     content: Daniel.md
+    career: Lead Engineer, Eaton Research Labs, Eaton.
     updates:
       - label: 'Career update: joining Eaton Research Labs'
         url: https://lnkd.in/p/ggjBsdqu
@@ -99,6 +100,7 @@ profiles:
   - align: right
     image: shishir.jpg
     content: Shishir.md
+    career: Senior Engineer, Dominion Energy; joined in June 2026.
     updates:
       - label: LinkedIn post
         url: https://lnkd.in/p/gkNNX52f
@@ -110,10 +112,12 @@ profiles:
   - align: left
     image: chandra.jpg
     content: chandra.md
-    career: EPRI.
+    career: Staff - Level III, Transmission Operations & Planning, Electric Power Research Institute (EPRI).
     updates:
       - label: Joining EPRI
         url: https://www.linkedin.com/posts/chandra-kant-jat_happy-to-share-that-i-have-joined-epri-in-activity-7436915580684742657-GZCc
+      - label: EPRI professional profile
+        url: https://top.epri.com/person/chandra-kant-jat
     image_circular: false # crops the image to make it circular
   - align: right
     image: abodh.jpg
@@ -147,42 +151,44 @@ profiles:
       - title: Final defense
         image: assets/img/milestones/surendra-final-defense.png
         alt: Surendra Bajagain at his PhD final defense with his committee attending in person and remotely
-    career: Power Engineer at Dominion Energy.
+    career: Engineer III, Power Distribution System Modeling and Planning, Dominion Energy.
     updates:
       - label: 'Career update: joining Dominion Energy'
         url: https://www.linkedin.com/posts/activity-7158300617122238464-oZ6l
-    image_placeholder: true
-    initials: SB
+    image: surendra.png
+    image_circular: false
   - name: Rabayet Sadnan
     align: left
     content: Rabayet.md
-    career: Research Scientist at Pacific Northwest National Laboratories.
+    career: Scientist III, Power System Modeling Group, Pacific Northwest National Laboratory (PNNL).
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-dr-rabayet-sadnan-for-activity-7054761786331299840-koew
-    image_placeholder: true
-    initials: RS
+      - label: 2026 IEEE PES Outstanding Dissertation Award finalist
+        url: https://esic.wsu.edu/
+    image: rabayet.png
+    image_circular: false
   - name: Lusha Wang
     align: right
     content: Lusha.md
-    career: Assistant Professor at University of Alabama.
-    image_placeholder: true
-    initials: LW
+    career: Assistant Professor, University of Alabama (since 2023).
+    image: lusha.png
+    image_circular: false
   - name: Gayathri Krishnamoorthy
     align: left
     content: Gayathri.md
-    career: Research Engineer at National Renewable Energy Laboratories.
-    image_placeholder: true
-    initials: GK
+    career: Researcher, Strategic Energy Analysis, National Laboratory of the Rockies (formerly NREL).
+    image: gayathri.png
+    image_circular: false
   - name: Mohammad Ostadijafari
     align: right
     content: Mohammad.md
-    career: Power Systems Software Engineer at GE Digital.
+    career: System Development Engineer, Amazon.
     updates:
       - label: LinkedIn announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_studentsuccess-phd-research-activity-6865088593279496192-Qyqx
-    image_placeholder: true
-    initials: MO
+    image: mohammad.png
+    image_circular: false
   - name: Rahul Jha
     align: left
     content: Rahul.md
@@ -195,27 +201,32 @@ profiles:
   - name: Shiva Poudel
     align: right
     content: Shiva.md
-    career: Research Scientist at Pacific Northwest National Laboratories.
+    career: Electrical Engineer, Power Systems Research, Pacific Northwest National Laboratory (PNNL); joined in 2020.
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-my-first-phd-student-activity-6671898615826538496-wdC-
-    image_placeholder: true
-    initials: SP
+    image: shiva.png
+    image_circular: false
   - name: Andrew Ian Cannon
     align: left
     content: Andrew.md
-    image_placeholder: true
-    initials: AC
+    career: Research Engineer, Schweitzer Engineering Laboratories (SEL).
+    image: drew.png
+    image_circular: false
   - name: Anandini Bharadwaj
     align: right
     content: Anandini.md
     image_placeholder: true
     initials: AB
-  - name: Arun Imayakumar
+  - name: Arun Abhishek Imayakumar
     align: left
     content: Arun.md
-    image_placeholder: true
-    initials: AI
+    career: Assistant Professor, Sri Venkateswara College of Engineering (SVCE); joined in July 2021.
+    updates:
+      - label: A slice of freedom - article in The Hindu
+        url: https://www.thehindu.com/education/a-slice-of-freedom/article30541895.ece
+    image: arun.png
+    image_circular: false
     
   
 ---

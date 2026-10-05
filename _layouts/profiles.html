@@ -16,9 +16,21 @@ layout: page
           </nav>
           {% endif %}
           {% if page.profiles -%}
+          {% assign profile_section_open = false %}
           {% for profile in page.profiles %}
           {% if profile.section %}
+          {% if profile_section_open %}</section>{% endif %}
+          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
+          {% assign profile_section_open = true %}
+          {% if profile.section == 'Alumni' %}
+          <header class="alumni-section-heading">
+            <p class="alumni-section-eyebrow">SCALE Lab community</p>
+            <h2 id="{{ profile.section | slugify }}" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
+            <p class="alumni-section-intro">Our former students and researchers, and where their work has taken them.</p>
+          </header>
+          {% else %}
           <h2 id="{{ profile.section | slugify }}" class="mt-5" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
+          {% endif %}
           {% endif %}
           <hr>
           <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
@@ -90,6 +102,7 @@ layout: page
           {% endif %}
 
           {% endfor %}
+          {% if profile_section_open %}</section>{% endif %}
           {%- endif %}
         </article>
 

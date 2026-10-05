@@ -27,6 +27,64 @@ body.sticky-bottom-footer {
 }
 
 // Profile
+.profile-section-alumni {
+  margin-top: 4rem;
+  padding: 3.5rem 0 2rem;
+  // Extend the painted gradient to the viewport edges without widening layout.
+  border-image: linear-gradient(
+    180deg,
+    var(--global-alumni-bg-color),
+    var(--global-alumni-gradient-end)
+  ) fill 0 / 0 / 0 100vmax;
+  clip-path: inset(0 -100vmax);
+
+  > hr {
+    margin: 2.25rem 0 1.75rem;
+    border-top-color: var(--global-divider-color);
+  }
+
+  > .alumni-section-heading + hr {
+    display: none;
+  }
+}
+
+.alumni-section-heading {
+  max-width: 36rem;
+  margin-bottom: 2.5rem;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2.75rem;
+    height: 3px;
+    margin-bottom: 1.25rem;
+    background: var(--global-theme-color);
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -.025em;
+    margin-bottom: .75rem;
+  }
+}
+
+.alumni-section-eyebrow {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: .5rem;
+}
+
+.alumni-section-intro {
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 .profile {
   img {
     width: 100%;
