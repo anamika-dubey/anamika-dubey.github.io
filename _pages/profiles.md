@@ -69,10 +69,6 @@ profiles:
       - label: Preliminary defense
         url: https://www.linkedin.com/posts/kunalshankar760_phdcandidate-powersystems-demandresponse-activity-7480774375143591936-dXDp
     image_circular: false # crops the image to make it circular
-  - align: right
-    image: Casey_Pic.jpg
-    content: Casey.md
-    image_circular: false # crops the image to make it circular
   - name: Yashvardhan Singh Raghuwanshi
     align: left
     image: Yash_Pic.png
@@ -83,6 +79,10 @@ profiles:
     content: Apsara.md
     image_placeholder: true
     initials: AA
+  - align: right
+    image: Casey_Pic.jpg
+    content: Casey.md
+    image_circular: false # crops the image to make it circular
   - section: Alumni
     align: left
     image: Daniel_Pic.jfif
