@@ -87,6 +87,7 @@ profiles:
     align: left
     image: Daniel_Pic.jfif
     content: Daniel.md
+    career: Lead Engineer, Eaton Research Labs, Eaton.
     updates:
       - label: 'Career update: joining Eaton Research Labs'
         url: https://lnkd.in/p/ggjBsdqu
@@ -99,6 +100,7 @@ profiles:
   - align: right
     image: shishir.jpg
     content: Shishir.md
+    career: Senior Engineer, Dominion Energy; joined in June 2026.
     updates:
       - label: LinkedIn post
         url: https://lnkd.in/p/gkNNX52f
@@ -181,7 +183,7 @@ profiles:
   - name: Mohammad Ostadijafari
     align: right
     content: Mohammad.md
-    career: Power Systems Software Engineer at GE Digital.
+    career: System Development Engineer, Amazon.
     updates:
       - label: LinkedIn announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_studentsuccess-phd-research-activity-6865088593279496192-Qyqx
@@ -208,6 +210,7 @@ profiles:
   - name: Andrew Ian Cannon
     align: left
     content: Andrew.md
+    career: Research Engineer, Schweitzer Engineering Laboratories (SEL).
     image: drew.png
     image_circular: false
   - name: Anandini Bharadwaj
@@ -218,6 +221,10 @@ profiles:
   - name: Arun Abhishek Imayakumar
     align: left
     content: Arun.md
+    career: Assistant Professor, Sri Venkateswara College of Engineering (SVCE); joined in July 2021.
+    updates:
+      - label: A slice of freedom - article in The Hindu
+        url: https://www.thehindu.com/education/a-slice-of-freedom/article30541895.ece
     image: arun.png
     image_circular: false
     
