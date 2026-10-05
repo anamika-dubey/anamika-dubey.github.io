@@ -77,8 +77,8 @@ profiles:
   - name: Apsara Adhikari
     align: right
     content: Apsara.md
-    image_placeholder: true
-    initials: AA
+    image: apsara.png
+    image_circular: false
   - align: right
     image: Casey_Pic.jpg
     content: Casey.md
