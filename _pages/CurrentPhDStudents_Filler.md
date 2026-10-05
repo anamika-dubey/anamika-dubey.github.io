@@ -1,1 +1,1 @@
-### PhD students
+### Doctoral researchers
