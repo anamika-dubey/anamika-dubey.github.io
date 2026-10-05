@@ -30,8 +30,12 @@ body.sticky-bottom-footer {
 .profile-section-alumni {
   margin-top: 4rem;
   padding: 3.5rem 0 2rem;
-  background: var(--global-alumni-bg-color);
-  box-shadow: 0 0 0 100vmax var(--global-alumni-bg-color);
+  // Extend the painted gradient to the viewport edges without widening layout.
+  border-image: linear-gradient(
+    180deg,
+    var(--global-alumni-bg-color),
+    var(--global-alumni-gradient-end)
+  ) fill 0 / 0 / 0 100vmax;
   clip-path: inset(0 -100vmax);
 
   > hr {

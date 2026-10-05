@@ -17,6 +17,7 @@
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
   --global-alumni-bg-color: #f6f3ee;
+  --global-alumni-gradient-end: #eaf0f5;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -63,6 +64,7 @@ html[data-theme='dark'] {
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
   --global-alumni-bg-color: #292725;
+  --global-alumni-gradient-end: #202c35;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
