@@ -186,12 +186,12 @@ profiles:
   - name: Rahul Jha
     align: left
     content: Rahul.md
+    image: rahul.png
+    image_circular: false
     career: Senior Engineer at ComEd.
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_gocougs-activity-6737457263868547073-X1DJ
-    image_placeholder: true
-    initials: RJ
   - name: Shiva Poudel
     align: right
     content: Shiva.md
