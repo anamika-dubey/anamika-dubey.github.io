@@ -28,11 +28,72 @@ body.sticky-bottom-footer {
 
 // Profile
 .profile-section-alumni {
-  margin-top: 3rem;
-  padding: 2rem 0;
+  position: relative;
+  isolation: isolate;
+  margin-top: 4rem;
+  padding: 3.5rem 0 2rem;
   background: var(--global-alumni-bg-color);
   box-shadow: 0 0 0 100vmax var(--global-alumni-bg-color);
   clip-path: inset(0 -100vmax);
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100vmax;
+    right: -100vmax;
+    height: 15rem;
+    background: linear-gradient(180deg, rgba(155, 111, 67, .09), transparent);
+    border-top: 1px solid var(--global-divider-color);
+    pointer-events: none;
+  }
+
+  > hr {
+    margin: 2.25rem 0 1.75rem;
+    border-top-color: var(--global-divider-color);
+  }
+
+  > .alumni-section-heading + hr {
+    display: none;
+  }
+}
+
+.alumni-section-heading {
+  max-width: 36rem;
+  margin-bottom: 2.5rem;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2.75rem;
+    height: 3px;
+    margin-bottom: 1.25rem;
+    background: var(--global-theme-color);
+  }
+
+  h2 {
+    font-size: clamp(2.25rem, 5vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -.025em;
+    margin-bottom: .75rem;
+  }
+}
+
+.alumni-section-eyebrow {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: .5rem;
+}
+
+.alumni-section-intro {
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .profile {
