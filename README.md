@@ -8,7 +8,7 @@ Website for SCALE Lab at Washington State University, led by Dr. Anamika Dubey. 
 
 - **Website updates:** contact [Aryan Ritwajeet Jha](mailto:aryan.r.jha@wsu.edu). Send the page or profile to change, the replacement text, relevant links, and any photos. For member profiles, include your joining/graduation dates and preferred contact links. Photos and announcements can be added later.
 - **Collaborator access:** contact [Dr. Anamika Dubey](mailto:anamika.dubey@wsu.edu), the repository owner, with your GitHub username and the pages you intend to maintain. You can also coordinate the request through Aryan.
-- **Repository owner:** invite editors through **Settings → Collaborators → Add people**. The invited person must accept the invitation before editing access becomes available. See [GitHub's invitation guide](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
+- **Ownership stays with Dr. Anamika Dubey.** Editing access is granted to collaborators; it does not transfer repository ownership. Dr. Dubey can invite editors through **Settings → Collaborators → Add people**. The invited person must accept the invitation before editing access becomes available. See [GitHub's invitation guide](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
 
 ## Where content lives
 
