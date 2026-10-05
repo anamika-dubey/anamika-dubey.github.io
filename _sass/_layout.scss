@@ -27,6 +27,14 @@ body.sticky-bottom-footer {
 }
 
 // Profile
+.profile-section-alumni {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: var(--global-alumni-bg-color);
+  box-shadow: 0 0 0 100vmax var(--global-alumni-bg-color);
+  clip-path: inset(0 -100vmax);
+}
+
 .profile {
   img {
     width: 100%;
