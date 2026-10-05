@@ -110,10 +110,12 @@ profiles:
   - align: left
     image: chandra.jpg
     content: chandra.md
-    career: EPRI.
+    career: Staff - Level III, Transmission Operations & Planning, Electric Power Research Institute (EPRI).
     updates:
       - label: Joining EPRI
         url: https://www.linkedin.com/posts/chandra-kant-jat_happy-to-share-that-i-have-joined-epri-in-activity-7436915580684742657-GZCc
+      - label: EPRI professional profile
+        url: https://top.epri.com/person/chandra-kant-jat
     image_circular: false # crops the image to make it circular
   - align: right
     image: abodh.jpg
@@ -147,7 +149,7 @@ profiles:
       - title: Final defense
         image: assets/img/milestones/surendra-final-defense.png
         alt: Surendra Bajagain at his PhD final defense with his committee attending in person and remotely
-    career: Power Engineer at Dominion Energy.
+    career: Engineer III, Power Distribution System Modeling and Planning, Dominion Energy.
     updates:
       - label: 'Career update: joining Dominion Energy'
         url: https://www.linkedin.com/posts/activity-7158300617122238464-oZ6l
@@ -156,22 +158,24 @@ profiles:
   - name: Rabayet Sadnan
     align: left
     content: Rabayet.md
-    career: Research Scientist at Pacific Northwest National Laboratories.
+    career: Scientist III, Power System Modeling Group, Pacific Northwest National Laboratory (PNNL).
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-dr-rabayet-sadnan-for-activity-7054761786331299840-koew
+      - label: 2026 IEEE PES Outstanding Dissertation Award finalist
+        url: https://esic.wsu.edu/
     image: rabayet.png
     image_circular: false
   - name: Lusha Wang
     align: right
     content: Lusha.md
-    career: Assistant Professor at University of Alabama.
+    career: Assistant Professor, University of Alabama (since 2023).
     image: lusha.png
     image_circular: false
   - name: Gayathri Krishnamoorthy
     align: left
     content: Gayathri.md
-    career: Research Engineer at National Renewable Energy Laboratories.
+    career: Researcher, Strategic Energy Analysis, National Laboratory of the Rockies (formerly NREL).
     image: gayathri.png
     image_circular: false
   - name: Mohammad Ostadijafari
@@ -195,7 +199,7 @@ profiles:
   - name: Shiva Poudel
     align: right
     content: Shiva.md
-    career: Research Scientist at Pacific Northwest National Laboratories.
+    career: Electrical Engineer, Power Systems Research, Pacific Northwest National Laboratory (PNNL); joined in 2020.
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-my-first-phd-student-activity-6671898615826538496-wdC-
