@@ -36,6 +36,14 @@ Routine text edits can be made directly on GitHub; a local development environme
 
 The site uses Jekyll, so opening a source `.md` or `.html` file on your computer does not show the finished website. Use the hosted PR preview for review. Build settings live in `_config.yml` and `.github/workflows/deploy.yml`; the workflow also records the build dependencies.
 
+## Reduce build emails
+
+These emails are GitHub Actions notifications. Each editor controls their own notification settings; changing the README or website does not change anyone's inbox.
+
+**On GitHub:** open [Notification settings](https://github.com/settings/notifications), then **System → Actions**. Choose **Only notify for failed workflows** to keep failure alerts, or remove **Email** / choose **Don't notify** to stop Actions emails. Save your changes. These are account-wide Actions preferences, including your other repositories. See [GitHub's current instructions](https://docs.github.com/en/subscriptions-and-notifications/how-tos/managing-github-actions-notifications).
+
+**Only quiet this repo in Gmail:** select a build email, choose **More → Filter messages like these**, and narrow the filter using the repository name `anamika-dubey/anamika-dubey.github.io` and the build/workflow text from that email. Use **Search** to confirm it matches the intended build emails. Then create the filter with **Skip the Inbox (Archive it)** and, optionally, a label such as `SCALE website builds`. The emails remain searchable. Filtering just the sender would also catch unrelated GitHub notifications. See [Gmail's filter guide](https://support.google.com/mail/answer/6579?hl=en).
+
 ## Acknowledgement
 
 Built with [Jekyll](https://jekyllrb.com/) using the [al-folio theme](https://github.com/alshedivat/al-folio). Thank you to the theme's authors and contributors. The original MIT license is retained in [LICENSE](LICENSE).
