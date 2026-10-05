@@ -151,8 +151,8 @@ profiles:
     updates:
       - label: 'Career update: joining Dominion Energy'
         url: https://www.linkedin.com/posts/activity-7158300617122238464-oZ6l
-    image_placeholder: true
-    initials: SB
+    image: surendra.png
+    image_circular: false
   - name: Rabayet Sadnan
     align: left
     content: Rabayet.md
@@ -160,20 +160,20 @@ profiles:
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-dr-rabayet-sadnan-for-activity-7054761786331299840-koew
-    image_placeholder: true
-    initials: RS
+    image: rabayet.png
+    image_circular: false
   - name: Lusha Wang
     align: right
     content: Lusha.md
     career: Assistant Professor at University of Alabama.
-    image_placeholder: true
-    initials: LW
+    image: lusha.png
+    image_circular: false
   - name: Gayathri Krishnamoorthy
     align: left
     content: Gayathri.md
     career: Research Engineer at National Renewable Energy Laboratories.
-    image_placeholder: true
-    initials: GK
+    image: gayathri.png
+    image_circular: false
   - name: Mohammad Ostadijafari
     align: right
     content: Mohammad.md
@@ -181,8 +181,8 @@ profiles:
     updates:
       - label: LinkedIn announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_studentsuccess-phd-research-activity-6865088593279496192-Qyqx
-    image_placeholder: true
-    initials: MO
+    image: mohammad.png
+    image_circular: false
   - name: Rahul Jha
     align: left
     content: Rahul.md
@@ -199,13 +199,13 @@ profiles:
     updates:
       - label: Defense announcement
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-my-first-phd-student-activity-6671898615826538496-wdC-
-    image_placeholder: true
-    initials: SP
+    image: shiva.png
+    image_circular: false
   - name: Andrew Ian Cannon
     align: left
     content: Andrew.md
-    image_placeholder: true
-    initials: AC
+    image: drew.png
+    image_circular: false
   - name: Anandini Bharadwaj
     align: right
     content: Anandini.md
@@ -214,8 +214,8 @@ profiles:
   - name: Arun Imayakumar
     align: left
     content: Arun.md
-    image_placeholder: true
-    initials: AI
+    image: arun.png
+    image_circular: false
     
   
 ---
