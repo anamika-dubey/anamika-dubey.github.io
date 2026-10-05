@@ -16,9 +16,13 @@ layout: page
           </nav>
           {% endif %}
           {% if page.profiles -%}
+          {% assign profile_section_open = false %}
           {% for profile in page.profiles %}
           {% if profile.section %}
-          <h2 id="{{ profile.section | slugify }}" class="mt-5" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
+          {% if profile_section_open %}</section>{% endif %}
+          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
+          {% assign profile_section_open = true %}
+          <h2 id="{{ profile.section | slugify }}"{% unless profile.section == 'Alumni' %} class="mt-5"{% endunless %} style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
           {% endif %}
           <hr>
           <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
@@ -90,6 +94,7 @@ layout: page
           {% endif %}
 
           {% endfor %}
+          {% if profile_section_open %}</section>{% endif %}
           {%- endif %}
         </article>
 
