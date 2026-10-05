@@ -1,6 +1,6 @@
 ### Surendra Bajagain
 
-**PhD alumnus, January 2019 to December 2023**
+**PhD alumnus, Spring 2019 to Fall 2023**
 
 **Thesis:** Enhancing Distribution System Situational Awareness Using Smart Meters
 
