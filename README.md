@@ -23,6 +23,19 @@ Website for SCALE Lab at Washington State University, led by Dr. Anamika Dubey. 
 
 Milestone photos appear as small thumbnails. Clicking one opens that member's gallery; use the ‹ / › buttons or left/right arrow keys to browse, and Escape to close. Additional photos go in the member's `milestones` list in `_pages/profiles.md`.
 
+## Edit, preview, and publish
+
+Routine text edits can be made directly on GitHub; a local development environment is optional.
+
+1. Create a branch from the latest **`master`**. Open the relevant file and use the pencil button to edit. Keep each commit focused on one purpose.
+2. Open a pull request (PR) targeting `master`. For a branch in this repository, the `deploy` workflow builds a preview automatically.
+3. Once the build and GitHub Pages publication finish, open `https://anamika-dubey.github.io/previews/pr-N/people/`, replacing `N` with your PR number. Other pages use the same preview prefix. Review the text, photos, and mobile layout before merging.
+4. Merge the reviewed PR. The live website updates automatically after the production deployment finishes, usually within a few minutes. Check [Actions](https://github.com/anamika-dubey/anamika-dubey.github.io/actions) for the `deploy` and `pages-build-deployment` runs. If the page looks stale, refresh with **Ctrl + Shift + R**.
+
+`master` holds the editable source. **`gh-pages`** holds the generated website and PR previews; the deployment workflow updates it automatically. Make content changes in source branches. A preview URL shows that PR's build; use the live site to see all merged changes.
+
+The site uses Jekyll, so opening a source `.md` or `.html` file on your computer does not show the finished website. Use the hosted PR preview for review. Build settings live in `_config.yml` and `.github/workflows/deploy.yml`; the workflow also records the build dependencies.
+
 ## Acknowledgement
 
 Built with [Jekyll](https://jekyllrb.com/) using the [al-folio theme](https://github.com/alshedivat/al-folio). Thank you to the theme's authors and contributors. The original MIT license is retained in [LICENSE](LICENSE).
