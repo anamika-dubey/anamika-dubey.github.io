@@ -211,7 +211,7 @@ profiles:
     content: Anandini.md
     image_placeholder: true
     initials: AB
-  - name: Arun Imayakumar
+  - name: Arun Abhishek Imayakumar
     align: left
     content: Arun.md
     image: arun.png
