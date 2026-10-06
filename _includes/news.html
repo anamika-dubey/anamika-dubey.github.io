@@ -11,7 +11,15 @@
               {% endif %}
               {% for item in news limit: news_limit %}
                 <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <th scope="row">
+                    {% if item.date_precision == "season" %}
+                      {{ item.season }} {{ item.date | date: "%Y" }}
+                    {% elsif item.date_precision == "month" %}
+                      {{ item.date | date: "%b %Y" }}
+                    {% else %}
+                      {{ item.date | date: "%b %-d, %Y" }}
+                    {% endif %}
+                  </th>
                   <td>
                     {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
