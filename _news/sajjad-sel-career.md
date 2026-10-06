@@ -8,4 +8,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations to Sajjad Uddin Mahmud on joining Schweitzer Engineering Laboratories (SEL) in Pullman, WA as an Associate Integration and Automation Engineer while finishing his PhD at WSU. Sajjad remains a member of SCALE Lab.
+Congratulations to Sajjad Uddin Mahmud on joining Schweitzer Engineering Laboratories (SEL) in Pullman, WA as an Associate Integration and Automation Engineer while he wraps up his PhD at WSU.
