@@ -2,6 +2,7 @@
   patterns:
   - IEEE Transactions on Power Systems
   group: Popular journals
+  wsu_power: true
 - label: IEEE Access
   patterns:
   - IEEE Access
@@ -10,34 +11,42 @@
   patterns:
   - IEEE Transactions on Smart Grid
   group: Popular journals
+  wsu_power: true
 - label: IEEE Transactions on Industry Applications
   patterns:
   - IEEE Transactions on Industry Applications
   group: Popular journals
+  wsu_power: true
 - label: IEEE Systems Journal
   patterns:
   - IEEE Systems Journal
   group: Popular journals
+  wsu_power: true
 - label: IEEE Transactions on Power Delivery
   patterns:
   - IEEE Transactions on Power Delivery
   group: Popular journals
+  wsu_power: true
 - label: IEEE Transactions on Sustainable Energy
   patterns:
   - IEEE Transactions on Sustainable Energy
   group: Popular journals
+  wsu_power: true
 - label: Electric Power Systems Research
   patterns:
   - Electric Power Systems Research
   group: Popular journals
+  wsu_power: true
 - label: IEEE PES General Meeting (PESGM)
   patterns:
   - general meeting
   group: Popular conferences
+  wsu_power: true
 - label: North American Power Symposium (NAPS)
   patterns:
   - north american power symposium
   group: Popular conferences
+  wsu_power: true
 - label: IEEE Texas Power and Energy Conference (TPEC)
   patterns:
   - texas power
@@ -50,14 +59,17 @@
   patterns:
   - smartgridcomm
   group: Popular conferences
+  wsu_power: true
 - label: IEEE PowerTech
   patterns:
   - powertech
   group: Popular conferences
+  wsu_power: true
 - label: IEEE PES ISGT
   patterns:
   - innovative smart grid
   group: Popular conferences
+  wsu_power: true
 - label: IEEE Photovoltaic Specialists Conference (PVSC)
   patterns:
   - photovoltaic specialists
@@ -79,6 +91,7 @@
   - transmission and distribution
   - t&d conference
   group: Other venues
+  wsu_power: true
 - label: NE-IECCE
   patterns:
   - north-east india
@@ -107,6 +120,7 @@
   patterns:
   - decision and control
   group: Other venues
+  wsu_power: true
 - label: ACM e-Energy
   patterns:
   - future energy systems
@@ -120,12 +134,89 @@
   patterns:
   - Proceedings of the IEEE
   group: Popular journals
+  wsu_power: true
 - label: IEEE Transactions on Industrial Informatics
   patterns:
   - IEEE Transactions on Industrial Informatics
   group: Popular journals
+  wsu_power: true
+- label: IEEE Transactions on Industrial Electronics
+  patterns:
+  - IEEE Transactions on Industrial Electronics
+  group: Other venues
+  wsu_power: true
+- label: IEEE Transactions on Power Electronics
+  patterns:
+  - IEEE Transactions on Power Electronics
+  group: Other venues
+  wsu_power: true
+- label: IEEE Transactions on Vehicular Technology
+  patterns:
+  - IEEE Transactions on Vehicular Technology
+  group: Other venues
+  wsu_power: true
+- label: IEEE Transactions on Automatic Control
+  patterns:
+  - IEEE Transactions on Automatic Control
+  group: Other venues
+  wsu_power: true
+- label: IEEE Transactions on Energy Conversion
+  patterns:
+  - IEEE Transactions on Energy Conversion
+  group: Other venues
+  wsu_power: true
+- label: International Journal of Electrical Power & Energy Systems
+  patterns:
+  - International Journal of Electrical Power & Energy Systems
+  - International Journal of Electrical Power and Energy Systems
+  group: Other venues
+  wsu_power: true
+- label: IET Renewable Power Generation
+  patterns:
+  - IET Renewable Power Generation
+  group: Other venues
+  wsu_power: true
+- label: IEEE Transactions on Circuits and Systems I
+  patterns:
+  - IEEE Transactions on Circuits and Systems I
+  group: Other venues
+  wsu_power: true
 - label: IET Generation, Transmission & Distribution
   patterns:
   - IET Generation Transmission & Distribution
   - IET Generation Transmission and Distribution
   group: Popular journals
+  wsu_power: true
+- label: IET Power Electronics
+  patterns:
+  - IET Power Electronics
+  group: Other venues
+  wsu_power: true
+- label: Nature Energy
+  patterns:
+  - Nature Energy
+  group: Other venues
+  wsu_power: true
+- label: Power Systems Computation Conference (PSCC)
+  patterns:
+  - Power Systems Computation Conference
+  - Power Systems Computations Conference
+  group: Other venues
+  wsu_power: true
+- label: IREP Symposium on Bulk Power System Phenomena
+  patterns:
+  - IREP
+  - Bulk Power System Phenomena
+  group: Other venues
+  wsu_power: true
+- label: IEEE Smart Grid Synchronized Measurements and Analytics (SGSMA)
+  patterns:
+  - SGSMA
+  - Smart Grid Synchronized Measurements
+  group: Other venues
+  wsu_power: true
+- label: American Control Conference (ACC)
+  patterns:
+  - American Control Conference
+  group: Other venues
+  wsu_power: true
