@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Sajjad Uddin Mahmud"]
+news_types: ["Job"]
 date: 2026-07-01
 date_precision: month
 inline: true

@@ -10,7 +10,7 @@
               {% assign news_limit = news_size %}
               {% endif %}
               {% for item in news limit: news_limit %}
-                <tr>
+                <tr{% if include.filters %} data-news-item data-news-people="{{ item.people | jsonify | escape }}" data-news-types="{{ item.news_types | jsonify | escape }}" data-news-year="{{ item.date | date: '%Y' }}"{% endif %}>
                   <th scope="row">
                     {% if item.date_precision == "month" %}
                       {{ item.date | date: "%b %Y" }}

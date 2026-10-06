@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Chandra Kant Jat"]
+news_types: ["Job"]
 date: 2026-03-01
 date_precision: month
 inline: true

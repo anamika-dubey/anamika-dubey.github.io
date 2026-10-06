@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Aryan Ritwajeet Jha"]
+news_types: ["Internship"]
 date: 2024-05-13
 inline: true
 related_posts: false

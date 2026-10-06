@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Abodh Poudyal"]
+news_types: ["Defense"]
 date: 2024-04-08
 inline: true
 related_posts: false

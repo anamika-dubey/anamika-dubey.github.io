@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Shishir Lamichhane"]
+news_types: ["Internship"]
 date: 2025-05-01
 date_precision: month
 inline: true

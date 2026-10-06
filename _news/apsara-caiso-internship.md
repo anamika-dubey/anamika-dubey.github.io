@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Apsara Adhikari"]
+news_types: ["Internship"]
 date: 2026-05-01
 date_precision: month
 inline: true

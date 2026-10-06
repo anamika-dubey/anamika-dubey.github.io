@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Ninad Kiran Gaikwad"]
+news_types: ["Internship"]
 date: 2025-01-01
 date_precision: month
 inline: true

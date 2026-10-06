@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Athul Jose P"]
+news_types: ["Internship"]
 date: 2025-07-01
 date_precision: month
 inline: true

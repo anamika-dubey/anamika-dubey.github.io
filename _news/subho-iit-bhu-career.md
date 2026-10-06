@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Subho Paul"]
+news_types: ["Job"]
 date: 2023-12-01
 date_precision: month
 inline: true
