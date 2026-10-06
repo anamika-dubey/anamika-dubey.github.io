@@ -3,8 +3,8 @@ layout: post
 title: Anamika Dubey earns tenure and promotion to Associate Professor
 people: ["Anamika Dubey"]
 news_types: ["Promotion"]
-date: 2022-01-01
-date_precision: year
+date: 2022-08-01
+date_precision: month
 inline: true
 related_posts: false
 ---
