@@ -25,6 +25,8 @@
   display: flex; flex-wrap: wrap; gap: .5rem .9rem; margin: 1.1rem 0;
   a { padding: .2rem 0; font-size: .9rem; }
 }
+#selected-publications { scroll-margin-top: 5rem; }
+
 .home-director-bio {
   margin: .5rem 0 1.5rem;
   summary { cursor: pointer; color: var(--global-theme-color); font-size: .9rem; }
