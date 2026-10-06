@@ -63,7 +63,7 @@
   let limit = 20;
   let options = [];
   let activeOption = -1;
-  ["Major journals", "Major conferences", "Other venues"].forEach((groupName) => {
+  ["Popular journals", "Popular conferences", "Other venues"].forEach((groupName) => {
     const fieldset = document.createElement("fieldset");
     const legend = document.createElement("legend");
     legend.textContent = groupName;
@@ -83,7 +83,7 @@
         grid.append(label);
       });
     fieldset.append(legend, grid);
-    document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-major-venues").append(fieldset);
+    document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-popular-venues").append(fieldset);
   });
   const venueCheckboxes = Array.from(venueFilter.querySelectorAll('input[type="checkbox"]'));
 

@@ -1,63 +1,63 @@
 - label: IEEE Transactions on Power Systems
   patterns:
   - IEEE Transactions on Power Systems
-  group: Major journals
+  group: Popular journals
 - label: IEEE Access
   patterns:
   - IEEE Access
-  group: Major journals
+  group: Popular journals
 - label: IEEE Transactions on Smart Grid
   patterns:
   - IEEE Transactions on Smart Grid
-  group: Major journals
+  group: Popular journals
 - label: IEEE Transactions on Industry Applications
   patterns:
   - IEEE Transactions on Industry Applications
-  group: Major journals
+  group: Popular journals
 - label: IEEE Systems Journal
   patterns:
   - IEEE Systems Journal
-  group: Major journals
+  group: Popular journals
 - label: IEEE Transactions on Power Delivery
   patterns:
   - IEEE Transactions on Power Delivery
-  group: Major journals
+  group: Popular journals
 - label: IEEE Transactions on Sustainable Energy
   patterns:
   - IEEE Transactions on Sustainable Energy
-  group: Major journals
+  group: Popular journals
 - label: Electric Power Systems Research
   patterns:
   - Electric Power Systems Research
-  group: Major journals
+  group: Popular journals
 - label: IEEE PES General Meeting (PESGM)
   patterns:
   - general meeting
-  group: Major conferences
+  group: Popular conferences
 - label: North American Power Symposium (NAPS)
   patterns:
   - north american power symposium
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE Texas Power and Energy Conference (TPEC)
   patterns:
   - texas power
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE IAS Annual Meeting
   patterns:
   - industry applications society annual
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE SmartGridComm
   patterns:
   - smartgridcomm
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE PowerTech
   patterns:
   - powertech
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE PES ISGT
   patterns:
   - innovative smart grid
-  group: Major conferences
+  group: Popular conferences
 - label: IEEE Photovoltaic Specialists Conference (PVSC)
   patterns:
   - photovoltaic specialists
@@ -65,7 +65,7 @@
 - label: Probabilistic Methods Applied to Power Systems (PMAPS)
   patterns:
   - probabilistic methods
-  group: Other venues
+  group: Popular conferences
 - label: International Conference on Power System Technology (POWERCON)
   patterns:
   - power system technology
@@ -116,3 +116,16 @@
   - nat. conf. comp.
   - ncvpripg
   group: Other venues
+- label: Proceedings of the IEEE
+  patterns:
+  - Proceedings of the IEEE
+  group: Popular journals
+- label: IEEE Transactions on Industrial Informatics
+  patterns:
+  - IEEE Transactions on Industrial Informatics
+  group: Popular journals
+- label: IET Generation, Transmission & Distribution
+  patterns:
+  - IET Generation Transmission & Distribution
+  - IET Generation Transmission and Distribution
+  group: Popular journals
