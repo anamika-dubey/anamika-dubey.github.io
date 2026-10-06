@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Aryan Ritwajeet Jha began an internship with the Advanced System Analytics and Modeling (ASAM) team at the North American Electric Reliability Corporation (NERC).
+Aryan Ritwajeet Jha began an internship with the Advanced System Analytics and Modeling (ASAM) team at the North American Electric Reliability Corporation (NERC), working remotely. Best of luck, Aryan!
