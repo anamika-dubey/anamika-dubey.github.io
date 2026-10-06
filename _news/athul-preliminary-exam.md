@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2026-07-07
+date: 2026-07-08
 people: ["Athul Jose P"]
 news_types: ["Prelims"]
 inline: true
