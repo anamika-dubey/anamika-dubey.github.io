@@ -48,6 +48,9 @@ profiles:
   - align: right
     image: Charlotte.jpg
     content: Charlotte.md
+    updates:
+      - label: Preliminary exam announcement
+        url: https://www.linkedin.com/posts/charlotte-wertz_happy-to-announce-that-i-have-passed-my-preliminary-share-7355952932904689665-CKFg/
     image_circular: false # crops the image to make it circular
   - align: left
     image: Athul_Pic.png
@@ -77,8 +80,8 @@ profiles:
   - name: Apsara Adhikari
     align: right
     content: Apsara.md
-    image_placeholder: true
-    initials: AA
+    image: apsara.png
+    image_circular: false
   - align: right
     image: Casey_Pic.jpg
     content: Casey.md

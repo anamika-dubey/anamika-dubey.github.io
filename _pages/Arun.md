@@ -1,6 +1,6 @@
 ### Arun Abhishek Imayakumar
 
-**MS alumnus, December 2019**
+**MS alumnus, Fall 2019**
 
 Arun received his M.S. in Electrical Engineering from Washington State University in December 2019 and his B.E. in Electrical and Electronics Engineering from Valliammai Engineering College, Anna University, India, in May 2016.
 

@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p> Director: Anamika Dubey </p>  
-    <p> Associate Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State Univ. </p>
+    <p> Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State Univ. </p>
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p> 
 
@@ -26,7 +26,7 @@ The proliferation of distributed energy resources and flexible loads is pushing 
     
 
 
-**Anamika Dubey (Lab Director)** - I am Huie-Rogers Endowed Chair Associate Professor of Electrical Engineering in the School of EECS at Washington State University (WSU), Pullman. I also hold a joint appointment as a Research Scientist at the Pacific Northwest National Laboratory (PNNL). At WSU, I am affiliated with Energy Systems Innovation Center (ESIC). I received my MSE and Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin in 2012 and 2015, respectively. Energy and climate change are indeed unquestionably urgent and significant challenges that demand our immediate attention. Within this broad scope, power systems research and development serve as the pivotal component in enabling the transition towards a clean and green energy future. As a power systems engineer and researcher, my goal is to help advance our society towards a future that is brighter, cleaner, and more sustainable.
+**Anamika Dubey (Lab Director)** - I am Huie-Rogers Endowed Chair Professor of Electrical Engineering in the School of EECS at Washington State University (WSU), Pullman. I also hold a joint appointment as a Research Scientist at the Pacific Northwest National Laboratory (PNNL). At WSU, I am affiliated with Energy Systems Innovation Center (ESIC). I received my MSE and Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin in 2012 and 2015, respectively. Energy and climate change are indeed unquestionably urgent and significant challenges that demand our immediate attention. Within this broad scope, power systems research and development serve as the pivotal component in enabling the transition towards a clean and green energy future. As a power systems engineer and researcher, my goal is to help advance our society towards a future that is brighter, cleaner, and more sustainable.
 
 
 

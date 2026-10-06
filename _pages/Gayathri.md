@@ -1,6 +1,6 @@
 ### Gayathri Krishnamoorthy
 
-**PhD alumna, August 2018 to May 2022; MS alumna, August 2016 to May 2018**
+**PhD alumna, Fall 2018 to Spring 2022; MS alumna, Fall 2016 to Spring 2018**
 
 Gayathri received her Ph.D. and M.Sc. in Electrical Engineering from Washington State University in 2022 and 2018, respectively. She earned her B.E. in Electronics and Communications Engineering from Anna University, India, in 2016.
 
