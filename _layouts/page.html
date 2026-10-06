@@ -5,7 +5,14 @@ layout: default
 <div class="post">
 
   <header class="post-header">
+    {% if page.reference_url %}
+    <div class="publication-heading-row">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <a class="publication-heading-reference" href="{{ page.reference_url | escape }}" title="{{ page.reference_title | escape }}" aria-label="{{ page.reference_title | escape }}">{{ page.reference_label }} <span aria-hidden="true">&nearr;</span></a>
+    </div>
+    {% else %}
     <h1 class="post-title">{{ page.title }}</h1>
+    {% endif %}
     <p class="post-description">{{ page.description }}</p>
   </header>
 
