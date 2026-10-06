@@ -37,7 +37,12 @@
     outline-offset: 3px;
   }
   .publication-filter-help { color: var(--global-text-color-light); font-size: 0.8rem; margin: 0 0 0.5rem; }
-  .publication-member-filter { grid-column: 1; grid-row: 2; }
+  .publication-filter-menus { grid-column: 1; grid-row: 2; display: flex; gap: 1rem; }
+  .publication-scope { grid-column: 1 / -1; grid-row: 3; margin: 0; font-size: 0.8rem; display: flex; align-items: center; gap: 0.4rem; }
+  .publication-scope input { accent-color: var(--global-theme-color); }
+  .publication-other-venues { margin-top: 0.6rem; }
+  .publication-venue-filter legend { font-size: 0.8rem; font-weight: 600; margin: 0.5rem 0; }
+  .publication-venue-filter .publication-member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   summary {
     cursor: pointer;
     font-size: 0.85rem;
@@ -69,7 +74,7 @@
 .publication-suggestions {
   position: absolute;
   z-index: 10;
-  top: calc(100% + 1.875rem);
+  top: 100%;
   left: 0;
   right: 0;
   max-height: 22rem;
@@ -87,7 +92,9 @@
 }
 
 .publication-empty { padding: 1.25rem 0; color: var(--global-text-color-light); }
-.publication-suggestions[hidden], .publication-empty[hidden], #publication-list [hidden] { display: none !important; }
+.publication-show-more { display: block; margin: 1rem auto 2rem; padding: 0.5rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 0.3rem; background: var(--global-bg-color); color: var(--global-text-color); cursor: pointer; }
+#publication-list li { scroll-margin-top: 5rem; }
+.publication-suggestions[hidden], .publication-empty[hidden], .publication-show-more[hidden], #publication-list [hidden] { display: none !important; }
 
 @media (max-width: 650px) {
   .publication-filters .publication-member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -96,6 +103,8 @@
   .publication-filters {
     gap: 0.35rem;
     summary span { display: none; }
+    .publication-results-count { max-width: 11rem; }
     .publication-member-grid { grid-template-columns: 1fr; }
+    .publication-venue-filter .publication-member-grid { grid-template-columns: 1fr; }
   }
 }

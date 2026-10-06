@@ -15,6 +15,16 @@
   members.forEach((member) => {
     [member.name, ...member.aliases].forEach((name) => aliases.set(nameKey(name), member.id));
   });
+  const venueDefinitions = JSON.parse(document.getElementById("publication-venues-data").textContent);
+  const venues = new Map();
+  function identifyVenue(raw) {
+    const name = raw.replace(/\\&/g, "&").replace(/[{}]/g, "").trim() || "Other publications";
+    const definition = venueDefinitions.find((venue) => venue.patterns.some((pattern) => normalize(name).includes(normalize(pattern))));
+    const label = definition ? definition.label : name;
+    const id = normalize(label);
+    if (!venues.has(id)) venues.set(id, {id, label, group: definition ? definition.group : "Other venues"});
+    return id;
+  }
 
   const records = Array.from(list.querySelectorAll("[data-publication-title]")).map((row) => {
     const authors = row.dataset.publicationAuthors.split("|").map((name) => name.trim()).filter(Boolean);
@@ -25,7 +35,10 @@
     });
     return {
       item: row.closest("li"), title: row.dataset.publicationTitle, authors, memberIds,
+      labMember: Array.from(memberIds).some((id) => id !== "anamika"),
+      venueId: identifyVenue(row.dataset.publicationVenue),
       search: normalize([row.dataset.publicationTitle, row.dataset.publicationVenue,
+        venues.get(identifyVenue(row.dataset.publicationVenue)).label,
         row.dataset.publicationYear, ...authors, ...memberNames].join(" ")),
     };
   });
@@ -37,12 +50,42 @@
   const count = document.getElementById("publication-results-count");
   const empty = document.getElementById("publication-empty");
   const selection = document.getElementById("publication-member-selection");
-  const checkboxes = Array.from(controls.querySelectorAll('input[type="checkbox"]'));
+  const checkboxes = Array.from(controls.querySelectorAll('.publication-member-filter input[type="checkbox"]'));
+  const labOnly = document.getElementById("publication-lab-only");
+  const more = document.getElementById("publication-show-more");
+  const venueSelection = document.getElementById("publication-venue-selection");
+  const venueFilter = controls.querySelector(".publication-venue-filter");
   const groups = Array.from(list.querySelectorAll("ol.bibliography"));
   const authorFilter = controls.querySelector(".publication-member-filter");
   let selected = new Set();
+  let selectedVenues = new Set();
+  let limit = 20;
   let options = [];
   let activeOption = -1;
+  ["Major journals", "Major conferences", "Other venues"].forEach((groupName) => {
+    const fieldset = document.createElement("fieldset");
+    const legend = document.createElement("legend");
+    legend.textContent = groupName;
+    if (groupName === "Other venues") legend.className = "sr-only";
+    const grid = document.createElement("div");
+    grid.className = "publication-member-grid";
+    Array.from(venues.values()).filter((venue) => venue.group === groupName)
+      .sort((a, b) => a.label.localeCompare(b.label)).forEach((venue) => {
+        const label = document.createElement("label");
+        label.className = "publication-member-option";
+        const box = document.createElement("input");
+        box.type = "checkbox";
+        box.value = venue.id;
+        const text = document.createElement("span");
+        const total = records.filter((record) => record.venueId === venue.id).length;
+        text.textContent = `${venue.label} (${total})`;
+        label.append(box, text);
+        grid.append(label);
+      });
+    fieldset.append(legend, grid);
+    document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-major-venues").append(fieldset);
+  });
+  const venueCheckboxes = Array.from(venueFilter.querySelectorAll('input[type="checkbox"]'));
 
   members.forEach((member) => {
     const total = records.filter((record) => record.memberIds.has(member.id)).length;
@@ -54,6 +97,10 @@
   function matchesMembers(record) {
     return Array.from(selected).every((id) => record.memberIds.has(id));
   }
+  function matchesFilters(record) {
+    return matchesMembers(record) && (!labOnly.checked || record.labMember)
+      && (!selectedVenues.size || selectedVenues.has(record.venueId));
+  }
 
   function closeSuggestions() {
     suggestions.hidden = true;
@@ -62,13 +109,15 @@
     activeOption = -1;
   }
 
-  function updateResults() {
+  function updateResults(resetLimit = true) {
+    if (resetLimit) limit = 20;
     selected = new Set(checkboxes.filter((box) => box.checked).map((box) => box.value));
+    selectedVenues = new Set(venueCheckboxes.filter((box) => box.checked).map((box) => box.value));
     const terms = normalize(input.value).split(/\s+/).filter(Boolean);
     let visible = 0;
     records.forEach((record) => {
-      const match = matchesMembers(record) && terms.every((term) => record.search.includes(term));
-      record.item.hidden = !match;
+      const match = matchesFilters(record) && terms.every((term) => record.search.includes(term));
+      record.item.hidden = !match || visible >= limit;
       if (match) visible += 1;
     });
     groups.forEach((group) => {
@@ -76,12 +125,13 @@
       const heading = group.previousElementSibling;
       if (heading && heading.matches("h2.bibliography")) heading.hidden = group.hidden;
     });
-    count.textContent = visible === records.length
-      ? `Showing all ${records.length} publications`
-      : `Showing ${visible} of ${records.length} publications`;
+    count.textContent = `Showing ${Math.min(limit, visible)} of ${visible} ${labOnly.checked ? "lab-member " : ""}publications`;
+    more.hidden = visible <= limit;
+    more.textContent = `Show ${Math.min(20, Math.max(0, visible - limit))} more`;
     empty.hidden = visible !== 0;
     selection.textContent = selected.size ? `${selected.size} selected` : "All members";
-    reset.disabled = !input.value && !selected.size;
+    venueSelection.textContent = selectedVenues.size ? `${selectedVenues.size} selected` : "All venues";
+    reset.disabled = !input.value && !selected.size && !selectedVenues.size;
   }
 
   function updateSuggestions() {
@@ -100,7 +150,7 @@
         label, kind, score: normalized.startsWith(query) ? 0 : 1,
       });
     }
-    records.filter(matchesMembers).forEach((record) => {
+    records.filter(matchesFilters).forEach((record) => {
       add(record.title, "Paper");
       record.authors.forEach((author) => {
         const id = aliases.get(nameKey(author));
@@ -155,7 +205,7 @@
   }
 
   input.addEventListener("input", () => { updateResults(); updateSuggestions(); });
-  input.addEventListener("focus", () => { authorFilter.open = false; updateSuggestions(); });
+  input.addEventListener("focus", () => { authorFilter.open = false; venueFilter.open = false; updateSuggestions(); });
   input.addEventListener("blur", closeSuggestions);
   input.addEventListener("keydown", (event) => {
     if (event.key === "Escape") { event.preventDefault(); closeSuggestions(); return; }
@@ -176,23 +226,39 @@
     const option = event.target.closest('[role="option"]');
     if (option) choose(Number(option.dataset.index));
   });
-  checkboxes.forEach((box) => box.addEventListener("change", () => {
+  [...checkboxes, ...venueCheckboxes, labOnly].forEach((box) => box.addEventListener("change", () => {
     updateResults();
     closeSuggestions();
   }));
   document.addEventListener("click", (event) => {
     if (!authorFilter.contains(event.target)) authorFilter.open = false;
+    if (!venueFilter.contains(event.target)) venueFilter.open = false;
   });
-  authorFilter.addEventListener("keydown", (event) => {
+  [authorFilter, venueFilter].forEach((filter) => filter.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       event.preventDefault();
-      authorFilter.open = false;
-      authorFilter.querySelector("summary").focus();
+      filter.open = false;
+      filter.querySelector("summary").focus();
+    }
+  }));
+  authorFilter.addEventListener("toggle", () => { if (authorFilter.open) venueFilter.open = false; });
+  venueFilter.addEventListener("toggle", () => { if (venueFilter.open) authorFilter.open = false; });
+  more.addEventListener("click", () => {
+    const firstNew = records.find((record) => record.item.hidden && matchesFilters(record)
+      && normalize(input.value).split(/\s+/).filter(Boolean).every((term) => record.search.includes(term)));
+    limit += 20;
+    updateResults(false);
+    if (firstNew) {
+      firstNew.item.tabIndex = -1;
+      firstNew.item.focus({preventScroll: true});
+      firstNew.item.scrollIntoView({block: "start"});
     }
   });
   reset.addEventListener("click", () => {
     input.value = "";
-    checkboxes.forEach((box) => { box.checked = false; });
+    [...checkboxes, ...venueCheckboxes].forEach((box) => { box.checked = false; });
+    venueFilter.querySelector(".publication-other-venues").open = false;
+    [authorFilter, venueFilter].forEach((filter) => { filter.querySelector(".publication-member-list").scrollTop = 0; });
     updateResults();
     closeSuggestions();
     input.focus();

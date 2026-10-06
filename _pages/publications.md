@@ -11,12 +11,14 @@ See [Anamika Dubey's Google Scholar profile](https://scholar.google.com/citation
 
 {% include publication_filters.html %}
 
-<p id="publication-empty" class="publication-empty" hidden>No publications match your search and member selections. Try a shorter search or clear the filters.</p>
+<p id="publication-empty" class="publication-empty" hidden>No publications match these filters. Try a shorter search, clear the filters, or uncheck “Lab-member publications only” to search the full bibliography.</p>
 
 <div class="publications" id="publication-list">
 
 {% bibliography -f {{ site.scholar.bibliography }} %}
 
 </div>
+
+<button id="publication-show-more" class="publication-show-more" type="button" hidden>Show more</button>
 
 <script src="{{ '/assets/js/publication-search.js' | relative_url }}" defer></script>
