@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-Aryan Ritwajeet Jha completed his preliminary exam at Washington State University on November 5, 2025.
+Congratulations, Aryan Ritwajeet Jha, on passing your preliminary exam!
