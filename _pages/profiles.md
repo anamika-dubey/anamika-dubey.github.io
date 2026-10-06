@@ -48,6 +48,9 @@ profiles:
   - align: right
     image: Charlotte.jpg
     content: Charlotte.md
+    updates:
+      - label: Preliminary exam announcement
+        url: https://www.linkedin.com/posts/charlotte-wertz_happy-to-announce-that-i-have-passed-my-preliminary-share-7355952932904689665-CKFg/
     image_circular: false # crops the image to make it circular
   - align: left
     image: Athul_Pic.png
