@@ -77,8 +77,7 @@
         box.type = "checkbox";
         box.value = venue.id;
         const text = document.createElement("span");
-        const total = records.filter((record) => record.venueId === venue.id).length;
-        text.textContent = `${venue.label} (${total})`;
+        text.textContent = venue.label;
         label.append(box, text);
         grid.append(label);
       });
@@ -86,13 +85,6 @@
     document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-major-venues").append(fieldset);
   });
   const venueCheckboxes = Array.from(venueFilter.querySelectorAll('input[type="checkbox"]'));
-
-  members.forEach((member) => {
-    const total = records.filter((record) => record.memberIds.has(member.id)).length;
-    const label = controls.querySelector(`[data-count-for="${member.id}"]`);
-    label.textContent = `(${total})`;
-    label.title = `${total} publications in this bibliography`;
-  });
 
   function matchesMembers(record) {
     return Array.from(selected).every((id) => record.memberIds.has(id));
@@ -114,6 +106,31 @@
     selected = new Set(checkboxes.filter((box) => box.checked).map((box) => box.value));
     selectedVenues = new Set(venueCheckboxes.filter((box) => box.checked).map((box) => box.value));
     const terms = normalize(input.value).split(/\s+/).filter(Boolean);
+    const matchesSearch = (record) => terms.every((term) => record.search.includes(term));
+    // Counts cover the complete matching collection, including unloaded batches.
+    const matching = records.filter((record) => matchesFilters(record) && matchesSearch(record));
+    checkboxes.forEach((box) => {
+      const total = matching.filter((record) => record.memberIds.has(box.value)).length;
+      const label = box.closest("label");
+      const counter = label.querySelector(".publication-member-count");
+      counter.textContent = `(${total})`;
+      counter.title = `${total} matching publications featuring this author`;
+      label.hidden = total === 0 && !box.checked;
+    });
+    // Venue selections use OR, so retain alternative venues that match the other filters.
+    const venueMatches = records.filter((record) => matchesMembers(record)
+      && (!labOnly.checked || record.labMember) && matchesSearch(record));
+    venueCheckboxes.forEach((box) => {
+      const total = venueMatches.filter((record) => record.venueId === box.value).length;
+      const label = box.closest("label");
+      label.querySelector("span").textContent = `${venues.get(box.value).label} (${total})`;
+      label.hidden = total === 0 && !box.checked;
+    });
+    venueFilter.querySelectorAll("fieldset").forEach((group) => {
+      group.hidden = !Array.from(group.querySelectorAll("label")).some((label) => !label.hidden);
+    });
+    venueFilter.querySelector(".publication-other-venues").hidden =
+      !Array.from(document.getElementById("publication-other-venue-list").querySelectorAll("label")).some((label) => !label.hidden);
     let visible = 0;
     records.forEach((record) => {
       const match = matchesFilters(record) && terms.every((term) => record.search.includes(term));

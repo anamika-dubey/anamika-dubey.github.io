@@ -95,6 +95,7 @@
 .publication-show-more { display: block; margin: 1rem auto 2rem; padding: 0.5rem 1rem; border: 1px solid var(--global-divider-color); border-radius: 0.3rem; background: var(--global-bg-color); color: var(--global-text-color); cursor: pointer; }
 #publication-list li { scroll-margin-top: 5rem; }
 .publication-suggestions[hidden], .publication-empty[hidden], .publication-show-more[hidden], #publication-list [hidden] { display: none !important; }
+.publication-member-option[hidden], .publication-venue-filter fieldset[hidden], .publication-other-venues[hidden] { display: none !important; }
 
 @media (max-width: 650px) {
   .publication-filters .publication-member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
