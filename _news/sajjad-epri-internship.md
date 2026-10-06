@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Sajjad Uddin Mahmud began a summer internship as a Student Employee at the Electric Power Research Institute (EPRI), working on the integration of grid-enhancing technologies. Best of luck, Sajjad!
+Sajjad Uddin Mahmud began a remote summer internship as a Student Employee at the Electric Power Research Institute (EPRI), running from May to August 2025 and working on the integration of grid-enhancing technologies. Best of luck, Sajjad!

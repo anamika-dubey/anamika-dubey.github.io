@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Sajjad Uddin Mahmud began a summer internship as an Engineering Intern at Schweitzer Engineering Laboratories (SEL) in Pullman, WA. Best of luck, Sajjad!
+Sajjad Uddin Mahmud began a summer internship as an Engineering Intern at Schweitzer Engineering Laboratories (SEL) in Pullman, WA, running from June to August 2024. Best of luck, Sajjad!

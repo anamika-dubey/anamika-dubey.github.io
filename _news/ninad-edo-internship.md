@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Ninad Kiran Gaikwad began a summer internship as a Machine Learning Intern with the Research and Development group at Edo Energy in the United States. Best of luck, Ninad!
+Ninad Kiran Gaikwad began a summer internship as a Machine Learning Intern with the Research and Development group at Edo Energy in Spokane, WA, running from May to August 2023. Best of luck, Ninad!

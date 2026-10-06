@@ -12,9 +12,7 @@
               {% for item in news limit: news_limit %}
                 <tr>
                   <th scope="row">
-                    {% if item.date_precision == "season" %}
-                      {{ item.season }} {{ item.date | date: "%Y" }}
-                    {% elsif item.date_precision == "month" %}
+                    {% if item.date_precision == "month" %}
                       {{ item.date | date: "%b %Y" }}
                     {% else %}
                       {{ item.date | date: "%b %-d, %Y" }}
