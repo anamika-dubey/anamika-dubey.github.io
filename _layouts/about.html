@@ -6,12 +6,18 @@ layout: default
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            {% if page.heading %}{{ page.heading }}{% elsif site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
+          {% if page.social %}
+          <div class="social home-social" role="group" aria-label="Contact and research profiles">
+            <div class="contact-icons">{% include social.html %}</div>
+          </div>
+          {% endif %}
         </header>
 
         <article>
+          {% if page.heading %}<div class="home-overview">{% endif %}
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if page.profile.image %}
@@ -40,6 +46,7 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+          {% if page.heading %}</div>{% endif %}
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
@@ -60,19 +67,6 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %}
         </article>
 
 </div>
