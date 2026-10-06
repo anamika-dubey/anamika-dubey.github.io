@@ -52,7 +52,7 @@
   });
 
   function matchesMembers(record) {
-    return !selected.size || Array.from(selected).some((id) => record.memberIds.has(id));
+    return Array.from(selected).every((id) => record.memberIds.has(id));
   }
 
   function closeSuggestions() {
