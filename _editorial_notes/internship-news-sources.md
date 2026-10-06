@@ -18,3 +18,5 @@ Updated 6 October 2026 from the user's supplied LinkedIn experience screenshots 
 ## Final user confirmations
 
 On 6 October 2026, the user confirmed Kunal June-August 2026 in Richland, WA; Apsara May-August 2026 in Folsom, CA; Ninad GE June-August 2025 in Bellevue, WA and Edo May-August 2023 in Spokane, WA; Sajjad SEL job July 2026 onwards in Pullman, WA, EPRI May-August 2025 remotely, and SEL internship June-August 2024 in Pullman, WA. These confirmations are reflected in the published entries. No internship locations remain pending.
+
+- Athul, second PNNL internship: user reported summer 2026 on October 6, 2026, tentatively June–August. Publish summer/year only until exact months and location are confirmed; June 1 is used for chronological sorting, not displayed. Public LinkedIn snippets do not verify this separate summer placement. Preserve the distinct July–December 2025 internship.
