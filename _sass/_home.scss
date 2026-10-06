@@ -1,0 +1,32 @@
+.home-overview {
+  display: flex; flex-direction: row-reverse; align-items: start; gap: 2rem;
+  > .clearfix { flex: 1; min-width: 0; }
+  > .profile { float: none !important; width: 30%; margin: 0; flex: none; }
+  @media (max-width: 575px) {
+    flex-direction: column-reverse; gap: 1rem; margin-bottom: 1.5rem;
+    > .profile { display: flex; gap: 1rem; width: 100%; }
+    .profile figure { width: 100px; flex: none; }
+    .profile .more-info { font-size: .8rem; margin: 0; }
+    .profile .more-info p { margin-bottom: .35rem; }
+  }
+}
+.home-social.social {
+  text-align: left;
+  margin: .4rem 0 1rem;
+  .contact-icons { display: flex; align-items: center; gap: .8rem; font-size: 1.65rem; }
+  a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 3px; }
+}
+.home-introduction {
+  .home-lead { font-size: 1.15rem; line-height: 1.6; }
+  .home-research-themes { padding-left: 1.15rem; margin: 1rem 0; }
+  li { margin-bottom: .5rem; }
+}
+.home-explore {
+  display: flex; flex-wrap: wrap; gap: .5rem .9rem; margin: 1.1rem 0;
+  a { padding: .2rem 0; font-size: .9rem; }
+}
+.home-director-bio {
+  margin: .5rem 0 1.5rem;
+  summary { cursor: pointer; color: var(--global-theme-color); font-size: .9rem; }
+  p { margin-top: .75rem; }
+}

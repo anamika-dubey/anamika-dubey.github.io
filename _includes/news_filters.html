@@ -1,0 +1,16 @@
+<section id="news-filters" class="news-filters" aria-label="Find lab news" hidden>
+  <div class="news-search-row">
+    <label for="news-search" class="sr-only">Search news</label>
+    <input id="news-search" type="search" placeholder="Search people, organizations, or news" list="news-suggestions" autocomplete="off">
+    <datalist id="news-suggestions"></datalist>
+    <button id="news-reset" type="button" disabled>Clear filters</button>
+  </div>
+  <div id="news-active-filters" class="news-active-filters" role="group" aria-label="Selected news filters"></div>
+  <div class="news-filter-menus">
+    <details data-news-facet="people"><summary>Person <span>All</span></summary><fieldset><legend class="sr-only">People in the news</legend></fieldset></details>
+    <details data-news-facet="types"><summary>Event <span>All</span></summary><fieldset><legend class="sr-only">News event types</legend></fieldset></details>
+    <details data-news-facet="years"><summary>Year <span>All</span></summary><fieldset><legend class="sr-only">News years</legend></fieldset></details>
+    <p id="news-result-count" role="status" aria-live="polite"></p>
+  </div>
+</section>
+<p id="news-empty" hidden>No news matches these filters. Try another search or clear the filters.</p>

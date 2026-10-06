@@ -1,33 +1,45 @@
 ---
 layout: about
 title: about
+heading: SCALE Lab
 permalink: /
-subtitle: Contact. Anamika Dubey. anamika.dubey@wsu.edu.
+subtitle: Sustainable Climate-resilient Analytics for Large-scale Energy Systems
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p> Director: Anamika Dubey </p>  
-    <p> Professor, <a href='https://esic.wsu.edu/'>ESIC</a>. Washington State Univ. </p>
+    <p><strong>Director: Anamika Dubey</strong></p>
+    <p>Professor, Washington State University</p>
+    <p><a href='https://esic.wsu.edu/'>Energy Systems Innovation Center</a></p>
     <p>EME 23, 355 NE Spokane St</p>
     <p>Pullman, WA 99164</p> 
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true  # contact and research profile links near the top
 ---
 
-With rapid decarbonization goals and ambitious urban electrification targets, the electric power grid is undergoing unprecedented changes. SCALE Lab is at the forefront of addressing the new requirements for improved efficiency, operational flexibility, and resilience in response to the grid’s changing nature and extreme weather events. Our mission is to solve the ever-growing problem of providing a resilient, adaptable, and economically viable power supply with distributed generation resources. We focus on scalable methods that integrate model and data information to provide better decision support for increasingly complex power grids.
+<section class="home-introduction" aria-label="About SCALE Lab">
+  <p class="home-lead">At Washington State University, SCALE Lab develops models, algorithms, and tools for a reliable, resilient, and sustainable electric grid.</p>
+  <p>We combine power systems engineering, optimization, and data-driven methods to turn complex grid challenges into practical decisions.</p>
+  <ul class="home-research-themes">
+    <li><strong>Grid resilience.</strong> Preparing for extreme events and restoring reliable service.</li>
+    <li><strong>Scalable optimization.</strong> Making increasingly complex power systems tractable to model and operate.</li>
+    <li><strong>Grid-edge flexibility.</strong> Coordinating buildings, distributed generation, storage, and electric vehicles.</li>
+  </ul>
+  <nav class="home-explore" aria-label="Explore SCALE Lab">
+    <a href="{{ '/research/' | relative_url }}">Explore our research &rarr;</a>
+    <a href="{{ '/people/' | relative_url }}">Meet the lab &rarr;</a>
+    <a href="{{ '/publications/' | relative_url }}">Browse publications &rarr;</a>
+  </nav>
+</section>
 
-The proliferation of distributed energy resources and flexible loads is pushing the control and operational requirements of the grid to the edge, thus significantly increasing the scale and complexity of grid operations. These grid-edge resources also hold the potential to support grid resilience in the aftermath of extreme weather events, which are impacting grid more often and with higher severity. Effective use of grid-edge resources to support decarbonization goals and resilience necessitates advances in modeling, analysis, and optimization of the electric power networks. SCLAE lab specializes in the analytics required for the effective integration and coordination of controllable grid-edge resources such as photovoltaics (PVs), electric vehicles (EVs), and grid-interactive efficient buildings (GEBs). Our methodological contributions are situated at the intersection of mathematical optimization techniques, physics-informed machine-learning, and cyber-physical electric power distribution systems. For a comprehensive information on the ongoing and past projects, kindly refer to Projects section.
-    
-
+<details class="home-director-bio" markdown="1">
+  <summary>About the lab director</summary>
 
 **Anamika Dubey (Lab Director)** - I am Huie-Rogers Endowed Chair Professor of Electrical Engineering in the School of EECS at Washington State University (WSU), Pullman. I also hold a joint appointment as a Research Scientist at the Pacific Northwest National Laboratory (PNNL). At WSU, I am affiliated with Energy Systems Innovation Center (ESIC). I received my MSE and Ph.D. in Electrical and Computer Engineering from the University of Texas at Austin in 2012 and 2015, respectively. Energy and climate change are indeed unquestionably urgent and significant challenges that demand our immediate attention. Within this broad scope, power systems research and development serve as the pivotal component in enabling the transition towards a clean and green energy future. As a power systems engineer and researcher, my goal is to help advance our society towards a future that is brighter, cleaner, and more sustainable.
 
-
-
-
+</details>

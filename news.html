@@ -4,4 +4,6 @@ title: news
 permalink: /news/
 ---
 
-{% include news.html %}
+{% include news_filters.html %}
+{% include news.html filters=true %}
+<script src="{{ '/assets/js/news-search.js' | relative_url }}" defer></script>

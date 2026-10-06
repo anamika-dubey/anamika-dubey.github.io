@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Anamika Dubey"]
+news_types: ["Talk"]
 date: 2023-08-30
 inline: true
 related_posts: false

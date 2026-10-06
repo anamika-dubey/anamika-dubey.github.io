@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Surendra Bajagain"]
+news_types: ["Defense"]
 date: 2023-10-27
 inline: true
 related_posts: false

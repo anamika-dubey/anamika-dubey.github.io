@@ -2,7 +2,9 @@
 
 These are source notes for future news entries, not published announcements. This underscored folder is excluded from the Jekyll website. Confirm event dates and final wording before adding entries to `_news/`.
 
-## Shishir Lamichhane: Dominion Energy internships
+## Shishir Lamichhane: Dominion Energy internship research details
+
+The two internship starts and subsequent full-time role are now published in `_news/shishir-dominion-*.md`. The project descriptions below remain notes for possible future stories.
 
 Source: user-supplied LinkedIn experience screenshot, received 5 October 2026.
 

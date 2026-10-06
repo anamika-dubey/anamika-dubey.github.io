@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Daniel Glover", "Sajjad Uddin Mahmud"]
+news_types: ["Award"]
 date: 2024-05-01
 inline: true
 related_posts: false

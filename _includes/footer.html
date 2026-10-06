@@ -1,3 +1,4 @@
+    {% unless site.footer_enabled == false %}
     {% if site.footer_fixed %}
     <footer class="fixed-bottom">
       <div class="container mt-0">
@@ -23,3 +24,4 @@
       </div>
     </footer>
     {%- endif %}
+    {% endunless %}

@@ -20,3 +20,5 @@ profiles:
     
   
 ---
+
+<p><a href="{{ '/publications/' | relative_url }}">Browse publications from these research areas &rarr;</a></p>

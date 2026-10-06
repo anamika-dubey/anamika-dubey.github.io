@@ -1,5 +1,7 @@
 ---
 layout: post
+people: ["Abodh Poudyal"]
+news_types: ["Job"]
 date: 2024-03-04
 inline: true
 related_posts: false
