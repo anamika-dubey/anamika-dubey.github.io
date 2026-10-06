@@ -1,6 +1,6 @@
 ### Anandini Bharadwaj
 
-**MS alumna, May 2019**
+**MS alumna, Spring 2019**
 
 **Thesis:** Operational Topology Estimation of Three Phase Unbalanced Power Distribution Systems with Outages
 

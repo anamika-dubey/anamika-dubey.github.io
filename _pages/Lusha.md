@@ -1,6 +1,6 @@
 ### Lusha Wang
 
-**PhD alumna, May 2022**
+**PhD alumna, Spring 2022**
 
 Lusha's research focuses on electric vehicles and distributed energy resources in power distribution and transportation systems, including modeling, optimization, resilience, and control. She received her Ph.D. in Electrical Engineering, with a minor in Computer Science, from Washington State University in 2022 and her B.E. in Electrical Engineering from Wuhan University in 2016. After a postdoctoral appointment at Argonne National Laboratory, she joined the University of Alabama as an Assistant Professor in 2023.
 
