@@ -48,6 +48,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
+footer_enabled: false
 footer_fixed: true
 
 # Dimensions
