@@ -52,6 +52,7 @@
   const selection = document.getElementById("publication-member-selection");
   const checkboxes = Array.from(controls.querySelectorAll('.publication-member-filter input[type="checkbox"]'));
   const labOnly = document.getElementById("publication-lab-only");
+  const activeFilters = document.getElementById("publication-active-filters");
   const more = document.getElementById("publication-show-more");
   const venueSelection = document.getElementById("publication-venue-selection");
   const venueFilter = controls.querySelector(".publication-venue-filter");
@@ -99,6 +100,49 @@
     input.setAttribute("aria-expanded", "false");
     input.removeAttribute("aria-activedescendant");
     activeOption = -1;
+  }
+  function updateTags() {
+    const previousFocus = activeFilters.contains(document.activeElement) ? document.activeElement.dataset.filterKey : null;
+    activeFilters.replaceChildren();
+    function tag(label, key, box) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "publication-filter-tag";
+      button.dataset.filterKey = key;
+      button.setAttribute("aria-label", `Remove ${label} filter`);
+      const text = document.createElement("span");
+      text.textContent = label;
+      const cross = document.createElement("span");
+      cross.className = "publication-tag-remove";
+      cross.textContent = "×";
+      cross.setAttribute("aria-hidden", "true");
+      button.append(text, cross);
+      button.addEventListener("click", () => {
+        box.checked = false;
+        updateResults();
+        closeSuggestions();
+      });
+      activeFilters.append(button);
+    }
+    if (labOnly.checked) tag("Lab-member publications only", "scope", labOnly);
+    else {
+      const status = document.createElement("span");
+      status.className = "publication-all-papers";
+      status.textContent = "All papers by Anamika";
+      const restore = document.createElement("button");
+      restore.type = "button";
+      restore.className = "publication-restore-scope";
+      restore.dataset.filterKey = "scope";
+      restore.textContent = "Show lab papers only";
+      restore.addEventListener("click", () => { labOnly.checked = true; updateResults(); closeSuggestions(); });
+      activeFilters.append(status, restore);
+    }
+    checkboxes.filter((box) => box.checked).forEach((box) => tag(membersById.get(box.value).name, `author:${box.value}`, box));
+    venueCheckboxes.filter((box) => box.checked).forEach((box) => tag(venues.get(box.value).label, `venue:${box.value}`, box));
+    if (previousFocus) {
+      const buttons = Array.from(activeFilters.querySelectorAll("button"));
+      (buttons.find((button) => button.dataset.filterKey === previousFocus) || buttons[0]).focus({preventScroll: true});
+    }
   }
 
   function updateResults(resetLimit = true) {
@@ -148,7 +192,8 @@
     empty.hidden = visible !== 0;
     selection.textContent = selected.size ? `${selected.size} selected` : "All members";
     venueSelection.textContent = selectedVenues.size ? `${selectedVenues.size} selected` : "All venues";
-    reset.disabled = !input.value && !selected.size && !selectedVenues.size;
+    reset.disabled = !input.value && !selected.size && !selectedVenues.size && !labOnly.checked;
+    updateTags();
   }
 
   function updateSuggestions() {
@@ -273,6 +318,7 @@
   });
   reset.addEventListener("click", () => {
     input.value = "";
+    labOnly.checked = false;
     [...checkboxes, ...venueCheckboxes].forEach((box) => { box.checked = false; });
     venueFilter.querySelector(".publication-other-venues").open = false;
     [authorFilter, venueFilter].forEach((filter) => { filter.querySelector(".publication-member-list").scrollTop = 0; });

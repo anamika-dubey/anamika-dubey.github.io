@@ -37,9 +37,17 @@
     outline-offset: 3px;
   }
   .publication-filter-help { color: var(--global-text-color-light); font-size: 0.8rem; margin: 0 0 0.5rem; }
-  .publication-filter-menus { grid-column: 1; grid-row: 2; display: flex; gap: 1rem; }
-  .publication-scope { grid-column: 1 / -1; grid-row: 3; margin: 0; font-size: 0.8rem; display: flex; align-items: center; gap: 0.4rem; }
-  .publication-scope input { accent-color: var(--global-theme-color); }
+  .publication-filter-menus { grid-column: 1; grid-row: 3; display: flex; gap: 1rem; }
+  .publication-active-filters { grid-column: 1 / -1; grid-row: 2; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .publication-filter-tag, .publication-all-papers, .publication-restore-scope {
+    display: inline-flex; align-items: center; gap: 0.4rem; max-width: 100%;
+    padding: 0.2rem 0.45rem; border: 1px solid var(--global-divider-color); border-radius: 0.3rem;
+    background: var(--global-bg-color); color: var(--global-text-color); font-size: 0.75rem;
+    span { min-width: 0; overflow-wrap: anywhere; text-align: left; }
+  }
+  .publication-filter-tag, .publication-restore-scope { cursor: pointer; }
+  .publication-filter-tag { border-color: var(--global-theme-color); }
+  .publication-filter-tag .publication-tag-remove { flex: none; color: var(--global-theme-color); font-size: 1rem; line-height: 1; }
   .publication-other-venues { margin-top: 0.6rem; }
   .publication-venue-filter legend { font-size: 0.8rem; font-weight: 600; margin: 0.5rem 0; }
   .publication-venue-filter .publication-member-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -68,7 +76,7 @@
     input { flex: none; margin-top: 0.25rem; width: 16px; height: 16px; accent-color: var(--global-theme-color); }
   }
   .publication-member-count { color: var(--global-text-color-light); white-space: nowrap; }
-  .publication-results-count { grid-column: 2; grid-row: 2; margin: 0; font-size: 0.75rem; color: var(--global-text-color-light); text-align: right; }
+  .publication-results-count { grid-column: 2; grid-row: 3; margin: 0; font-size: 0.75rem; color: var(--global-text-color-light); text-align: right; }
 }
 
 .publication-suggestions {

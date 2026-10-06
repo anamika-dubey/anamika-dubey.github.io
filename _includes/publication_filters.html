@@ -9,6 +9,7 @@
     <button id="publication-reset" type="button" disabled>Clear filters</button>
   </div>
   <ul id="publication-suggestions" class="publication-suggestions" role="listbox" aria-label="Search suggestions" hidden></ul>
+  <div id="publication-active-filters" class="publication-active-filters" role="group" aria-label="Selected publication filters"></div>
   <p id="publication-search-help" class="sr-only">Search as you type, or choose a suggested paper or author.</p>
   <div class="publication-filter-menus">
   <details class="publication-member-filter">
@@ -41,7 +42,7 @@
     </div>
   </details>
   </div>
-  <label class="publication-scope"><input id="publication-lab-only" type="checkbox" checked> Lab-member publications only</label>
+  <input id="publication-lab-only" type="checkbox" checked hidden>
   <p id="publication-results-count" class="publication-results-count" role="status" aria-live="polite" aria-atomic="true"></p>
 </section>
 <script id="publication-members-data" type="application/json">{{ site.data.publication_members | jsonify }}</script>
