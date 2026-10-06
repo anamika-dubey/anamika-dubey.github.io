@@ -19,6 +19,7 @@ profiles:
   - align: lright
     image: Sajjad.jpg
     content: Sajjad.md
+    career: Associate Integration and Automation Engineer, Schweitzer Engineering Laboratories (SEL), Pullman, WA, while finishing his PhD.
     updates:
       - label: Preliminary defense
         url: https://www.linkedin.com/posts/sajjad30148_phdcandidate-powersystems-gridresilience-ugcPost-7391660994286174208-amvv
@@ -90,7 +91,7 @@ profiles:
     align: left
     image: Daniel_Pic.jfif
     content: Daniel.md
-    career: Lead Engineer, Eaton Research Labs, Eaton.
+    career: Lead Engineer, Eaton Research Labs, Eaton; working remotely on advanced computational methods for power systems.
     updates:
       - label: 'Career update: joining Eaton Research Labs'
         url: https://lnkd.in/p/ggjBsdqu
@@ -103,7 +104,7 @@ profiles:
   - align: right
     image: shishir.jpg
     content: Shishir.md
-    career: Senior Engineer, Dominion Energy; joined in June 2026.
+    career: Senior Engineer, Transmission Planning group, Dominion Energy, Richmond, VA; joined in June 2026.
     updates:
       - label: LinkedIn post
         url: https://lnkd.in/p/gkNNX52f
@@ -115,7 +116,7 @@ profiles:
   - align: left
     image: chandra.jpg
     content: chandra.md
-    career: Staff - Level III, Transmission Operations & Planning, Electric Power Research Institute (EPRI).
+    career: Grid Operations & Planning System Studies Engineer, Electric Power Research Institute (EPRI), Knoxville, TN.
     updates:
       - label: Joining EPRI
         url: https://www.linkedin.com/posts/chandra-kant-jat_happy-to-share-that-i-have-joined-epri-in-activity-7436915580684742657-GZCc
