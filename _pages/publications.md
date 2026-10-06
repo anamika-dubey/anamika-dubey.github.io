@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 ---
 <!-- _pages/publications.md -->
-Research publications by Dr. Anamika Dubey and collaborators. See her [Google Scholar profile](https://scholar.google.com/citations?user=y-3RPK0AAAAJ&hl=en) for citation information.
+See [Anamika Dubey's Google Scholar profile](https://scholar.google.com/citations?user=y-3RPK0AAAAJ&hl=en) for citation information.
 
 <div class="publications">
 
