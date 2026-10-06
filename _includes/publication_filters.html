@@ -1,0 +1,49 @@
+<section id="publication-filters" class="publication-filters" aria-label="Find publications" hidden>
+  <div class="publication-search-row">
+    <div class="publication-search-field">
+      <label for="publication-search" class="sr-only">Search publications</label>
+      <input id="publication-search" type="search" placeholder="Title, author, venue, or year"
+             autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false"
+             aria-controls="publication-suggestions" aria-describedby="publication-search-help">
+    </div>
+    <button id="publication-reset" type="button" disabled>Clear filters</button>
+  </div>
+  <ul id="publication-suggestions" class="publication-suggestions" role="listbox" aria-label="Search suggestions" hidden></ul>
+  <div id="publication-active-filters" class="publication-active-filters" role="group" aria-label="Selected publication filters"></div>
+  <p id="publication-search-help" class="sr-only">Search as you type, or choose a suggested paper or author.</p>
+  <div class="publication-filter-menus">
+  <details class="publication-member-filter">
+    <summary>Authors <span id="publication-member-selection">All members</span></summary>
+    <div class="publication-member-list">
+      <p class="publication-filter-help">Papers featuring every selected author. Counts and available names update with your filters.</p>
+      {% assign members = site.data.publication_members[0].members | concat: site.data.publication_members[1].members | sort: 'name' %}
+      <fieldset>
+        <legend class="sr-only">Lab members</legend>
+        <div class="publication-member-grid">
+          {% for member in members %}
+          <label class="publication-member-option">
+            <input type="checkbox" value="{{ member.id }}">
+            <span>{{ member.name }} <span class="publication-member-count" data-count-for="{{ member.id }}"></span></span>
+          </label>
+          {% endfor %}
+        </div>
+      </fieldset>
+    </div>
+  </details>
+  <details class="publication-venue-filter">
+    <summary>Venues <span id="publication-venue-selection">All venues</span></summary>
+    <div class="publication-member-list">
+      <p class="publication-filter-help">Papers in any selected venue. Uncheck all to remove the venue filter.</p>
+      <div id="publication-major-venues"></div>
+      <details class="publication-other-venues">
+        <summary>Other venues</summary>
+        <div id="publication-other-venue-list"></div>
+      </details>
+    </div>
+  </details>
+  </div>
+  <input id="publication-lab-only" type="checkbox" checked hidden>
+  <p id="publication-results-count" class="publication-results-count" role="status" aria-live="polite" aria-atomic="true"></p>
+</section>
+<script id="publication-members-data" type="application/json">{{ site.data.publication_members | jsonify }}</script>
+<script id="publication-venues-data" type="application/json">{{ site.data.publication_venues | jsonify }}</script>

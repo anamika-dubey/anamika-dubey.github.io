@@ -1,0 +1,82 @@
+- label: Current members and director
+  members:
+    - id: anamika
+      name: Anamika Dubey
+      aliases: [Anamika Dubey, A Dubey]
+    - id: sajjad
+      name: Sajjad Uddin Mahmud
+      aliases: [Sajjad Uddin Mahmud, Sajjad Mahmud, S U Mahmud]
+    - id: ninad
+      name: Ninad Kiran Gaikwad
+      aliases: [Ninad Kiran Gaikwad, Ninad Gaikwad, N K Gaikwad, N Gaikwad]
+    - id: aryan
+      name: Aryan Ritwajeet Jha
+      aliases: [Aryan Ritwajeet Jha, Aryan R Jha, A R Jha]
+    - id: charlotte
+      name: Charlotte Wertz
+      aliases: [Charlotte Wertz, C Wertz]
+    - id: athul
+      name: Athul Jose P.
+      aliases: [Athul Jose P, Athul Pulikkottil, A Pulikkottil]
+    - id: anup
+      name: Anup Parajuli
+      aliases: [Anup Parajuli, A Parajuli]
+    - id: kunal
+      name: Kunal Shankar
+      aliases: [Kunal Shankar, K Shankar]
+    - id: yash
+      name: Yashvardhan Singh Raghuwanshi
+      aliases: [Yashvardhan Singh Raghuwanshi, Yash Raghuwanshi, Y Raghuwanshi]
+    - id: apsara
+      name: Apsara Adhikari
+      aliases: [Apsara Adhikari, A Adhikari]
+    - id: casey
+      name: Casey Dettlaff
+      aliases: [Casey Dettlaff, Kasey Dettlaff, Kelsi Dettlaff, K Dettlaff]
+- label: Alumni
+  members:
+    - id: daniel
+      name: Daniel Glover
+      aliases: [Daniel Glover, D Glover]
+    - id: shishir
+      name: Shishir Lamichhane
+      aliases: [Shishir Lamichhane, S Lamichhane]
+    - id: chandra
+      name: Chandra Kant Jat
+      aliases: [Chandra Kant Jat, Chandrakant Jat, C Jat]
+    - id: abodh
+      name: Abodh Poudyal
+      aliases: [Abodh Poudyal, A Poudyal]
+    - id: subho
+      name: Subho Paul
+      aliases: [Subho Paul, S Paul]
+    - id: surendra
+      name: Surendra Bajagain
+      aliases: [Surendra Bajagain, S Bajagain]
+    - id: rabayet
+      name: Rabayet Sadnan
+      aliases: [Rabayet Sadnan, R Sadnan]
+    - id: lusha
+      name: Lusha Wang
+      aliases: [Lusha Wang, L Wang]
+    - id: gayathri
+      name: Gayathri Krishnamoorthy
+      aliases: [Gayathri Krishnamoorthy, G Krishnamoorthy]
+    - id: mohammad
+      name: Mohammad Ostadijafari
+      aliases: [Mohammad Ostadijafari, Emad Ostadijafari, Mohammad Ostadjafari, M Ostadijafari]
+    - id: rahul
+      name: Rahul Jha
+      aliases: [Rahul Jha, Rahul R Jha, Rahul Ranjan Jha, R R Jha]
+    - id: shiva
+      name: Shiva Poudel
+      aliases: [Shiva Poudel, S Poudel]
+    - id: drew
+      name: Andrew Ian Cannon (Drew)
+      aliases: [Andrew Ian Cannon, Andrew IH Cannon, Andrew I H Cannon, Andrew Cannon, Drew Cannon]
+    - id: anandini
+      name: Anandini Bharadwaj
+      aliases: [Anandini Bharadwaj, A Bharadwaj]
+    - id: arun
+      name: Arun Abhishek Imayakumar
+      aliases: [Arun Abhishek Imayakumar, Arun Imayakumar, A A Imayakumar]

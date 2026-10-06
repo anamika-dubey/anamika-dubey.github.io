@@ -1,7 +1,10 @@
 ---
 ---
 <!-- _layouts/bib.html -->
-      <div class="row">
+      <div class="row" data-publication-title="{{ entry.title | escape }}"
+           data-publication-year="{{ entry.year | escape }}"
+           data-publication-venue="{{ entry.journal | default: entry.booktitle | default: entry.institution | default: entry.note | escape }}"
+           data-publication-authors="{% for author in entry.author_array %}{{ author.first | escape }} {{ author.last | escape }}{% unless forloop.last %}|{% endunless %}{% endfor %}">
         {%- if site.enable_publication_thumbnails -%}
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
