@@ -39,6 +39,7 @@
   const selection = document.getElementById("publication-member-selection");
   const checkboxes = Array.from(controls.querySelectorAll('input[type="checkbox"]'));
   const groups = Array.from(list.querySelectorAll("ol.bibliography"));
+  const authorFilter = controls.querySelector(".publication-member-filter");
   let selected = new Set();
   let options = [];
   let activeOption = -1;
@@ -154,7 +155,7 @@
   }
 
   input.addEventListener("input", () => { updateResults(); updateSuggestions(); });
-  input.addEventListener("focus", updateSuggestions);
+  input.addEventListener("focus", () => { authorFilter.open = false; updateSuggestions(); });
   input.addEventListener("blur", closeSuggestions);
   input.addEventListener("keydown", (event) => {
     if (event.key === "Escape") { event.preventDefault(); closeSuggestions(); return; }
@@ -179,6 +180,16 @@
     updateResults();
     closeSuggestions();
   }));
+  document.addEventListener("click", (event) => {
+    if (!authorFilter.contains(event.target)) authorFilter.open = false;
+  });
+  authorFilter.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      authorFilter.open = false;
+      authorFilter.querySelector("summary").focus();
+    }
+  });
   reset.addEventListener("click", () => {
     input.value = "";
     checkboxes.forEach((box) => { box.checked = false; });

@@ -1,7 +1,7 @@
 <section id="publication-filters" class="publication-filters" aria-label="Find publications" hidden>
   <div class="publication-search-row">
     <div class="publication-search-field">
-      <label for="publication-search">Search publications</label>
+      <label for="publication-search" class="sr-only">Search publications</label>
       <input id="publication-search" type="search" placeholder="Title, author, venue, or year"
              autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false"
              aria-controls="publication-suggestions" aria-describedby="publication-search-help">
@@ -9,16 +9,16 @@
     </div>
     <button id="publication-reset" type="button" disabled>Clear filters</button>
   </div>
-  <p id="publication-search-help" class="publication-filter-help">Search as you type, or choose a suggested paper or author.</p>
+  <p id="publication-search-help" class="sr-only">Search as you type, or choose a suggested paper or author.</p>
   <details class="publication-member-filter">
-    <summary>Filter by lab member <span id="publication-member-selection">All members</span></summary>
-    <p class="publication-filter-help">Show papers by any selected member. Leave all unchecked to show everyone.</p>
+    <summary>Authors <span id="publication-member-selection">All members</span></summary>
     <div class="publication-member-list">
-      {% for group in site.data.publication_members %}
+      <p class="publication-filter-help">Papers by any selected author. Uncheck all to show everyone.</p>
+      {% assign members = site.data.publication_members[0].members | concat: site.data.publication_members[1].members | sort: 'name' %}
       <fieldset>
-        <legend>{{ group.label }}</legend>
+        <legend class="sr-only">Lab members</legend>
         <div class="publication-member-grid">
-          {% for member in group.members %}
+          {% for member in members %}
           <label class="publication-member-option">
             <input type="checkbox" value="{{ member.id }}">
             <span>{{ member.name }} <span class="publication-member-count" data-count-for="{{ member.id }}"></span></span>
@@ -26,7 +26,6 @@
           {% endfor %}
         </div>
       </fieldset>
-      {% endfor %}
     </div>
   </details>
   <p id="publication-results-count" class="publication-results-count" role="status" aria-live="polite" aria-atomic="true"></p>
