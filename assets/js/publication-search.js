@@ -149,15 +149,15 @@
   function choose(index) {
     input.value = options[index].label;
     updateResults();
-    closeSuggestions();
     input.focus();
+    closeSuggestions();
   }
 
   input.addEventListener("input", () => { updateResults(); updateSuggestions(); });
   input.addEventListener("focus", updateSuggestions);
   input.addEventListener("blur", closeSuggestions);
   input.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") { closeSuggestions(); return; }
+    if (event.key === "Escape") { event.preventDefault(); closeSuggestions(); return; }
     if (event.key === "Tab") { closeSuggestions(); return; }
     if (event.key === "ArrowDown" || event.key === "ArrowUp") {
       if (suggestions.hidden) updateSuggestions();
