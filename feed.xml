@@ -11,7 +11,7 @@ sitemap: false
   <id>{{ '/feed.xml' | absolute_url | xml_escape }}</id>
   <link href="{{ '/feed.xml' | absolute_url | xml_escape }}" rel="self" type="application/atom+xml" />
   <link href="{{ '/news/' | absolute_url | xml_escape }}" rel="alternate" type="text/html" />
-  <updated>{{ announcements.first.date | default: site.time | date_to_xmlschema }}</updated>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author><name>SCALE Lab</name></author>
   {% for item in announcements limit: 50 %}
   <entry>
