@@ -1,0 +1,118 @@
+- label: IEEE Transactions on Power Systems
+  patterns:
+  - IEEE Transactions on Power Systems
+  group: Major journals
+- label: IEEE Access
+  patterns:
+  - IEEE Access
+  group: Major journals
+- label: IEEE Transactions on Smart Grid
+  patterns:
+  - IEEE Transactions on Smart Grid
+  group: Major journals
+- label: IEEE Transactions on Industry Applications
+  patterns:
+  - IEEE Transactions on Industry Applications
+  group: Major journals
+- label: IEEE Systems Journal
+  patterns:
+  - IEEE Systems Journal
+  group: Major journals
+- label: IEEE Transactions on Power Delivery
+  patterns:
+  - IEEE Transactions on Power Delivery
+  group: Major journals
+- label: IEEE Transactions on Sustainable Energy
+  patterns:
+  - IEEE Transactions on Sustainable Energy
+  group: Major journals
+- label: Electric Power Systems Research
+  patterns:
+  - Electric Power Systems Research
+  group: Major journals
+- label: IEEE PES General Meeting (PESGM)
+  patterns:
+  - general meeting
+  group: Major conferences
+- label: North American Power Symposium (NAPS)
+  patterns:
+  - north american power symposium
+  group: Major conferences
+- label: IEEE Texas Power and Energy Conference (TPEC)
+  patterns:
+  - texas power
+  group: Major conferences
+- label: IEEE IAS Annual Meeting
+  patterns:
+  - industry applications society annual
+  group: Major conferences
+- label: IEEE SmartGridComm
+  patterns:
+  - smartgridcomm
+  group: Major conferences
+- label: IEEE PowerTech
+  patterns:
+  - powertech
+  group: Major conferences
+- label: IEEE PES ISGT
+  patterns:
+  - innovative smart grid
+  group: Major conferences
+- label: IEEE Photovoltaic Specialists Conference (PVSC)
+  patterns:
+  - photovoltaic specialists
+  group: Other venues
+- label: Probabilistic Methods Applied to Power Systems (PMAPS)
+  patterns:
+  - probabilistic methods
+  group: Other venues
+- label: International Conference on Power System Technology (POWERCON)
+  patterns:
+  - power system technology
+  group: Other venues
+- label: Energy Technologies for Future Grids (ETFG)
+  patterns:
+  - energy technologies for future
+  group: Other venues
+- label: IEEE PES T&D
+  patterns:
+  - transmission and distribution
+  - t&d conference
+  group: Other venues
+- label: NE-IECCE
+  patterns:
+  - north-east india
+  group: Other venues
+- label: IEEE Electric Ship Technologies Symposium (ESTS)
+  patterns:
+  - electric ship
+  group: Other venues
+- label: IEEE Rural Electric Power Conference (REPC)
+  patterns:
+  - rural electric
+  group: Other venues
+- label: IEEE Conference on Control Technology and Applications (CCTA)
+  patterns:
+  - control technology
+  group: Other venues
+- label: Connected Vehicles and Expo (ICCVE)
+  patterns:
+  - connected vehicles
+  group: Other venues
+- label: International Symposium on Systems Engineering (ISSE)
+  patterns:
+  - systems engineering
+  group: Other venues
+- label: IEEE Conference on Decision and Control (CDC)
+  patterns:
+  - decision and control
+  group: Other venues
+- label: ACM e-Energy
+  patterns:
+  - future energy systems
+  group: Other venues
+- label: NCVPRIPG
+  patterns:
+  - nat. conf. comp.
+  - ncvpripg
+  group: Other venues
