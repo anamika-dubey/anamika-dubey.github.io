@@ -1,3 +1,20 @@
+.about-nav-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  > a.nav-link { padding-right: 0.15rem; }
+  .about-menu-toggle {
+    min-width: 24px;
+    padding-left: 0.25rem;
+    padding-right: 0.35rem;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    &::after { margin-left: 0; }
+    &:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 2px; }
+  }
+}
+
 .home-overview {
   display: flex; flex-direction: row-reverse; align-items: start; gap: 2rem;
   > .clearfix { flex: 1; min-width: 0; }
@@ -25,6 +42,8 @@
   display: flex; flex-wrap: wrap; gap: .5rem .9rem; margin: 1.1rem 0;
   a { padding: .2rem 0; font-size: .9rem; }
 }
+#selected-publications { scroll-margin-top: 5rem; }
+
 .home-director-bio {
   margin: .5rem 0 1.5rem;
   summary { cursor: pointer; color: var(--global-theme-color); font-size: .9rem; }

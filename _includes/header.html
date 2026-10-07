@@ -41,12 +41,20 @@
               {% endfor %}
 
               <!-- About -->
-              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+              <li id="aboutNav" class="nav-item dropdown {% if page.permalink == '/' or page.permalink == '/news/' or page.collection == 'news' %}active{% endif %}">
+                <div class="about-nav-controls">
                 <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
                   {%- if page.permalink == '/' -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}
                 </a>
+                <button class="nav-link dropdown-toggle about-menu-toggle" type="button" id="aboutDropdown" data-toggle="dropdown" data-target="#aboutNav" aria-haspopup="true" aria-expanded="false" aria-label="Open About menu"></button>
+                </div>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="aboutDropdown">
+                  <a class="dropdown-item" href="{{ '/' | relative_url }}">Overview</a>
+                  <a class="dropdown-item" href="{{ '/news/' | relative_url }}">News</a>
+                  <a class="dropdown-item" href="{{ '/#selected-publications' | relative_url }}">Selected publications</a>
+                </div>
               </li>
               {% if site.blog_nav_title %}
               <!-- Blog -->

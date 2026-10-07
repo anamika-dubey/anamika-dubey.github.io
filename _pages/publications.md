@@ -3,12 +3,13 @@ layout: page
 permalink: /publications/
 title: publications
 description: Research publications by Dr. Anamika Dubey and collaborators
+reference_url: https://scholar.google.com/citations?user=y-3RPK0AAAAJ&hl=en
+reference_label: Google Scholar
+reference_title: Anamika Dubey's Google Scholar profile and citation information
 nav: true
 nav_order: 3
 ---
 <!-- _pages/publications.md -->
-See [Anamika Dubey's Google Scholar profile](https://scholar.google.com/citations?user=y-3RPK0AAAAJ&hl=en) for citation information.
-
 {% include publication_filters.html %}
 
 <p id="publication-empty" class="publication-empty" hidden>No publications match these filters. Try a shorter search, clear the filters, or uncheck “Lab-member publications only” to search the full bibliography.</p>

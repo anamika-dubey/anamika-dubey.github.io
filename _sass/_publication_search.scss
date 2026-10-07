@@ -1,3 +1,18 @@
+.publication-heading-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  .publication-heading-reference {
+    margin-left: auto;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    color: var(--global-text-color-light);
+    &:hover, &:focus-visible { color: var(--global-theme-color); }
+  }
+}
+
 .publication-filters {
   position: relative;
   display: grid;

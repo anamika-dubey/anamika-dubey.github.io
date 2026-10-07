@@ -265,7 +265,8 @@ blockquote {
     }
   }
 
-  .navbar-nav .nav-item.active>.nav-link {
+  .navbar-nav .nav-item.active>.nav-link,
+  .navbar-nav .nav-item.active>.about-nav-controls>.nav-link {
     background-color: inherit;
     font-weight: bolder;
     color: var(--global-theme-color);

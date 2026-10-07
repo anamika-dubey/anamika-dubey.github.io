@@ -19,10 +19,11 @@
   const venues = new Map();
   function identifyVenue(raw) {
     const name = raw.replace(/\\&/g, "&").replace(/[{}]/g, "").trim() || "Other publications";
-    const definition = venueDefinitions.find((venue) => venue.patterns.some((pattern) => normalize(name).includes(normalize(pattern))));
+    const definition = venueDefinitions.find((venue) => venue.patterns.some((pattern) =>
+      ` ${normalize(name)} `.includes(` ${normalize(pattern)} `)));
     const label = definition ? definition.label : name;
     const id = normalize(label);
-    if (!venues.has(id)) venues.set(id, {id, label, group: definition ? definition.group : "Other venues"});
+    if (!venues.has(id)) venues.set(id, {id, label, group: definition ? definition.group : "Other venues", wsuPower: Boolean(definition && definition.wsu_power)});
     return id;
   }
 
@@ -52,6 +53,8 @@
   const selection = document.getElementById("publication-member-selection");
   const checkboxes = Array.from(controls.querySelectorAll('.publication-member-filter input[type="checkbox"]'));
   const labOnly = document.getElementById("publication-lab-only");
+  const wsuPower = document.getElementById("publication-wsu-power");
+  const wsuPowerCount = document.getElementById("publication-wsu-power-count");
   const activeFilters = document.getElementById("publication-active-filters");
   const more = document.getElementById("publication-show-more");
   const venueSelection = document.getElementById("publication-venue-selection");
@@ -63,7 +66,7 @@
   let limit = 20;
   let options = [];
   let activeOption = -1;
-  ["Major journals", "Major conferences", "Other venues"].forEach((groupName) => {
+  ["Popular journals", "Popular conferences", "Other venues"].forEach((groupName) => {
     const fieldset = document.createElement("fieldset");
     const legend = document.createElement("legend");
     legend.textContent = groupName;
@@ -76,6 +79,7 @@
         label.className = "publication-member-option";
         const box = document.createElement("input");
         box.type = "checkbox";
+        box.dataset.venueOption = "true";
         box.value = venue.id;
         const text = document.createElement("span");
         text.textContent = venue.label;
@@ -83,15 +87,16 @@
         grid.append(label);
       });
     fieldset.append(legend, grid);
-    document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-major-venues").append(fieldset);
+    document.getElementById(groupName === "Other venues" ? "publication-other-venue-list" : "publication-popular-venues").append(fieldset);
   });
-  const venueCheckboxes = Array.from(venueFilter.querySelectorAll('input[type="checkbox"]'));
+  const venueCheckboxes = Array.from(venueFilter.querySelectorAll('input[data-venue-option]'));
 
   function matchesMembers(record) {
     return Array.from(selected).every((id) => record.memberIds.has(id));
   }
   function matchesFilters(record) {
     return matchesMembers(record) && (!labOnly.checked || record.labMember)
+      && (!wsuPower.checked || venues.get(record.venueId).wsuPower)
       && (!selectedVenues.size || selectedVenues.has(record.venueId));
   }
 
@@ -138,6 +143,7 @@
       activeFilters.append(status, restore);
     }
     checkboxes.filter((box) => box.checked).forEach((box) => tag(membersById.get(box.value).name, `author:${box.value}`, box));
+    if (wsuPower.checked) tag("WSU ECE Power approved venues", "wsu-power", wsuPower);
     venueCheckboxes.filter((box) => box.checked).forEach((box) => tag(venues.get(box.value).label, `venue:${box.value}`, box));
     if (previousFocus) {
       const buttons = Array.from(activeFilters.querySelectorAll("button"));
@@ -163,7 +169,13 @@
     });
     // Venue selections use OR, so retain alternative venues that match the other filters.
     const venueMatches = records.filter((record) => matchesMembers(record)
-      && (!labOnly.checked || record.labMember) && matchesSearch(record));
+      && (!labOnly.checked || record.labMember) && matchesSearch(record)
+      && (!wsuPower.checked || venues.get(record.venueId).wsuPower));
+    const approvedCount = records.filter((record) => matchesMembers(record)
+      && (!labOnly.checked || record.labMember) && matchesSearch(record)
+      && (!selectedVenues.size || selectedVenues.has(record.venueId))
+      && venues.get(record.venueId).wsuPower).length;
+    wsuPowerCount.textContent = `(${approvedCount})`;
     venueCheckboxes.forEach((box) => {
       const total = venueMatches.filter((record) => record.venueId === box.value).length;
       const label = box.closest("label");
@@ -192,7 +204,7 @@
     empty.hidden = visible !== 0;
     selection.textContent = selected.size ? `${selected.size} selected` : "All members";
     venueSelection.textContent = selectedVenues.size ? `${selectedVenues.size} selected` : "All venues";
-    reset.disabled = !input.value && !selected.size && !selectedVenues.size && !labOnly.checked;
+    reset.disabled = !input.value && !selected.size && !selectedVenues.size && !labOnly.checked && !wsuPower.checked;
     updateTags();
   }
 
@@ -288,7 +300,7 @@
     const option = event.target.closest('[role="option"]');
     if (option) choose(Number(option.dataset.index));
   });
-  [...checkboxes, ...venueCheckboxes, labOnly].forEach((box) => box.addEventListener("change", () => {
+  [...checkboxes, ...venueCheckboxes, labOnly, wsuPower].forEach((box) => box.addEventListener("change", () => {
     updateResults();
     closeSuggestions();
   }));
@@ -319,6 +331,7 @@
   reset.addEventListener("click", () => {
     input.value = "";
     labOnly.checked = false;
+    wsuPower.checked = false;
     [...checkboxes, ...venueCheckboxes].forEach((box) => { box.checked = false; });
     venueFilter.querySelector(".publication-other-venues").open = false;
     [authorFilter, venueFilter].forEach((filter) => { filter.querySelector(".publication-member-list").scrollTop = 0; });
