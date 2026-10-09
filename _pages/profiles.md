@@ -87,6 +87,8 @@ profiles:
     image: Casey_Pic.jpg
     content: Casey.md
     image_circular: false # crops the image to make it circular
+  # Alumni: newest graduation first; former postdocs use their lab departure.
+  # Keep the existing order within the same semester when exact dates are unknown.
   - section: Alumni
     align: left
     image: Daniel_Pic.jfif
@@ -193,6 +195,12 @@ profiles:
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_studentsuccess-phd-research-activity-6865088593279496192-Qyqx
     image: mohammad.png
     image_circular: false
+  - name: Andrew Ian Cannon
+    align: left
+    content: Andrew.md
+    career: Research Engineer, Schweitzer Engineering Laboratories (SEL).
+    image: drew.png
+    image_circular: false
   - name: Rahul Jha
     align: left
     content: Rahul.md
@@ -211,17 +219,6 @@ profiles:
         url: https://www.linkedin.com/posts/anamika-dubey-316a8a11_congratulations-to-my-first-phd-student-activity-6671898615826538496-wdC-
     image: shiva.png
     image_circular: false
-  - name: Andrew Ian Cannon
-    align: left
-    content: Andrew.md
-    career: Research Engineer, Schweitzer Engineering Laboratories (SEL).
-    image: drew.png
-    image_circular: false
-  - name: Anandini Bharadwaj
-    align: right
-    content: Anandini.md
-    image_placeholder: true
-    initials: AB
   - name: Arun Abhishek Imayakumar
     align: left
     content: Arun.md
@@ -231,8 +228,12 @@ profiles:
         url: https://www.thehindu.com/education/a-slice-of-freedom/article30541895.ece
     image: arun.png
     image_circular: false
-    
-  
+  - name: Anandini Bharadwaj
+    align: right
+    content: Anandini.md
+    image_placeholder: true
+    initials: AB
+
 ---
 
 
