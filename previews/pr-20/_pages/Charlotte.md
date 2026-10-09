@@ -1,0 +1,5 @@
+### Charlotte Wertz
+
+**PhD candidate, Fall 2023**
+
+I am a PhD candidate in Electrical and Computer Engineering at Washington State University. My research interests are in the intersection of power system resiliency and energy equity. I am part of the Distinguished Graduate Research Program (DGRP), a fellowship that enables me to collaborate with Pacific Northwest National Laboratory for my dissertation. I am currently funded by Graduate Assistance for Areas of National Need (GAANN) fellowship and being trained on applying computer science principles to power engineering. I received my bachelor’s degree in Electrical Engineering with a focus on power systems from Washington State University in May 2023. [Github](https://github.com/cwertz77). [LinkedIn](https://www.linkedin.com/in/charlotte-wertz).

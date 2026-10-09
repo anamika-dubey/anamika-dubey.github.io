@@ -1,0 +1,5 @@
+### Sajjad Uddin Mahmud
+
+**PhD candidate, Spring 2022**
+
+My current research focuses on devising efficient techniques and solutions to ensure the resilience of power grids and uphold the consistent delivery of energy, especially under severe weather conditions. Besides, I gained extensive experience in designing and implementing grid-integrated rooftop solar systems, solar irrigation systems, and solar home systems in Bangladesh. I obtained my Master of Science (M.Sc.) and Bachelor of Science (B.Sc.) degrees from Bangladesh University of Engineering and Technology, Bangladesh, in 2020 and 2015, respectively.  [Website](https://sajjad30148.github.io/). [Email](mailto:sajjaduddin.mahmud@wsu.edu). [GitHub](https://github.com/sajjad30148).
