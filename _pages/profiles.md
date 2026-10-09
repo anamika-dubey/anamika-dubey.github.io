@@ -104,7 +104,7 @@ profiles:
   - align: right
     image: shishir.jpg
     content: Shishir.md
-    career: Senior Engineer, Transmission Planning group, Dominion Energy, Richmond, VA; joined in June 2026.
+    career: Senior Engineer, Planning & Strategic Initiatives team, Dominion Energy, Richmond, VA; joined in June 2026.
     updates:
       - label: LinkedIn post
         url: https://lnkd.in/p/gkNNX52f
