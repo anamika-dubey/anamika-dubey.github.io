@@ -4,13 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   preview.className = 'news-member-preview';
   preview.hidden = true;
   preview.setAttribute('aria-hidden', 'true');
-  const portrait = document.createElement('img');
-  portrait.alt = '';
-  preview.append(portrait);
   document.body.append(preview);
-  const hide = () => { preview.hidden = true; };
-  const show = link => {
+  let request = 0;
+  const hide = () => { request += 1; preview.hidden = true; };
+  const show = async link => {
+    hide();
+    const current = request;
+    // Decode a fresh image before exposing it, never the previous member's pixels.
+    const portrait = document.createElement('img');
+    portrait.alt = '';
     portrait.src = link.dataset.portrait;
+    try { await portrait.decode(); } catch { return; }
+    // Leaving, scrolling, or entering another name invalidates pending loads.
+    if (current !== request) return;
+    preview.replaceChildren(portrait);
     const rect = link.getBoundingClientRect();
     preview.hidden = false;
     const size = preview.getBoundingClientRect();
@@ -18,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
     preview.style.top = `${rect.top >= size.height + 16 ? rect.top - size.height - 8 : Math.min(rect.bottom + 8, innerHeight - size.height - 8)}px`;
   };
   document.querySelectorAll('.news-member').forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      if (matchMedia('(hover: hover)').matches) show(link);
+    link.addEventListener('pointerenter', event => {
+      // Some embedded browsers report hover:none even for an actual mouse.
+      if (event.pointerType === 'mouse') show(link);
     });
-    link.addEventListener('mouseleave', hide);
+    link.addEventListener('pointerleave', hide);
     link.addEventListener('focus', () => show(link));
     link.addEventListener('blur', hide);
   });
-  portrait.addEventListener('error', hide);
   document.addEventListener('keydown', event => { if (event.key === 'Escape') hide(); });
   document.addEventListener('scroll', hide, true);
   window.addEventListener('resize', hide);
