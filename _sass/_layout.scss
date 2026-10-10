@@ -28,15 +28,46 @@ body.sticky-bottom-footer {
 
 // Profile
 .profile-section-alumni {
+  position: relative;
+  isolation: isolate;
+  // Scope the palette to alumni, including inherited link and muted-text styles.
+  --global-text-color: var(--global-alumni-text);
+  --global-text-color-light: var(--global-alumni-muted);
+  --global-theme-color: var(--global-alumni-link);
+  --global-hover-color: var(--global-alumni-link);
+  --global-divider-color: var(--global-alumni-divider);
+  color: var(--global-text-color);
+  overflow-wrap: anywhere;
   margin-top: 4rem;
   padding: 3.5rem 0 2rem;
   // Extend the painted gradient to the viewport edges without widening layout.
   border-image: linear-gradient(
     180deg,
-    var(--global-alumni-bg-color),
+    var(--global-alumni-bg-color) 0%,
+    var(--global-alumni-gradient-mid) 42%,
+    var(--global-alumni-gradient-deep) 75%,
     var(--global-alumni-gradient-end)
   ) fill 0 / 0 / 0 100vmax;
   clip-path: inset(0 -100vmax);
+
+  // Painted rays fade within the surface layer; no animation or layout overflow.
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    inset: 0 0 auto;
+    height: min(48rem, 12%);
+    background: repeating-conic-gradient(
+      from 155deg at 50% -12%,
+      transparent 0deg 12deg,
+      var(--global-alumni-ray) 13deg 16deg,
+      transparent 17deg 28deg
+    );
+    mask-image: linear-gradient(#000, transparent);
+  }
+
+  a { text-decoration: underline; text-underline-offset: .16em; }
 
   > hr {
     margin: 2.25rem 0 1.75rem;
