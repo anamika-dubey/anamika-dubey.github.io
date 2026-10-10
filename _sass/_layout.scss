@@ -27,6 +27,24 @@ body.sticky-bottom-footer {
 }
 
 // Profile
+.news-member {
+  text-decoration: underline;
+  text-underline-offset: .15em;
+  &:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+}
+
+.news-member-preview {
+  position: fixed;
+  z-index: 1100;
+  pointer-events: none;
+  padding: .35rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: .5rem;
+  background: var(--global-bg-color);
+  box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
+  img { display: block; width: 112px; height: 112px; object-fit: cover; border-radius: .25rem; }
+}
+
 .profile-section-alumni {
   position: relative;
   isolation: isolate;

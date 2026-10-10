@@ -1,0 +1,6 @@
+{%- assign rendered_news = include.content -%}
+{%- for member in site.data.news_members -%}
+  {%- capture member_link -%}<a class="news-member" href="{{ '/people/' | relative_url }}#{{ member.anchor }}" data-portrait="{{ member.image | prepend: '/assets/img/' | relative_url }}" data-member-name="{{ member.name | escape }}">{{ member.name | escape }}</a>{%- endcapture -%}
+  {%- assign rendered_news = rendered_news | replace: member.name, member_link -%}
+{%- endfor -%}
+{{- rendered_news -}}
