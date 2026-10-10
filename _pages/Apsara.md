@@ -1,6 +1,6 @@
 ### Apsara Adhikari
 
-**PhD, joined Fall 2024**
+**PhD, Fall 2024**
 
 I am a Graduate Research Assistant in the School of Electrical Engineering and Computer Science at Washington State University in Pullman, Washington. I received my bachelor's degree in Electrical Engineering from the Institute of Engineering (IOE), Pulchowk Campus, Nepal, in 2021.
 
