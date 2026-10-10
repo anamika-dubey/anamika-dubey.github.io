@@ -37,12 +37,13 @@ body.sticky-bottom-footer {
   position: fixed;
   z-index: 1100;
   pointer-events: none;
+  opacity: .82;
   padding: .35rem;
   border: 1px solid var(--global-divider-color);
   border-radius: .5rem;
   background: var(--global-bg-color);
   box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
-  img { display: block; width: 112px; height: 112px; object-fit: cover; border-radius: .25rem; }
+  img { display: block; width: 80px; height: 80px; object-fit: cover; border-radius: .25rem; }
 }
 
 .profile-section-alumni {
