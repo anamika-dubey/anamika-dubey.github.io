@@ -1,0 +1,5 @@
+### Athul Jose P
+
+**PhD candidate, Fall 2023**
+
+I am a PhD candidate in Electrical Engineering at the School of EECS at Washington State University. I received my Bachelor of Technology from Govt Engineering College Thrissur, India, and a Master of Technology in Power Systems from National Institute of Technology Calicut, India. My current research interests center around the flexibility and aggregation of Distributed Energy Resources, utilizing optimal control and reinforced learning for flexibility market applications. I am an enthusiastic badminton player during leisure.  [Email](mailto:athul.p@wsu.edu), [Website](https://athuljosep.github.io/), [LinkedIn](https://www.linkedin.com/in/athul-jose-p/), [GitHub](https://github.com/athuljosep).
