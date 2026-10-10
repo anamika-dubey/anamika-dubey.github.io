@@ -16,8 +16,15 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
   --global-card-bg-color: #{$white-color};
-  --global-alumni-bg-color: #f6f3ee;
-  --global-alumni-gradient-end: #eaf0f5;
+  --global-alumni-bg-color: #edf7f8;
+  --global-alumni-gradient-mid: #c3dfe7;
+  --global-alumni-gradient-deep: #9cc4d5;
+  --global-alumni-gradient-end: #7eabc2;
+  --global-alumni-text: #102c3d;
+  --global-alumni-muted: #203e50;
+  --global-alumni-link: #123565;
+  --global-alumni-divider: rgba(16, 44, 61, .22);
+  --global-alumni-ray: rgba(255, 255, 255, .48);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -63,8 +70,15 @@ html[data-theme='dark'] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
-  --global-alumni-bg-color: #292725;
-  --global-alumni-gradient-end: #202c35;
+  --global-alumni-bg-color: #203e50;
+  --global-alumni-gradient-mid: #142f43;
+  --global-alumni-gradient-deep: #0c2034;
+  --global-alumni-gradient-end: #071321;
+  --global-alumni-text: #edf5f8;
+  --global-alumni-muted: #c7dce6;
+  --global-alumni-link: #8dd9f0;
+  --global-alumni-divider: rgba(199, 220, 230, .22);
+  --global-alumni-ray: rgba(157, 216, 234, .08);
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
