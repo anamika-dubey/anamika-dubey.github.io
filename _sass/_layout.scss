@@ -220,13 +220,13 @@ body.sticky-bottom-footer {
       clip-path: polygon(0 25%, 7% 18%, 15% 32%, 24% 10%, 35% 29%, 46% 16%, 57% 35%, 68% 13%, 78% 25%, 89% 8%, 100% 22%, 100% 100%, 0 100%);
     }
   }
-  .ocean-rock { position: absolute; bottom: 2rem; width: clamp(75px, 13vw, 180px); }
+  .ocean-rock { position: absolute; bottom: 2rem; width: clamp(75px, 13vw, 180px); color: var(--global-ocean-bedrock); }
   .ocean-rock-1 { left: -2%; }
   .ocean-rock-2 { left: 18%; transform: rotate(8deg); }
   .ocean-rock-3 { left: 45%; width: clamp(60px, 10vw, 140px); }
   .ocean-rock-4 { right: 14%; transform: scaleX(-1); }
   .ocean-rock-5 { right: -3%; }
-  .ocean-crab { position: absolute; bottom: 3rem; right: 30%; width: clamp(65px, 8vw, 110px); opacity: .6; }
+  .ocean-crab { position: absolute; bottom: 3rem; right: 30%; width: clamp(65px, 8vw, 110px); color: var(--global-ocean-life); opacity: .6; }
   @media (max-width: 767px) {
     .ocean-fish { width: 110px; opacity: .08; }
     .ocean-bubble, .ocean-shell { opacity: .09; }
