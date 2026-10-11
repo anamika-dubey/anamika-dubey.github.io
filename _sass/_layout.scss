@@ -113,7 +113,7 @@ body.sticky-bottom-footer {
   color: var(--global-text-color);
   overflow-wrap: anywhere;
   margin-top: 0;
-  padding: 5rem 0 2rem;
+  padding: 5rem 0 14rem;
   // Extend the painted gradient to the viewport edges without widening layout.
   border-image: linear-gradient(
     180deg,
@@ -206,6 +206,27 @@ body.sticky-bottom-footer {
   .ocean-animal { position: absolute; width: clamp(160px, 22vw, 300px); opacity: .19; }
   .ocean-turtle { top: 32%; left: -3%; transform: rotate(-12deg); }
   .ocean-shrimp { top: 65%; right: -3%; transform: scaleX(-1) rotate(-10deg); }
+  .ocean-bedrock {
+    position: absolute;
+    inset: auto 0 0;
+    height: 10rem;
+    color: var(--global-ocean-bedrock);
+    &::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 6rem;
+      background: currentColor;
+      clip-path: polygon(0 25%, 7% 18%, 15% 32%, 24% 10%, 35% 29%, 46% 16%, 57% 35%, 68% 13%, 78% 25%, 89% 8%, 100% 22%, 100% 100%, 0 100%);
+    }
+  }
+  .ocean-rock { position: absolute; bottom: 2rem; width: clamp(75px, 13vw, 180px); }
+  .ocean-rock-1 { left: -2%; }
+  .ocean-rock-2 { left: 18%; transform: rotate(8deg); }
+  .ocean-rock-3 { left: 45%; width: clamp(60px, 10vw, 140px); }
+  .ocean-rock-4 { right: 14%; transform: scaleX(-1); }
+  .ocean-rock-5 { right: -3%; }
+  .ocean-crab { position: absolute; bottom: 3rem; right: 30%; width: clamp(65px, 8vw, 110px); opacity: .6; }
   @media (max-width: 767px) {
     .ocean-fish { width: 110px; opacity: .08; }
     .ocean-bubble, .ocean-shell { opacity: .09; }
