@@ -10,5 +10,5 @@ source_posted: 2026-08-03
 source_url: https://lnkd.in/p/ggjBsdqu
 ---
 
-Daniel Glover presented [Learning to Optimize: Gaussian Process Surrogates for Battery Energy Storage Coordination]({{ '/publications/' | relative_url }}#glover2026learningtooptimize) at the IEEE PES General Meeting in Montréal, Canada. The paper was coauthored with Anup Parajuli, Ninad Kiran Gaikwad, Aryan Ritwajeet Jha, and Anamika Dubey. He also joined a panel on physics-informed learning, presenting distribution-power-flow surrogate modeling developed with Anamika Dubey.
+Daniel Glover presented [Learning to Optimize: Gaussian Process Surrogates for Battery Energy Storage Coordination]({{ '/publications/' | relative_url }}#glover2026learningtooptimize) at the IEEE PES General Meeting in Montréal, Canada. He also joined a panel on physics-informed learning, presenting research on distribution-power-flow surrogate modeling.
 
