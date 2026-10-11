@@ -1,7 +1,7 @@
 ---
 layout: post
 people: ["Surendra Bajagain"]
-news_types: ["Publication"]
+news_types: ["Publication", "Paper", "Journal"]
 date: 2023-09-10
 inline: true
 related_posts: false

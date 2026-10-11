@@ -3,7 +3,7 @@ layout: post
 date: 2025-10-01
 date_precision: month
 people: ["Apsara Adhikari", "Charlotte Wertz"]
-news_types: ["Conference"]
+news_types: ["Conference", "Paper"]
 inline: true
 related_posts: false
 source_posted: 2025-11-06

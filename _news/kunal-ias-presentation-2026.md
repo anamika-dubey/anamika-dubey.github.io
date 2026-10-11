@@ -2,7 +2,7 @@
 layout: post
 date: 2026-10-08
 people: ["Kunal Shankar", "Ninad Kiran Gaikwad"]
-news_types: ["Conference"]
+news_types: ["Conference", "Paper"]
 inline: true
 related_posts: false
 ---

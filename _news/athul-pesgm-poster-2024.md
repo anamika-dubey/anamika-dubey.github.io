@@ -3,7 +3,7 @@ layout: post
 date: 2024-07-01
 date_precision: month
 people: ["Athul Jose P", "Casey Dettlaff", "Ninad Kiran Gaikwad"]
-news_types: ["Conference"]
+news_types: ["Conference", "Poster"]
 inline: true
 related_posts: false
 source_posted: 2024-07-28

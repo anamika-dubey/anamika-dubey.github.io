@@ -3,7 +3,7 @@ layout: post
 date: 2025-05-01
 date_precision: month
 people: ["Charlotte Wertz"]
-news_types: ["Award"]
+news_types: ["Award", "Poster"]
 inline: true
 related_posts: false
 source_posted: 2025-05-28

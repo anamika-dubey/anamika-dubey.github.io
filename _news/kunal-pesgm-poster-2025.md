@@ -3,7 +3,7 @@ layout: post
 date: 2025-07-01
 date_precision: month
 people: ["Kunal Shankar", "Ninad Kiran Gaikwad"]
-news_types: ["Conference"]
+news_types: ["Conference", "Poster", "Paper"]
 inline: true
 related_posts: false
 source_posted: 2025-07-28

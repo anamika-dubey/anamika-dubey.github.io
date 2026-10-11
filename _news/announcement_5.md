@@ -1,7 +1,7 @@
 ---
 layout: post
 people: ["Srayashi Konar"]
-news_types: ["Publication"]
+news_types: ["Publication", "Paper", "Journal"]
 date: 2023-10-10
 inline: true
 related_posts: false

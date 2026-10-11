@@ -2,7 +2,7 @@
 layout: post
 date: 2025-07-27
 people: ["Casey Dettlaff", "Athul Jose P", "Ninad Kiran Gaikwad"]
-news_types: ["Conference"]
+news_types: ["Conference", "Poster", "Paper"]
 inline: true
 related_posts: false
 source_posted: 2025-07-27

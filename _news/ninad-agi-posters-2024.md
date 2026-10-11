@@ -3,7 +3,7 @@ layout: post
 date: 2024-08-01
 date_precision: month
 people: ["Ninad Kiran Gaikwad"]
-news_types: ["Conference"]
+news_types: ["Conference", "Poster"]
 inline: true
 related_posts: false
 source_posted: 2024-08-29

@@ -2,7 +2,7 @@
 layout: post
 date: 2025-04-27
 people: ["Sajjad Uddin Mahmud"]
-news_types: ["Conference"]
+news_types: ["Conference", "Paper"]
 inline: true
 related_posts: false
 source_posted: 2025-04-27
