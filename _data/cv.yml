@@ -3,7 +3,7 @@
   contents:
     - name: Full Name
       value: Anamika Dubey
-    
+
 - title: Experience
   type: time_table
   contents:
@@ -70,7 +70,7 @@
     - year: 2013
       items: 
         - U.S. patent, “Decoupled Three-Phase Power Flow Analysis Method for Unbalanced Power Distribution Systems,” Patent US 20130226482 A1, 29th Aug. 2013.
-    
+
 - title: Academic Interests
   type: nested_list
   contents:
@@ -79,4 +79,4 @@
         - Resilience to High-Impact Low-Probability Events
         - Integration of Variable and Uncertain Distributed Energy Resources
         - Optimization of Active Power Distribution Systems for Grid-edge Interfacing
-   
+
