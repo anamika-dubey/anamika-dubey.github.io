@@ -93,6 +93,11 @@ body.sticky-bottom-footer {
   .sky-bird-1 { top: 14%; right: 1%; transform: scaleX(-1); }
   .sky-bird-2 { top: 48%; left: 1%; }
   .sky-bird-3 { top: 78%; right: 1%; transform: scaleX(-1); }
+  .sky-branch { width: clamp(180px, 27vw, 370px); opacity: .13; color: var(--global-dusk-text); }
+  .sky-branch-1 { top: 0; left: -5%; transform: rotate(-12deg); }
+  .sky-branch-2 { top: 29%; right: -5%; transform: scaleX(-1) rotate(-10deg); }
+  .sky-branch-3 { bottom: 1%; left: -5%; transform: rotate(-18deg); }
+  @media (max-width: 767px) { .sky-branch { width: 170px; opacity: .07; } }
   @media (max-width: 767px) { .sky-cloud, .sky-bird { opacity: .07; } }
 }
 
@@ -108,7 +113,7 @@ body.sticky-bottom-footer {
   color: var(--global-text-color);
   overflow-wrap: anywhere;
   margin-top: 0;
-  padding: 3.5rem 0 2rem;
+  padding: 5rem 0 2rem;
   // Extend the painted gradient to the viewport edges without widening layout.
   border-image: linear-gradient(
     180deg,
@@ -156,6 +161,23 @@ body.sticky-bottom-footer {
   }
 }
 
+.sea-level {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  overflow: hidden;
+  color: var(--global-ocean-life);
+  opacity: .55;
+  span { flex: 0 0 160px; }
+  svg { width: 160px; height: 48px; }
+}
+.scenery-credit { font-size: .7rem; margin: 1rem 0; color: var(--global-text-color-light); }
+
 // Static silhouettes live at the edges, behind the readable profile column.
 .ocean-life {
   position: absolute;
@@ -181,9 +203,13 @@ body.sticky-bottom-footer {
   }
   .ocean-bubble-3, .ocean-bubble-6 { width: 36px; }
   .ocean-shell { position: absolute; bottom: 1rem; left: -1%; width: clamp(100px, 14vw, 190px); opacity: .20; }
+  .ocean-animal { position: absolute; width: clamp(160px, 22vw, 300px); opacity: .19; }
+  .ocean-turtle { top: 32%; left: -3%; transform: rotate(-12deg); }
+  .ocean-shrimp { top: 65%; right: -3%; transform: scaleX(-1) rotate(-10deg); }
   @media (max-width: 767px) {
     .ocean-fish { width: 110px; opacity: .08; }
     .ocean-bubble, .ocean-shell { opacity: .09; }
+    .ocean-animal { width: 150px; opacity: .08; }
   }
 }
 

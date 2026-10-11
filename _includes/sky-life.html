@@ -1,5 +1,6 @@
 <!-- Lucide icons; copyright and licenses in aquatic-icons/LICENSE.txt. -->
 <div class="sky-life" aria-hidden="true">
+  {% for branch in (1..3) %}<span class="sky-branch sky-branch-{{ branch }}">{% include aquatic-icons/tree-branch.svg %}</span>{% endfor %}
   {% for cloud in (1..3) %}<span class="sky-cloud sky-cloud-{{ cloud }}">{% include aquatic-icons/cloud.svg %}</span>{% endfor %}
   {% for bird in (1..3) %}<span class="sky-bird sky-bird-{{ bird }}">{% include aquatic-icons/bird.svg %}</span>{% endfor %}
 </div>

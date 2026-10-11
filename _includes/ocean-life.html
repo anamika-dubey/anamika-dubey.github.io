@@ -7,4 +7,7 @@
   <span class="ocean-bubble ocean-bubble-{{ bubble }}">{% include aquatic-icons/bubbles.svg %}</span>
   {% endfor %}
   <span class="ocean-shell">{% include aquatic-icons/shell.svg %}</span>
+  <span class="ocean-animal ocean-turtle">{% include aquatic-icons/turtle.svg %}</span>
+  <span class="ocean-animal ocean-shrimp">{% include aquatic-icons/shrimp.svg %}</span>
 </div>
+<div class="sea-level" aria-hidden="true">{% for wave in (1..12) %}<span>{% include aquatic-icons/waves-horizontal.svg %}</span>{% endfor %}</div>
