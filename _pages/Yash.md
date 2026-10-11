@@ -7,3 +7,5 @@ I am pursuing my PhD at Washington State University (WSU), specializing in optim
 **Co-advisors:** Dr. Anjan Bose and Dr. Anamika Dubey.
 
 [Website](https://yash271100.github.io/) · [LinkedIn](https://www.linkedin.com/in/yashvardhan-singh-raghuwanshi-380451191/) · [Email](mailto:y.raghuwanshi@wsu.edu)
+
+[ESIC student spotlight](https://www.linkedin.com/pulse/student-spotlight-yash-phd-candidate-fikec/).

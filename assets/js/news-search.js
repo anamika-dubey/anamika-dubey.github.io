@@ -5,12 +5,18 @@
   if (!controls) return;
   const normalize = value => value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   const parse = value => { try { return JSON.parse(value) || []; } catch (_) { return []; } };
-  const rows = Array.from(document.querySelectorAll("[data-news-item]")).map(node => ({
-    node, people: parse(node.dataset.newsPeople), types: parse(node.dataset.newsTypes), years: [node.dataset.newsYear],
-    text: normalize(node.textContent + " " + node.dataset.newsPeople + " " + node.dataset.newsTypes)
-  }));
+  const rows = Array.from(document.querySelectorAll("[data-news-item]")).map(node => {
+    const creditedPeople = parse(node.dataset.newsPeople);
+    const facultyOnly = creditedPeople.length === 1 && creditedPeople[0] === "Anamika Dubey";
+    const people = facultyOnly ? ["Anamika Dubey only"] : creditedPeople.filter(name => name !== "Anamika Dubey");
+    return {
+      node, people, facultyOnly, types: parse(node.dataset.newsTypes), years: [node.dataset.newsYear],
+      text: normalize(node.textContent + " " + node.dataset.newsPeople + " " + node.dataset.newsTypes + " " + people.join(" "))
+    };
+  });
   const search = document.getElementById("news-search");
   const reset = document.getElementById("news-reset");
+  const labOnly = document.getElementById("news-lab-only");
   const chips = document.getElementById("news-active-filters");
   const facets = ["people", "types", "years"];
   const selected = Object.fromEntries(facets.map(key => [key, new Set()]));
@@ -18,7 +24,8 @@
   const menus = Array.from(controls.querySelectorAll("details"));
   const words = () => normalize(search.value).split(" ").filter(Boolean);
   function matches(row, omit = null) {
-    return words().every(word => row.text.includes(word)) && facets.every(key => {
+    return (!labOnly.checked || !row.facultyOnly)
+      && words().every(word => row.text.includes(word)) && facets.every(key => {
       if (key === omit || !selected[key].size) return true;
       return key === "people" ? [...selected[key]].every(value => row[key].includes(value)) : [...selected[key]].some(value => row[key].includes(value));
     });
@@ -73,7 +80,7 @@
     });
     document.getElementById("news-result-count").textContent = `${count} of ${rows.length} updates`;
     document.getElementById("news-empty").hidden = count !== 0;
-    reset.disabled = !search.value && !wanted.length;
+    reset.disabled = !search.value && !wanted.length && !labOnly.checked;
   }
   menus.forEach(menu => menu.addEventListener("toggle", () => {
     if (menu.open) menus.forEach(other => { if (other !== menu) other.open = false; });
@@ -82,7 +89,8 @@
   document.addEventListener("click", event => { if (!controls.contains(event.target)) menus.forEach(menu => { menu.open = false; }); });
   search.addEventListener("input", update);
   search.addEventListener("change", update);
-  reset.addEventListener("click", () => { search.value = ""; facets.forEach(key => selected[key].clear()); update(); search.focus(); });
+  labOnly.addEventListener("change", update);
+  reset.addEventListener("click", () => { search.value = ""; labOnly.checked = false; facets.forEach(key => selected[key].clear()); update(); search.focus(); });
   controls.hidden = false;
   update();
 })();

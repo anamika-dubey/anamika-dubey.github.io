@@ -1,0 +1,7 @@
+{%- assign rendered_news = include.content -%}
+{%- for member in site.data.news_members -%}
+  {%- capture member_url -%}{% if member.url %}{{ member.url | relative_url }}{% else %}{{ '/people/' | relative_url }}#{{ member.anchor }}{% endif %}{%- endcapture -%}
+  {%- capture member_link -%}<a class="news-member" href="{{ member_url }}" data-portrait="{{ member.image | prepend: '/assets/img/' | relative_url }}" data-member-name="{{ member.name | escape }}">{{ member.name | escape }}</a>{%- endcapture -%}
+  {%- assign rendered_news = rendered_news | replace: member.name, member_link -%}
+{%- endfor -%}
+{{- rendered_news -}}

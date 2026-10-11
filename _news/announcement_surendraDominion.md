@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations * Surendra Bajagain * for starting a full-time position as a Power Systems Research Engineer at Dominion Energy.
+Congratulations Surendra Bajagain for starting a full-time position as a Power Systems Research Engineer at Dominion Energy.

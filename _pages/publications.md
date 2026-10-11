@@ -8,8 +8,12 @@ reference_label: Google Scholar
 reference_title: Anamika Dubey's Google Scholar profile and citation information
 nav: true
 nav_order: 3
+# Update this date when publication records in _bibliography/papers.bib change.
+publications_updated: 2026-10-05
 ---
 <!-- _pages/publications.md -->
+<p class="small">Publications last updated: <time datetime="{{ page.publications_updated | date: '%Y-%m-%d' }}">{{ page.publications_updated | date: '%B %-d, %Y' }}</time>. Maintained manually.</p>
+
 {% include publication_filters.html %}
 
 <p id="publication-empty" class="publication-empty" hidden>No publications match these filters. Try a shorter search, clear the filters, or uncheck “Lab-member publications only” to search the full bibliography.</p>
