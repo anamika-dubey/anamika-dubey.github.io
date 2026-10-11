@@ -10,4 +10,4 @@ source_url: https://www.linkedin.com/in/sajjad30148/recent-activity/all/
 # Announcement date; the post does not specify the award ceremony date.
 ---
 
-Sajjad Uddin Mahmud announced that he won first prize in the Engineering and Environmental Sciences category at the WSU GPSA Research Expo 2025 for his research on power-grid resilience under extreme weather.
+Sajjad Uddin Mahmud won first prize in the Engineering and Environmental Sciences category at the WSU GPSA Research Expo 2025 for his research on power-grid resilience under extreme weather.
