@@ -173,7 +173,7 @@ body.sticky-bottom-footer {
   overflow: hidden;
   color: var(--global-ocean-life);
   opacity: .55;
-  span { flex: 0 0 160px; }
+  span { flex: 0 0 160px; margin-right: -26.667px; }
   svg { width: 160px; height: 48px; }
 }
 .scenery-credit { font-size: .7rem; margin: 1rem 0; color: var(--global-text-color-light); }
