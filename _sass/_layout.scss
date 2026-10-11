@@ -121,23 +121,23 @@ body.sticky-bottom-footer {
   width: 100vw;
   overflow: hidden;
   color: var(--global-ocean-life);
-  .ocean-fish { position: absolute; width: clamp(38px, 5vw, 75px); fill: currentColor; opacity: .32; }
-  .fish-eye { fill: var(--global-alumni-bg-color); }
+  svg { display: block; width: 100%; height: auto; }
+  .ocean-fish { position: absolute; width: clamp(38px, 5vw, 75px); opacity: .32; }
   .ocean-fish-1 { top: 7%; left: 2%; }
   .ocean-fish-2 { top: 23%; right: 2%; transform: scaleX(-1); }
   .ocean-fish-3 { top: 43%; left: 3%; width: 45px; }
   .ocean-fish-4 { top: 60%; right: 3%; transform: scaleX(-1); }
   .ocean-fish-5 { top: 77%; left: 2%; }
   .ocean-fish-6 { top: 88%; right: 2%; width: 42px; transform: scaleX(-1); }
-  .ocean-bubble { position: absolute; width: 13px; height: 13px; border: 1px solid currentColor; border-radius: 50%; opacity: .35; }
+  .ocean-bubble { position: absolute; width: 24px; opacity: .35; }
   @for $i from 1 through 8 {
     .ocean-bubble-#{$i} { top: 9% + $i * 10%; @if $i % 2 == 0 { left: 1.5%; } @else { right: 1.5%; } }
   }
-  .ocean-bubble-3, .ocean-bubble-6 { width: 7px; height: 7px; }
-  .ocean-plants { position: absolute; bottom: 0; left: 1%; width: clamp(55px, 8vw, 130px); opacity: .25; }
+  .ocean-bubble-3, .ocean-bubble-6 { width: 16px; }
+  .ocean-shell { position: absolute; bottom: 1rem; left: 1%; width: clamp(45px, 6vw, 90px); opacity: .25; }
   @media (max-width: 767px) {
     .ocean-fish { width: 32px; opacity: .14; }
-    .ocean-bubble, .ocean-plants { opacity: .18; }
+    .ocean-bubble, .ocean-shell { opacity: .18; }
   }
 }
 

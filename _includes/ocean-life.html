@@ -1,7 +1,10 @@
+<!-- Lucide icons: see aquatic-icons/LICENSE.txt for copyright and license. -->
 <div class="ocean-life" aria-hidden="true">
   {% for fish in (1..6) %}
-  <svg class="ocean-fish ocean-fish-{{ fish }}" viewBox="0 0 100 50" focusable="false"><path d="M23 25C38 5 65 5 85 25C65 45 38 45 23 25L4 9V41Z"/><circle cx="72" cy="22" r="2" class="fish-eye"/><path d="M45 13L54 3L63 13Z"/></svg>
+  <span class="ocean-fish ocean-fish-{{ fish }}">{% include aquatic-icons/fish.svg %}</span>
   {% endfor %}
-  {% for bubble in (1..8) %}<span class="ocean-bubble ocean-bubble-{{ bubble }}"></span>{% endfor %}
-  <svg class="ocean-plants" viewBox="0 0 130 220" focusable="false"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M25 220C5 175 48 150 25 100S30 40 22 10M55 220C80 180 35 140 58 105S45 65 55 45M83 220C60 190 100 155 83 128S100 80 90 62M110 220C125 185 96 170 115 140"/></g></svg>
+  {% for bubble in (1..8) %}
+  <span class="ocean-bubble ocean-bubble-{{ bubble }}">{% include aquatic-icons/bubbles.svg %}</span>
+  {% endfor %}
+  <span class="ocean-shell">{% include aquatic-icons/shell.svg %}</span>
 </div>
