@@ -341,4 +341,19 @@
   });
   updateResults();
   controls.hidden = false;
+  // News links may target papers beyond the first page of results.
+  function revealLinkedPaper() {
+    const target = document.getElementById(location.hash.slice(1));
+    if (!target || !list.contains(target)) return;
+    const record = records.find(record => record.item.contains(target));
+    if (!record) return;
+    input.value = record.title;
+    labOnly.checked = false;
+    wsuPower.checked = false;
+    [...checkboxes, ...venueCheckboxes].forEach(box => { box.checked = false; });
+    updateResults();
+    target.scrollIntoView({block: "center"});
+  }
+  window.addEventListener("hashchange", revealLinkedPaper);
+  revealLinkedPaper();
 })();
