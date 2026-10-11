@@ -5,10 +5,15 @@
   if (!controls) return;
   const normalize = value => value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   const parse = value => { try { return JSON.parse(value) || []; } catch (_) { return []; } };
-  const rows = Array.from(document.querySelectorAll("[data-news-item]")).map(node => ({
-    node, people: parse(node.dataset.newsPeople), types: parse(node.dataset.newsTypes), years: [node.dataset.newsYear],
-    text: normalize(node.textContent + " " + node.dataset.newsPeople + " " + node.dataset.newsTypes)
-  }));
+  const rows = Array.from(document.querySelectorAll("[data-news-item]")).map(node => {
+    const creditedPeople = parse(node.dataset.newsPeople);
+    const facultyOnly = creditedPeople.length === 1 && creditedPeople[0] === "Anamika Dubey";
+    const people = facultyOnly ? ["Anamika Dubey only"] : creditedPeople.filter(name => name !== "Anamika Dubey");
+    return {
+      node, people, facultyOnly, types: parse(node.dataset.newsTypes), years: [node.dataset.newsYear],
+      text: normalize(node.textContent + " " + node.dataset.newsPeople + " " + node.dataset.newsTypes + " " + people.join(" "))
+    };
+  });
   const search = document.getElementById("news-search");
   const reset = document.getElementById("news-reset");
   const labOnly = document.getElementById("news-lab-only");
@@ -19,7 +24,7 @@
   const menus = Array.from(controls.querySelectorAll("details"));
   const words = () => normalize(search.value).split(" ").filter(Boolean);
   function matches(row, omit = null) {
-    return (!labOnly.checked || !(row.people.length === 1 && row.people[0] === "Anamika Dubey"))
+    return (!labOnly.checked || !row.facultyOnly)
       && words().every(word => row.text.includes(word)) && facets.every(key => {
       if (key === omit || !selected[key].size) return true;
       return key === "people" ? [...selected[key]].every(value => row[key].includes(value)) : [...selected[key]].some(value => row[key].includes(value));
