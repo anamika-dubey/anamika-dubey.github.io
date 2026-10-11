@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations, Shishir Lamichhane, on successfully defending your PhD dissertation!
+Congratulations, Shishir Lamichhane, on successfully defending your PhD dissertation! I wish you all the best as you embark on the next chapter of your career.

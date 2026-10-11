@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-Congratulations, Daniel Glover, on successfully defending your PhD dissertation!
+Congratulations, Daniel Glover, on successfully defending your PhD dissertation! I wish you all the best as you embark on the next chapter of your career.
