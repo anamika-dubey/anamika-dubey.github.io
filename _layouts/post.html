@@ -49,6 +49,7 @@ layout: default
     <div id="markdown-content">
       {% if page.collection == 'news' %}
         {% include news-content.html content=content %}
+        {% include news-source.html item=page %}
       {% else %}
         {{ content }}
       {% endif %}

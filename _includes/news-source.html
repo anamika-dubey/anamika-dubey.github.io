@@ -1,0 +1,9 @@
+{%- if include.item.source_url -%}
+  {%- assign source_label = 'Source' -%}
+  {%- if include.item.source_url contains '/recent-activity/' -%}
+    {%- assign source_label = 'LinkedIn activity' -%}
+  {%- elsif include.item.source_url contains 'linkedin.com' or include.item.source_url contains 'lnkd.in/p/' -%}
+    {%- assign source_label = 'LinkedIn post' -%}
+  {%- endif -%}
+  <span class="news-source"> · <a href="{{ include.item.source_url | escape }}">{{ source_label }}</a></span>
+{%- endif -%}
