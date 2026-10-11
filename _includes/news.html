@@ -20,7 +20,8 @@
                   </th>
                   <td>
                     {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                      {% capture news_content %}{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}{% endcapture %}
+                      {% include news-content.html content=news_content %}
                     {%- else -%}
                       <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                     {%- endif %}
