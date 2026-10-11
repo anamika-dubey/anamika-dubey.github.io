@@ -8,4 +8,6 @@ My research centers on system identification and estimation, with a particular f
 
 Outside of research, I enjoy working out and playing ping pong.
 
+[ESIC Student Spotlight: Kunal’s Journey in Power Engineering](https://www.linkedin.com/pulse/student-spotlight-kunals-journey-power-f93wc/).
+
 [Email](mailto:kunal.shankar@wsu.edu). [LinkedIn](https://linkedin.com/in/kunalshankar760). [GitHub](https://github.com/kunalshankar760).
