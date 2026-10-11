@@ -21,9 +21,10 @@ layout: page
           {% for profile in page.profiles %}
           {% if profile.section %}
           {% if profile_section_open %}</section>{% endif %}
-          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
+          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% else %} profile-section-current{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
           {% assign profile_section_open = true %}
           {% if profile.section == 'Alumni' %}
+          {% include ocean-life.html %}
           <header class="alumni-section-heading">
             <p class="alumni-section-eyebrow">SCALE Lab community</p>
             <h2 id="{{ profile.section | slugify }}" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>

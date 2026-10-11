@@ -43,6 +43,21 @@ body.sticky-bottom-footer {
   img { display: block; width: 80px; height: 80px; object-fit: cover; border-radius: .25rem; }
 }
 
+.profile-section-current {
+  --global-text-color: var(--global-dusk-text);
+  --global-text-color-light: var(--global-dusk-text);
+  --global-theme-color: var(--global-dusk-link);
+  --global-hover-color: var(--global-dusk-link);
+  --global-divider-color: color-mix(in srgb, var(--global-dusk-text) 22%, transparent);
+  color: var(--global-text-color);
+  padding: 2rem 0 3.5rem;
+  overflow-wrap: anywhere;
+  border-image: linear-gradient(180deg, var(--global-dusk-top), var(--global-dusk-mid) 55%, var(--global-alumni-bg-color)) fill 0 / 0 / 0 100vmax;
+  clip-path: inset(0 -100vmax);
+  > h2 { margin-top: 0 !important; }
+  a { text-decoration: underline; text-underline-offset: .16em; }
+}
+
 .profile-section-alumni {
   position: relative;
   isolation: isolate;
@@ -54,7 +69,7 @@ body.sticky-bottom-footer {
   --global-divider-color: var(--global-alumni-divider);
   color: var(--global-text-color);
   overflow-wrap: anywhere;
-  margin-top: 4rem;
+  margin-top: 0;
   padding: 3.5rem 0 2rem;
   // Extend the painted gradient to the viewport edges without widening layout.
   border-image: linear-gradient(
@@ -92,6 +107,37 @@ body.sticky-bottom-footer {
 
   > .alumni-section-heading + hr {
     display: none;
+  }
+}
+
+// Static silhouettes live at the edges, behind the readable profile column.
+.ocean-life {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  overflow: hidden;
+  color: var(--global-ocean-life);
+  .ocean-fish { position: absolute; width: clamp(38px, 5vw, 75px); fill: currentColor; opacity: .32; }
+  .fish-eye { fill: var(--global-alumni-bg-color); }
+  .ocean-fish-1 { top: 7%; left: 2%; }
+  .ocean-fish-2 { top: 23%; right: 2%; transform: scaleX(-1); }
+  .ocean-fish-3 { top: 43%; left: 3%; width: 45px; }
+  .ocean-fish-4 { top: 60%; right: 3%; transform: scaleX(-1); }
+  .ocean-fish-5 { top: 77%; left: 2%; }
+  .ocean-fish-6 { top: 88%; right: 2%; width: 42px; transform: scaleX(-1); }
+  .ocean-bubble { position: absolute; width: 13px; height: 13px; border: 1px solid currentColor; border-radius: 50%; opacity: .35; }
+  @for $i from 1 through 8 {
+    .ocean-bubble-#{$i} { top: 9% + $i * 10%; @if $i % 2 == 0 { left: 1.5%; } @else { right: 1.5%; } }
+  }
+  .ocean-bubble-3, .ocean-bubble-6 { width: 7px; height: 7px; }
+  .ocean-plants { position: absolute; bottom: 0; left: 1%; width: clamp(55px, 8vw, 130px); opacity: .25; }
+  @media (max-width: 767px) {
+    .ocean-fish { width: 32px; opacity: .14; }
+    .ocean-bubble, .ocean-plants { opacity: .18; }
   }
 }
 
