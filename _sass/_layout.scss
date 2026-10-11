@@ -44,6 +44,8 @@ body.sticky-bottom-footer {
 }
 
 .profile-section-current {
+  position: relative;
+  isolation: isolate;
   --global-text-color: var(--global-dusk-text);
   --global-text-color-light: var(--global-dusk-text);
   --global-theme-color: var(--global-dusk-link);
@@ -55,6 +57,16 @@ body.sticky-bottom-footer {
   border-image: linear-gradient(180deg, var(--global-dusk-top), var(--global-dusk-mid) 55%, var(--global-alumni-bg-color)) fill 0 / 0 / 0 100vmax;
   clip-path: inset(0 -100vmax);
   > h2 { margin-top: 0 !important; }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    inset: 0 0 auto;
+    height: min(42rem, 18%);
+    background: repeating-conic-gradient(from 150deg at 80% -10%, transparent 0deg 15deg, var(--global-dusk-ray) 16deg 20deg, transparent 21deg 34deg);
+    mask-image: linear-gradient(#000, transparent);
+  }
   a { text-decoration: underline; text-underline-offset: .16em; }
 }
 
@@ -81,7 +93,7 @@ body.sticky-bottom-footer {
   ) fill 0 / 0 / 0 100vmax;
   clip-path: inset(0 -100vmax);
 
-  // Painted rays fade within the surface layer; no animation or layout overflow.
+  // Overlapping narrow shafts and rippled highlights suggest refracted light.
   &::before {
     content: "";
     position: absolute;
@@ -89,12 +101,20 @@ body.sticky-bottom-footer {
     pointer-events: none;
     inset: 0 0 auto;
     height: min(48rem, 12%);
-    background: repeating-conic-gradient(
-      from 155deg at 50% -12%,
-      transparent 0deg 12deg,
-      var(--global-alumni-ray) 13deg 16deg,
-      transparent 17deg 28deg
-    );
+    background:
+      repeating-conic-gradient(from 170deg at 30% -18%, transparent 0deg 18deg, var(--global-alumni-ray) 19deg 20deg, transparent 21deg 37deg),
+      repeating-conic-gradient(from 158deg at 72% -8%, transparent 0deg 22deg, var(--global-alumni-ray) 23deg 25deg, transparent 26deg 43deg);
+    mask-image: linear-gradient(#000, transparent);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    inset: 0 0 auto;
+    height: min(24rem, 7%);
+    background: repeating-radial-gradient(ellipse at 60% -50%, transparent 0 35px, var(--global-alumni-ray) 37px 39px, transparent 42px 76px);
+    opacity: .4;
     mask-image: linear-gradient(#000, transparent);
   }
 
@@ -141,6 +161,13 @@ body.sticky-bottom-footer {
   }
 }
 
+.profile-section-current > h2, .alumni-section-heading h2 {
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -.025em;
+  margin-bottom: .75rem;
+}
+
 .alumni-section-heading {
   max-width: 36rem;
   margin-bottom: 2.5rem;
@@ -154,12 +181,6 @@ body.sticky-bottom-footer {
     background: var(--global-theme-color);
   }
 
-  h2 {
-    font-size: clamp(2.25rem, 5vw, 3rem);
-    font-weight: 600;
-    letter-spacing: -.025em;
-    margin-bottom: .75rem;
-  }
 }
 
 .alumni-section-eyebrow {
