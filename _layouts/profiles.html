@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 <!-- about.html -->
@@ -8,7 +8,7 @@ layout: page
         <article>
           {{ content }}
           {% if page.profile_navigation %}
-          <nav aria-label="Member sections" class="mb-4">
+          <nav aria-label="Member sections" class="member-section-nav">
             {% for profile in page.profiles %}
               {% if profile.section %}
                 <a href="#{{ profile.section | slugify }}" class="mr-3">{{ profile.section | escape }}</a>
@@ -31,6 +31,7 @@ layout: page
             <p class="alumni-section-intro">Our former students and researchers, and where their work has taken them.</p>
           </header>
           {% else %}
+          {% include sky-life.html %}
           <h2 id="{{ profile.section | slugify }}" class="mt-5" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
           {% endif %}
           {% endif %}
