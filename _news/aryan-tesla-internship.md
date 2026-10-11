@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-Aryan Ritwajeet Jha began an internship with the Power Systems team at Tesla Energy in their Palo Alto, CA office. Best of luck, Aryan!
+Aryan Ritwajeet Jha completed an internship with the Power Systems team at Tesla Energy in their Palo Alto, CA office, running from January 26 to July 10, 2026.
