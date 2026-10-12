@@ -19,9 +19,9 @@
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <div class="container {% if page.profile_navigation %}people-container{% else %}mt-5{% endif %}">
       {% if site.preview %}
-      <div class="alert alert-info" role="note">
+      <div class="alert alert-info{% if page.profile_navigation %} people-preview-note{% endif %}" role="note">
         <strong>Preview:</strong> unpublished changes for
         <a href="{{ site.preview_pr_url | escape }}">this pull request</a>.
         <a href="{{ site.url }}/people/">View the live People page</a>.

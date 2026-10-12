@@ -25,6 +25,7 @@
                     {%- else -%}
                       <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                     {%- endif %}
+                    {% include news-source.html item=item %}
                   </td>
                 </tr>
               {%- endfor %}

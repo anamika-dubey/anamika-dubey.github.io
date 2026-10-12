@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 
 <!-- about.html -->
@@ -8,7 +8,7 @@ layout: page
         <article>
           {{ content }}
           {% if page.profile_navigation %}
-          <nav aria-label="Member sections" class="mb-4">
+          <nav aria-label="Member sections" class="member-section-nav">
             {% for profile in page.profiles %}
               {% if profile.section %}
                 <a href="#{{ profile.section | slugify }}" class="mr-3">{{ profile.section | escape }}</a>
@@ -21,15 +21,17 @@ layout: page
           {% for profile in page.profiles %}
           {% if profile.section %}
           {% if profile_section_open %}</section>{% endif %}
-          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
+          <section class="profile-section{% if profile.section == 'Alumni' %} profile-section-alumni{% else %} profile-section-current{% endif %}" aria-labelledby="{{ profile.section | slugify }}">
           {% assign profile_section_open = true %}
           {% if profile.section == 'Alumni' %}
+          {% include ocean-life.html %}
           <header class="alumni-section-heading">
             <p class="alumni-section-eyebrow">SCALE Lab community</p>
             <h2 id="{{ profile.section | slugify }}" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
             <p class="alumni-section-intro">Our former students and researchers, and where their work has taken them.</p>
           </header>
           {% else %}
+          {% include sky-life.html %}
           <h2 id="{{ profile.section | slugify }}" class="mt-5" style="scroll-margin-top: 6rem;">{{ profile.section | escape }}</h2>
           {% endif %}
           {% endif %}
@@ -105,6 +107,7 @@ layout: page
           {% endfor %}
           {% if profile_section_open %}</section>{% endif %}
           {%- endif %}
+          <p class="scenery-credit">Scenery: <a href="https://lucide.dev/">Lucide</a>; branches, rocks, and crab adapted from <a href="https://game-icons.net/">Lorc / Game-icons.net</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), backgrounds removed and recolored.</p>
         </article>
 
 </div>

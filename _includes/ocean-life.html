@@ -1,0 +1,17 @@
+<!-- Lucide icons: see aquatic-icons/LICENSE.txt for copyright and license. -->
+<div class="ocean-life" aria-hidden="true">
+  {% for fish in (1..6) %}
+  <span class="ocean-fish ocean-fish-{{ fish }}">{% include aquatic-icons/fish.svg %}</span>
+  {% endfor %}
+  {% for bubble in (1..8) %}
+  <span class="ocean-bubble ocean-bubble-{{ bubble }}">{% include aquatic-icons/bubbles.svg %}</span>
+  {% endfor %}
+  <span class="ocean-shell">{% include aquatic-icons/shell.svg %}</span>
+  <span class="ocean-animal ocean-turtle">{% include aquatic-icons/turtle.svg %}</span>
+  <span class="ocean-animal ocean-shrimp">{% include aquatic-icons/shrimp.svg %}</span>
+  <div class="ocean-bedrock">
+    {% for rock in (1..5) %}<span class="ocean-rock ocean-rock-{{ rock }}">{% include aquatic-icons/rock.svg %}</span>{% endfor %}
+  </div>
+  <span class="ocean-crab">{% include aquatic-icons/crab.svg %}</span>
+</div>
+<div class="sea-level" aria-hidden="true">{% for wave in (1..12) %}<span>{% include aquatic-icons/waves-horizontal.svg %}</span>{% endfor %}</div>
