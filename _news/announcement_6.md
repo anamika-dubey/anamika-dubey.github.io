@@ -7,4 +7,4 @@ inline: true
 related_posts: false
 ---
 
-The lab’s paper [Integrating Solar Resources and Topology Estimation Modules in Industrial ADMS Environment]({{ '/publications/' | relative_url }}#bajagain2023integrating), led by Surendra Bajagain, was announced for publication in IEEE Transactions on Industry Applications.
+Surendra Bajagain and Anamika Dubey, with collaborators, announced their paper [Integrating Solar Resources and Topology Estimation Modules in Industrial ADMS Environment]({{ '/publications/' | relative_url }}#bajagain2023integrating) in IEEE Transactions on Industry Applications.
