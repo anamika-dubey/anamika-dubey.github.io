@@ -5,10 +5,12 @@
   if (!controls) return;
   const normalize = value => value.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   const parse = value => { try { return JSON.parse(value) || []; } catch (_) { return []; } };
+  const labPeople = new Set(parse(controls.dataset.labPeople));
   const rows = Array.from(document.querySelectorAll("[data-news-item]")).map(node => {
     const creditedPeople = parse(node.dataset.newsPeople);
-    const facultyOnly = creditedPeople.length === 1 && creditedPeople[0] === "Anamika Dubey";
-    const people = facultyOnly ? ["Anamika Dubey only"] : creditedPeople.filter(name => name !== "Anamika Dubey");
+    const labCredits = creditedPeople.filter(name => labPeople.has(name));
+    const facultyOnly = labCredits.length === 1 && labCredits[0] === "Anamika Dubey";
+    const people = facultyOnly ? ["Anamika Dubey only"] : labCredits.filter(name => name !== "Anamika Dubey");
     return {
       node, people, facultyOnly, types: parse(node.dataset.newsTypes), years: [node.dataset.newsYear],
       text: normalize(node.textContent + " " + node.dataset.newsPeople + " " + node.dataset.newsTypes + " " + people.join(" "))
