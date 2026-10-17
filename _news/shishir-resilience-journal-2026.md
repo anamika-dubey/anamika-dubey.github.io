@@ -9,5 +9,5 @@ source_posted: 2026-05-26
 source_url: https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/gtd2.70330
 ---
 
-The lab’s collaborative paper [Resilience-Driven Planning of Electric Power Systems Against Extreme Weather Events]({{ '/publications/' | relative_url }}#poudyal2026resiliencedrivenplanning) was published in IET Generation, Transmission & Distribution.
+Abodh Poudyal, Shishir Lamichhane, and Anamika Dubey, with a collaborator, published [Resilience-Driven Planning of Electric Power Systems Against Extreme Weather Events]({{ '/publications/' | relative_url }}#poudyal2026resiliencedrivenplanning) in IET Generation, Transmission & Distribution.
 

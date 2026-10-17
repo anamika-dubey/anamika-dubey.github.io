@@ -1,4 +1,4 @@
-<section id="news-filters" class="news-filters" aria-label="Find lab news" hidden>
+<section id="news-filters" class="news-filters" aria-label="Find lab news" data-lab-people="{{ site.data.news_members | map: 'name' | jsonify | escape }}" hidden>
   <div class="news-search-row">
     <label for="news-search" class="sr-only">Search news</label>
     <input id="news-search" type="search" placeholder="Search people, organizations, or news" list="news-suggestions" autocomplete="off">
