@@ -10,5 +10,5 @@ source_posted: 2024-07-25
 source_url: https://www.linkedin.com/in/shishir--lamichhane/recent-activity/all/
 ---
 
-Shishir Lamichhane presented ongoing research on scalable stochastic siting and sizing of distributed generators at the IEEE PES General Meeting in Seattle, Washington, with guidance from Anamika Dubey and Abodh Poudyal.
+Shishir Lamichhane presented ongoing research on scalable stochastic siting and sizing of distributed generators at the IEEE PES General Meeting in Seattle, Washington, in collaboration with Abodh Poudyal and advised by Anamika Dubey.
 

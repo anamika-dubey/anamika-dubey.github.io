@@ -169,12 +169,13 @@ body.sticky-bottom-footer {
   left: calc(50% - 50vw);
   width: 100vw;
   height: 3rem;
-  display: flex;
   overflow: hidden;
-  color: var(--global-ocean-life);
+  background-color: var(--global-ocean-life);
   opacity: .55;
-  span { flex: 0 0 160px; margin-right: -26.667px; }
-  svg { width: 160px; height: 48px; }
+  // One complete wave period repeats continuously at every viewport width.
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 0 20 24' preserveAspectRatio='none' fill='none' stroke='black' stroke-width='2'%3E%3Cpath d='M2 12q2.5 2 5 0t5 0 5 0 5 0M2 19q2.5 2 5 0t5 0 5 0 5 0M2 5q2.5 2 5 0t5 0 5 0 5 0'/%3E%3C/svg%3E");
+  mask-size: 133.333px 48px;
+  mask-repeat: repeat-x;
 }
 .scenery-credit { font-size: .7rem; margin: 1rem 0; color: var(--global-text-color-light); }
 
