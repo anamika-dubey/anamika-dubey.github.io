@@ -31,8 +31,6 @@ A central challenge in electric power distribution systems is developing computa
 
 To support reproducible research and broader adoption of these methods, we co-developed **DistOPF**, an open-source computational platform for developing, validating, and benchmarking distribution optimal power flow algorithms.
 
-### Selected Research Projects
-
 **Ongoing and Recent**
 
 - **Accelerating Electromagnetic Transient Analysis through Physics-Informed Scalable AI Models for Rapid Load Growth**  
@@ -68,8 +66,6 @@ Resilience studies often begin with prescribed component-failure probabilities o
 
 To support reproducible research, our group has contributed to the **Weather-Outage Resilience Dataset (WORD)**, which facilitates systematic analysis of weather and electricity outage records.
 
-### Selected Research Projects
-
 **Ongoing**
 
 - **Wildfire-Resilient Power Grid Infrastructure Planning: Socio-Technical Innovations for Energy and Health Equity**  
@@ -90,31 +86,14 @@ To support reproducible research, our group has contributed to the **Weather-Out
 
 Understanding which infrastructure components are vulnerable is an essential first step in resilience planning. The more consequential question is how their failures affect network performance and which planning or operational interventions can reduce those consequences. We investigate how uncertainty and infrastructure failures should inform grid planning and operational decisions. Our frameworks combine hazard-dependent vulnerability, network constraints, and feasible system responses to evaluate resilience investments and restoration strategies. We also develop scalable stochastic optimization methods that make these decisions tractable for larger networks and numerous operating scenarios.
 
-### Scalable Stochastic Optimization
+**Scalable Stochastic Optimization**
 
 A major barrier to risk-informed planning is the computational burden of representing many uncertain operating scenarios. Network-constrained optimization across numerous scenarios can produce extremely large mathematical programs, limiting their usefulness for practical planning studies.
+To address this challenge, our group developed **SPAR-OPF**, a scalable stochastic optimization framework that replaces explicit scenario enumeration with compact separable approximations of expected operating costs. The approach uses sampled OPF solutions and their sensitivities to construct approximations and statistical bounds for evaluating solution quality. These advances expand the range of uncertain operating conditions and infrastructure planning alternatives that can be evaluated computationally.
 
-To address this challenge, our group developed **SPAR-OPF**, a scalable stochastic optimization framework that replaces explicit scenario enumeration with compact separable approximations of expected operating costs.
+**Extending Grid Decisions to Regional Networks**
 
-The approach uses sampled OPF solutions and their sensitivities to construct approximations and statistical bounds for evaluating solution quality.
-
-For an IEEE 123-bus distribution system with 1,200 scenarios, SPAR-OPF reduced computation time from approximately 16.8 hours to 80 seconds. We further demonstrated scalability to a 9,500-node distribution network, with solution times of approximately five to six minutes for the studied problems.
-
-These advances expand the range of uncertain operating conditions and infrastructure planning alternatives that can be evaluated computationally.
-
-### Extending Grid Decisions to Regional Networks
-
-Our research is expanding from distribution feeders to regional power systems, where generation availability, transmission constraints, environmental hazards, large electricity loads, and decisions by multiple operators interact.
-
-Through the **WSU–PNNL Advanced Grid Institute (AGI)**, which Professor Dubey co-directs, our group has developed a Pacific Northwest planning-scale transmission research testbed.
-
-The platform represents approximately 3,823 buses and 5,100 transmission lines, with 8,760 hourly operating states across Washington, Oregon, Idaho, and part of Montana.
-
-Initial research examines how localized disruptions, including wildfires, can produce consequences across geographically distant parts of the network. We are also investigating how network constraints, resource flexibility, and infrastructure upgrades affect the ability of regional power systems to accommodate growing electricity demand.
-
-This regional testbed supports the next stage of our research: connecting environmental and infrastructure evidence to network-level planning and operational decisions at larger scales.
-
-### Selected Research Projects
+Our research is expanding from distribution feeders to regional power systems, where generation availability, transmission constraints, environmental hazards, large electricity loads, and decisions by multiple operators interact. My group has developed a Pacific Northwest planning-scale transmission research testbed, with approximately 3,823 buses and 5,100 transmission lines, with 8,760 hourly operating states across Washington, Oregon, Idaho, and part of Montana. Initial research examines how localized disruptions, including wildfires, can produce consequences across geographically distant parts of the network. We are also investigating how network constraints, resource flexibility, and infrastructure upgrades affect the ability of regional power systems to accommodate growing electricity demand. This regional testbed supports the next stage of our research: connecting environmental and infrastructure evidence to network-level planning and operational decisions at larger scales.
 
 **Ongoing**
 
