@@ -9,40 +9,50 @@
   contents:
     - title: Huie-Rogers Endowed Chair Professor
       institution: School of Electrical Engineering and Computer Science, Washington State University
-      year: 2026 - Present
+      year: Aug. 2026 - Present
+    - title: Co-Director, WSU-PNNL Advanced Grid Institute
+      institution: Washington State University and Pacific Northwest National Laboratory
+      year: Jan. 2024 - Present
     - title: Huie-Rogers Endowed Chair Associate Professor
       institution: School of Electrical Engineering and Computer Science, Washington State University
-      year: 2022 - 2026
+      year: Aug. 2022 - July 2026
     - title: Research Scientist (Joint Appointment)
-      institution: Pacific Northwest National Lab (PNNL)
-      year: 2022 - Present
+      institution: Pacific Northwest National Laboratory (PNNL)
+      year: Apr. 2022 - Present
     - title: Assistant Professor
       institution: School of Electrical Engineering and Computer Science, Washington State University
-      year: 2016 - 2022
-    - title: Visiting Reseracher
-      institution: Pacific Northwest National Lab (PNNL)
-      year: 2023 
+      year: Jan. 2016 - July 2022
+    - title: Visiting Researcher
+      institution: Pacific Northwest National Laboratory (PNNL)
+      year: Aug. - Dec. 2023
 
 - title: Education
   type: time_table
   contents:
     - title: PhD in Electrical and Computer Engineering
       institution: University of Texas at Austin, Austin TX
-      year: 2012-2015
+      year: Aug. 2012 - Dec. 2015
       description: Dissertation- Distributed Resource Integration Analysis and Network Design of Electric Power Distribution Systems
     - title: MSE in Electrical and Computer Engineering
       institution: University of Texas at Austin, Austin TX
-      year: 2010-2015
+      year: Aug. 2010 - May 2012
       description: Thesis- Impacts of Electric Vehicle Loads on Utility Distribution Network Voltages
     - title: Bachelor of Technology in Electrical Engineering
       institution: Indian Institute of Technology (IIT) Roorkee, Roorkee, India
-      year: 2006-2010
+      year: July 2006 - May 2010
       description: Senior Design Project- Designing Expert Feeder System for Distribution System Phase Balancing
 
 
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - VCEA Anjan Bose Outstanding Researcher Award, Washington State University
+    - year: 2025
+      items:
+        - IEEE Industry Applications Society Ralph Lee Department Prize Paper Award, for "Robustness Assessment of Distributed Optimal Power Flow under Communication Non-idealities"
+        - EECS Mid-Career Research Excellence Award, Washington State University
     - year: 2023
       items: 
         - <a href='https://ieee-pes.org/about-pes/awards-scholarships/ieee-pes-outstanding-young-engineer-award/'>IEEE PES Outstanding Young Engineer Award</a>.
@@ -55,10 +65,10 @@
         - Voiland College of Engineering and Architecture (VCEA) Jr. Faculty Research Award, WSU Pullman
     - year: 2020
       items: 
-        - EECS Early Career Award in the School of Electrical Engineering and Computer Science, WSU Pullman 
-        - <a href='https://news.wsu.edu/news/2020/02/04/researchers-receive-nsf-career-awards-2/'> NSF CAREER Award (2/1/20-1/31/25) </a>.
+        - EECS Early Career Award in the School of Electrical Engineering and Computer Science, WSU Pullman
     - year: 2019
       items: 
+        - <a href='https://news.wsu.edu/news/2020/02/04/researchers-receive-nsf-career-awards-2/'>NSF CAREER Award</a> (awarded 2019; project period 2020-2026)
         - IEEE Transactions on Smart Grid Best Reviewer Award.
     - year: 2018
       items: 
@@ -71,12 +81,23 @@
       items: 
         - U.S. patent, “Decoupled Three-Phase Power Flow Analysis Method for Unbalanced Power Distribution Systems,” Patent US 20130226482 A1, 29th Aug. 2013.
 
-- title: Academic Interests
+- title: Research and Teaching Interests
   type: nested_list
   contents:
-    - title: Electric Power Systems – Control and Optimization
-      items: 
-        - Resilience to High-Impact Low-Probability Events
-        - Integration of Variable and Uncertain Distributed Energy Resources
-        - Optimization of Active Power Distribution Systems for Grid-edge Interfacing
+    - title: Power system modeling, optimization, and learning
+      items:
+        - Physics-consistent optimization and coordination of active distribution systems and grid-edge resources
+        - Grid resilience through hazard and vulnerability modeling, risk-averse planning, and distributed operations
+        - Scalable computational methods for grid analytics and decision-making under uncertainty
+        - Regional power-system models and cross-domain studies of extreme weather, reliability, and load growth
+
+- title: Research and Mentoring
+  type: map
+  contents:
+    - name: Research funding
+      value: Approximately $9.8 million in supported research as lead PI, WSU PI, and co-PI (through November 2026)
+    - name: Graduate mentoring
+      value: 11 Ph.D. and 4 M.S. graduates; 10 current Ph.D. students; 5 postdoctoral researchers trained
+    - name: Teaching development
+      value: Developed three new courses and an online professional master's course in distribution systems engineering
 
