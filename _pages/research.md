@@ -1,27 +1,19 @@
----
-layout: page
-permalink: /research/
-title: research
-description: Physics-grounded modeling, optimization, and learning for reliable power grid decisions
-nav: true
-nav_order: 4
----
+## From Risk to Reliable Grid Decisions
 
-### From Risk to Reliable Decisions: Physics-Grounded Modeling, Optimization, and Learning
+The electric grid faces growing exposure to high-consequence disruptions while becoming increasingly complex to operate and plan. Despite richer observations of weather, outages, and system conditions, a fundamental challenge remains: **how can we translate uncertain and incomplete information into reliable engineering decisions?**
 
-The electric power grid faces two converging challenges: increasing exposure to high-consequence disruptions and growing complexity in planning and operational decision-making. Despite increasingly rich observations of weather, outages, and system conditions, translating this information into effective engineering decisions remains a fundamental challenge. Addressing this gap requires understanding how uncertain disruptions affect network performance and how alternative planning and operational interventions can mitigate their consequences.
+At SCALE Lab, we advance the analytical and computational foundations for addressing this challenge. Our research integrates network physics, empirical evidence of infrastructure vulnerability, and scalable optimization to understand how uncertain conditions affect grid performance and which operational and planning interventions offer measurable benefits.
 
-At SCALE Lab, our research advances the analytical and computational foundations for reliable and resilient power grid operations and planning. We develop scalable optimization methods for network-constrained decision-making, probabilistic models to characterize infrastructure vulnerability and risk, and risk-informed frameworks for evaluating operational strategies and infrastructure investments.
+Our research spans three interconnected directions:
 
-**Our overarching research objective is to connect uncertain system conditions and observed disruptions to physically feasible, computationally tractable, and quantifiable engineering decisions.**
+1. **Physics-Consistent Optimization**  
+   Developing accurate and scalable computational methods for network-constrained grid operations and coordination.
 
-Our research program is organized around three interconnected directions.
+2. **Learning Infrastructure Vulnerability**  
+   Using observed weather and outage data to characterize hazard-dependent infrastructure risks and their uncertainty.
 
-- **Physics-Consistent Optimization as a Foundation for Grid Decisions**
-
-- **Learning Infrastructure Vulnerability from Observed Disruptions**
-
-- **From Infrastructure Vulnerability to Risk-Informed Grid Decisions**
+3. **Risk-Informed Grid Decisions**  
+   Translating infrastructure vulnerability and network consequences into effective operational strategies and planning investments.
 
 ---
 
