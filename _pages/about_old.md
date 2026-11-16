@@ -2,7 +2,6 @@
 layout: about
 title: about
 heading: SCALE Lab
-permalink: /
 subtitle: Sustainable Climate-resilient Analytics for Large-scale Energy Systems
 
 profile:
