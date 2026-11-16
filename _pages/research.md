@@ -19,35 +19,17 @@ Our research program is organized around three interconnected directions.
 
 ### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
 
-We develop optimization methods that faithfully represent the physical constraints of electric networks while remaining computationally tractable. Our work includes three-phase unbalanced optimal power flow, scalable network approximations and decompositions, and distributed coordination of flexible grid resources. These methods provide a foundation for grid operations and planning as distributed energy resources, variable generation, storage, and flexible demand become increasingly important.
-
 ### 2. Learning Infrastructure Vulnerability from Observed Disruptions
-
-We develop probabilistic approaches to characterize infrastructure vulnerability using observed weather, outage, and operating data. By combining Bayesian inference, multivariate hazard modeling, and network analysis, we investigate which infrastructure components are vulnerable, under what conditions, and how their failures affect electricity service. This research connects empirical evidence of disruptions to physically meaningful estimates of grid risk.
 
 ### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
 
-We investigate how uncertainty and infrastructure failures should inform grid planning and operational decisions. Our frameworks combine hazard-dependent vulnerability, network constraints, and feasible system responses to evaluate resilience investments and restoration strategies. We also develop scalable stochastic optimization methods that make these decisions tractable for larger networks and numerous operating scenarios.
-
 ---
 
-## Research Direction 1: Physics-Consistent Optimization and Grid Coordination
+### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
 
-### Research Overview
-
-A central challenge in electric power distribution systems is developing computationally tractable optimization methods that accurately represent nonlinear, unbalanced, three-phase network physics. Simplified models can improve computational efficiency but may compromise the accuracy of operational constraints and the decisions derived from them.
-
-Our research has advanced network-level optimal power flow (OPF) methods that exploit the structure of distribution networks through approximation, relaxation, and decomposition. These contributions address the tradeoffs among modeling fidelity, computational scalability, and decentralized decision-making.
-
-Building on these computational foundations, we have developed algorithms for coordinating distributed generation, renewable energy resources, smart inverters, energy storage, electric vehicles, and flexible demand. Our work includes centralized and distributed optimization architectures, network-constrained demand-side coordination, and learning-based approaches to distribution-system operations.
-
-An important aspect of this research is understanding how optimization algorithms perform under realistic operating conditions. We have studied the robustness of distributed OPF under communication delays and other communication non-idealities. This work received the **2025 IEEE Industry Applications Society Ralph Lee Department Prize Paper Award**.
-
-We have also extended distributed optimization methods to service restoration and networked microgrid coordination. Our research on layered restoration architectures demonstrated how distributed energy resources and networked microgrids can be coordinated to restore critical loads following disruptions, including proof-of-concept implementation in the GridAPPS-D environment.
+A central challenge in electric power distribution systems is developing computationally tractable optimization methods that accurately represent nonlinear, unbalanced, three-phase network physics. Simplified models can improve computational efficiency but may compromise the accuracy of operational constraints and the decisions derived from them. We develop optimization methods that faithfully represent the physical constraints of electric networks while remaining computationally tractable. Our work includes three-phase unbalanced optimal power flow, scalable network approximations and decompositions, and distributed coordination of flexible grid resources. These methods provide a foundation for grid operations and planning as distributed energy resources, variable generation, storage, and flexible demand become increasingly important.
 
 To support reproducible research and broader adoption of these methods, we co-developed **DistOPF**, an open-source computational platform for developing, validating, and benchmarking distribution optimal power flow algorithms.
-
-Together, these contributions establish computational foundations for coordinating flexible grid resources during both normal and disrupted operating conditions.
 
 ### Selected Research Projects
 
@@ -79,27 +61,12 @@ Together, these contributions establish computational foundations for coordinati
 
 ---
 
-## Research Direction 2: Data-Driven Infrastructure Vulnerability and Risk Modeling
+## 2. Data-Driven Infrastructure Vulnerability and Risk Modeling
 
-### Research Overview
 
-Resilience studies often begin with prescribed component-failure probabilities or selected contingency scenarios. However, these assumptions do not always adequately represent how actual environmental hazards affect infrastructure or how vulnerability varies across geographic regions and network components.
-
-Our research addresses this limitation by developing methods to **infer hazard-conditioned infrastructure vulnerability from observed disruptions**, quantify uncertainty in these estimates, and connect the results to power-system analyses.
-
-A major focus is the integration of historical weather and outage observations to characterize how extreme events affect electricity service. Our ongoing national-scale research combines high-resolution EAGLE-I outage observations with meteorological data to quantify differences in outage frequency and severity across climate regions and urban–rural environments.
-
-These analyses reveal substantial geographic heterogeneity in weather-dependent outage risks. They also illustrate why the frequency of disruptions and their consequences for affected communities must be examined separately.
-
-We have developed probabilistic vulnerability models using Bayesian inference to characterize nonlinear relationships between environmental conditions and infrastructure failures. These methods account for uncertainty arising from limited observations of extreme events and investigate the effects of interacting hazards, including wind, temperature, and precipitation.
-
-At the distribution-feeder level, we are developing **topology- and voltage-aware fragility models** to distinguish component vulnerability from network consequences. Our findings demonstrate that distribution laterals may experience higher failure rates while failures of main feeder components can produce more extensive service interruptions.
-
-Our research also examines the vulnerability of generation resources during extreme weather. In particular, we have developed Bayesian models for gas-fired generator availability under extreme winter conditions, distinguishing complete generator outages from partial capacity derating. Explicitly representing these different failure mechanisms provides a more informative characterization of weather-dependent generation availability.
+Resilience studies often begin with prescribed component-failure probabilities or selected contingency scenarios. However, these assumptions do not always adequately represent how actual environmental hazards affect infrastructure or how vulnerability varies across geographic regions and network components. Our research addresses this limitation by developing methods to **infer hazard-conditioned infrastructure vulnerability from observed disruptions**, quantify uncertainty in these estimates, and connect the results to power-system analyses. We develop probabilistic approaches to characterize infrastructure vulnerability using observed weather, outage, and operating data. By combining Bayesian inference, multivariate hazard modeling, and network analysis, we investigate which infrastructure components are vulnerable, under what conditions, and how their failures affect electricity service. This research connects empirical evidence of disruptions to physically meaningful estimates of grid risk.
 
 To support reproducible research, our group has contributed to the **Weather-Outage Resilience Dataset (WORD)**, which facilitates systematic analysis of weather and electricity outage records.
-
-Collectively, these efforts provide an empirical and probabilistic foundation for estimating infrastructure risk and incorporating it into power-system operations and resilience planning.
 
 ### Selected Research Projects
 
@@ -119,21 +86,9 @@ Collectively, these efforts provide an empirical and probabilistic foundation fo
 
 ---
 
-## Research Direction 3: Risk-Informed Planning and Scalable Decision-Making Under Uncertainty
+### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
 
-### Research Overview
-
-Understanding which infrastructure components are vulnerable is an essential first step in resilience planning. The more consequential question is how their failures affect network performance and which planning or operational interventions can reduce those consequences.
-
-Our research develops probabilistic, risk-averse planning frameworks that integrate component vulnerability, network constraints, and operational responses to evaluate infrastructure investments and restoration decisions.
-
-Our early work established probabilistic measures of distribution-system operational resilience, which we subsequently extended to stochastic planning frameworks that account explicitly for severe disruption scenarios.
-
-Using **conditional value-at-risk (CVaR)**, we have developed methods to evaluate resilience decisions beyond expected performance, incorporating the potentially disproportionate consequences of high-impact disruptions.
-
-A key finding is that the value of resilience investments depends not only on the probability of component failures but also on the network's ability to respond after those failures.
-
-For example, by jointly optimizing line hardening, automated switching, and distributed generation, our frameworks demonstrate how different risk preferences lead to different investment portfolios. These findings highlight the importance of evaluating infrastructure investments through their system-level operational consequences rather than component reliability alone.
+Understanding which infrastructure components are vulnerable is an essential first step in resilience planning. The more consequential question is how their failures affect network performance and which planning or operational interventions can reduce those consequences. We investigate how uncertainty and infrastructure failures should inform grid planning and operational decisions. Our frameworks combine hazard-dependent vulnerability, network constraints, and feasible system responses to evaluate resilience investments and restoration strategies. We also develop scalable stochastic optimization methods that make these decisions tractable for larger networks and numerous operating scenarios.
 
 ### Scalable Stochastic Optimization
 
