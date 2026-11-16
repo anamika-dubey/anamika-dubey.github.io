@@ -1,3 +1,12 @@
+---
+layout: page
+permalink: /research/
+title: research
+description: Physics-grounded modeling, optimization, and learning for reliable power grid decisions
+nav: true
+nav_order: 4
+---
+
 ## From Risk to Reliable Grid Decisions
 
 The electric grid faces growing exposure to high-consequence disruptions while becoming increasingly complex to operate and plan. Despite richer observations of weather, outages, and system conditions, a fundamental challenge remains: **how can we translate uncertain and incomplete information into reliable engineering decisions?**
