@@ -17,11 +17,11 @@ At SCALE Lab, our research advances the analytical and computational foundations
 
 Our research program is organized around three interconnected directions.
 
-## 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
+### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
 
-## 2. Learning Infrastructure Vulnerability from Observed Disruptions
+### 2. Learning Infrastructure Vulnerability from Observed Disruptions
 
-## 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
+### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
 
 ---
 
