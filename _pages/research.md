@@ -1,4 +1,3 @@
-
 ---
 layout: pages
 permalink: /research/
