@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-## From Risk to Reliable Decisions: Physics-Grounded Modeling, Optimization, and Learning
+### From Risk to Reliable Decisions: Physics-Grounded Modeling, Optimization, and Learning
 
 The electric power grid faces two converging challenges: increasing exposure to high-consequence disruptions and growing complexity in planning and operational decision-making. Despite increasingly rich observations of weather, outages, and system conditions, translating this information into effective engineering decisions remains a fundamental challenge. Addressing this gap requires understanding how uncertain disruptions affect network performance and how alternative planning and operational interventions can mitigate their consequences.
 
@@ -17,11 +17,11 @@ At SCALE Lab, our research advances the analytical and computational foundations
 
 Our research program is organized around three interconnected directions.
 
-### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
+- **1. Physics-Consistent Optimization as a Foundation for Grid Decisions**
 
-### 2. Learning Infrastructure Vulnerability from Observed Disruptions
+- **2. Learning Infrastructure Vulnerability from Observed Disruptions**
 
-### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
+- **3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions**
 
 ---
 
