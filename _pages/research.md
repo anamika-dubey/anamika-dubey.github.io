@@ -13,6 +13,20 @@ The electric grid faces growing exposure to high-consequence disruptions while b
 
 At SCALE Lab, we advance the analytical and computational foundations for addressing this challenge. Our research integrates network physics, empirical evidence of infrastructure vulnerability, and scalable optimization to understand how uncertain conditions affect grid performance and which operational and planning interventions offer measurable benefits.
 
+<figure class="my-4 text-center">
+  <img
+    src="{{ '/assets/img/research-framework.png' | relative_url }}"
+    alt="Emerging power grid challenges and SCALE Lab's research framework connecting data, models, and decisions."
+    class="img-fluid"
+    style="width: 100%; height: auto;"
+  >
+  <figcaption class="small text-muted mt-2">
+    SCALE Lab's research connects emerging grid challenges,
+    heterogeneous data, physics-grounded models, and
+    reliable engineering decisions.
+  </figcaption>
+</figure>
+
 Our research spans three interconnected directions:
 
 1. **Physics-Consistent Optimization**  
