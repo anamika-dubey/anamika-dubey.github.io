@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: Research
-description: Physics-grounded modeling, optimization, and learning for reliable power grid decisions
+description: Physics-based modeling, optimization, and learning for reliable power grid decisions
 nav: true
 nav_order: 4
 ---
