@@ -12,10 +12,8 @@ profile:
   more_info: >
     <p><strong>Anamika Dubey</strong></p>
     <p>Professor, Washington State University</p>
-    <p>Co-Director, <a href='https://natlab.wsu.edu/grid/'>WSU-PNNL Advanced Grid Institute (AGI)</a></p>
     <p><a href='https://esic.wsu.edu/'>Energy Systems Innovation Center</a></p>
-    
-     
+    <p>Co-Director, <a href='https://natlab.wsu.edu/grid/'>WSU-PNNL Advanced Grid Institute</a></p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
