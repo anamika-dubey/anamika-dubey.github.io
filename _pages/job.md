@@ -2,7 +2,7 @@
 title: job
 permalink: /job/
 layout: page
-nav: true 
+nav: false 
 ---
 We currently do not have any open positions. Please check back later.
 
