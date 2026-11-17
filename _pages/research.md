@@ -103,27 +103,61 @@ Our research is supported through federally funded, industry-sponsored, and nati
 
 ---
 
-
 ## 2. Data-Driven Infrastructure Vulnerability and Risk Modeling
 
+Resilience assessments often rely on assumed component-failure probabilities that do not adequately capture how infrastructure responds to actual environmental hazards. Our research addresses this limitation by **learning infrastructure vulnerability from observed disruptions**. We combine weather, outage, and operating data with statistical and Bayesian inference to estimate how failure likelihood, severity, and duration vary across hazards, geographic regions, and infrastructure characteristics.
 
-Resilience studies often begin with prescribed component-failure probabilities or selected contingency scenarios. However, these assumptions do not always adequately represent how actual environmental hazards affect infrastructure or how vulnerability varies across geographic regions and network components. Our research addresses this limitation by developing methods to **infer hazard-conditioned infrastructure vulnerability from observed disruptions**, quantify uncertainty in these estimates, and connect the results to power-system analyses. We develop probabilistic approaches to characterize infrastructure vulnerability using observed weather, outage, and operating data. By combining Bayesian inference, multivariate hazard modeling, and network analysis, we investigate which infrastructure components are vulnerable, under what conditions, and how their failures affect electricity service. This research connects empirical evidence of disruptions to physically meaningful estimates of grid risk.
+Our research has advanced three complementary areas:
 
-To support reproducible research, our group has contributed to the **Weather-Outage Resilience Dataset (WORD)**, which facilitates systematic analysis of weather and electricity outage records.
+<div class="row text-center my-4">
 
-**Ongoing**
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Weather–Outage Modeling</h5>
+      <p class="mb-0">
+        Statistical and Bayesian models of weather-dependent outages,
+        including compound effects of wind, temperature, and precipitation.
+      </p>
+    </div>
+  </div>
 
-- **Wildfire-Resilient Power Grid Infrastructure Planning: Socio-Technical Innovations for Energy and Health Equity**  
-  National Science Foundation, RAISE Program. Co-PI. February 2025–January 2030.
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Infrastructure Fragility</h5>
+      <p class="mb-0">
+        Hazard-conditioned fragility models that account for feeder topology,
+        voltage class, geographic variation, and infrastructure characteristics.
+      </p>
+    </div>
+  </div>
 
-- **Strengthening Energy Infrastructure Resilience and Equity During Extreme Cold Weather Events**  
-  National Science Foundation, Strengthening American Infrastructure Program. WSU PI. September 2023–August 2027.  
-  [NSF Project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2324544)
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Extreme-Weather Performance</h5>
+      <p class="mb-0">
+        Probabilistic modeling of generator failures, capacity derating,
+        and outage duration under extreme winter conditions.
+      </p>
+    </div>
+  </div>
 
-**Completed**
+</div>
 
-- **Data-Driven Resilience Modeling, Prediction, and Enhancement**  
-  Power Systems Engineering Research Center (PSERC). WSU PI. July 2024–July 2026.
+**Our results demonstrate why infrastructure vulnerability cannot be represented by a single failure probability.** Weather–outage studies across geographically distinct regions reveal the importance of compound weather conditions. More recent work develops topology- and voltage-aware fragility curves, distinguishing main feeders from laterals and identifying differences in vulnerability across voltage classes and geographic regions. We have also extended probabilistic vulnerability modeling to gas-fired generation, jointly estimating winter-weather-driven failure probability, available capacity, and event duration.
+
+To make these analyses reproducible, our group contributed to the **Weather-Outage Resilience Dataset (WORD)**, an open data-processing framework that integrates weather and electricity outage records for systematic resilience research.
+
+**Selected research contributions:** [Topology- and voltage-aware fragility (IEEE PES GM, 2026)](https://doi.org/10.1109/PESGM58988.2026.11693233) · [Statistical and Bayesian resilience modeling (2025 preprint)](https://arxiv.org/abs/2511.03043) · [Extreme-winter generator vulnerability (2026 preprint)](https://arxiv.org/abs/2610.04368) · [WORD data-processing repository](https://github.com/arslangit1/eagleiDataProcessor)
+
+#### Research Leadership and Funded Programs
+
+This research brings together power systems, climate and weather analysis, statistical learning, and infrastructure resilience through multi-institutional collaborations.
+
+- **NSF RAISE — Co-PI (2025–2030):** Wildfire-resilient power infrastructure planning, integrating technical resilience with energy and health equity.
+
+- **NSF Strengthening American Infrastructure — WSU PI (2023–2027):** Modeling extreme-cold impacts on energy infrastructure resilience and equity. [NSF Award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2324544)
+
+- **Power Systems Engineering Research Center (PSERC) — WSU PI (2024–2026):** Data-driven resilience modeling, prediction, and enhancement.
 
 ---
 
