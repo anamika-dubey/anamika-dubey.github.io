@@ -36,6 +36,13 @@ h3.research-section-title {
 }
 </style>
 
+<a href="{{ '/assets/pdf/research_statement.pdf' | relative_url }}"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-sm btn-outline-primary">
+   Research Statement (PDF) ↗
+</a>
+
 The electric grid faces growing exposure to high-consequence disruptions while becoming increasingly complex to operate and plan. Despite richer observations of weather, outages, and system conditions, a fundamental challenge remains: **how can we translate uncertain and incomplete information into reliable engineering decisions?**
 
 At SCALE Lab, we advance the analytical and computational foundations for addressing this challenge. Our research integrates network physics, empirical evidence of infrastructure vulnerability, and scalable optimization to understand how uncertain conditions affect grid performance and which operational and planning interventions offer measurable benefits.
