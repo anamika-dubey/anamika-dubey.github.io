@@ -16,7 +16,7 @@ profiles:
     image: 
     content: CurrentPhDStudents_Filler.md
     image_circular: false # crops the image to make it circular
-<style>
+  <style>
   /* Section headings: current members */
   .profile-section-current > h2 {
     font-size: 2.15rem !important;
@@ -25,8 +25,8 @@ profiles:
     line-height: 1.25;
     margin-top: 1.5rem !important;
     margin-bottom: 1rem;
-  }
-</style>  
+    }
+  </style>  
   - align: lright
     image: Sajjad.jpg
     content: Sajjad.md
