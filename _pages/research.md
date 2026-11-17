@@ -36,7 +36,7 @@ h3.research-section-title {
 }
 </style>
 
-<a href="{{ '/assets/pdf/research_statement.pdf' | relative_url }}"
+<a href="{{ '/assets/pdf/Research_Statement_final.pdf' | relative_url }}"
    target="_blank"
    rel="noopener noreferrer"
    class="btn btn-sm btn-outline-primary">
