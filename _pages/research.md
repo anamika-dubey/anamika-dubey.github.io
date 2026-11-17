@@ -163,36 +163,64 @@ This research brings together power systems, climate and weather analysis, stati
 
 ### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
 
-Understanding which infrastructure components are vulnerable is an essential first step in resilience planning. The more consequential question is how their failures affect network performance and which planning or operational interventions can reduce those consequences. We investigate how uncertainty and infrastructure failures should inform grid planning and operational decisions. Our frameworks combine hazard-dependent vulnerability, network constraints, and feasible system responses to evaluate resilience investments and restoration strategies. We also develop scalable stochastic optimization methods that make these decisions tractable for larger networks and numerous operating scenarios.
+Understanding infrastructure vulnerability is only the first step. The more consequential question is **how system operators and planners should respond to uncertain disruptions**. Our research develops risk-informed optimization frameworks that connect hazard-dependent vulnerability, network constraints, and feasible system responses to decisions about infrastructure investments, resource allocation, and restoration.
 
-**Scalable Stochastic Optimization**
+Our contributions span three interconnected areas:
 
-A major barrier to risk-informed planning is the computational burden of representing many uncertain operating scenarios. Network-constrained optimization across numerous scenarios can produce extremely large mathematical programs, limiting their usefulness for practical planning studies.
-To address this challenge, our group developed **SPAR-OPF**, a scalable stochastic optimization framework that replaces explicit scenario enumeration with compact separable approximations of expected operating costs. The approach uses sampled OPF solutions and their sensitivities to construct approximations and statistical bounds for evaluating solution quality. These advances expand the range of uncertain operating conditions and infrastructure planning alternatives that can be evaluated computationally.
+<div class="row text-center my-4">
 
-**Extending Grid Decisions to Regional Networks**
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Risk-Informed Planning</h5>
+      <p class="mb-0">
+        Joint optimization of infrastructure hardening,
+        distributed generation, switching, and restoration
+        under uncertainty and tail-risk preferences.
+      </p>
+    </div>
+  </div>
 
-Our research is expanding from distribution feeders to regional power systems, where generation availability, transmission constraints, environmental hazards, large electricity loads, and decisions by multiple operators interact. My group has developed a Pacific Northwest planning-scale transmission research testbed, with approximately 3,823 buses and 5,100 transmission lines, with 8,760 hourly operating states across Washington, Oregon, Idaho, and part of Montana. Initial research examines how localized disruptions, including wildfires, can produce consequences across geographically distant parts of the network. We are also investigating how network constraints, resource flexibility, and infrastructure upgrades affect the ability of regional power systems to accommodate growing electricity demand. This regional testbed supports the next stage of our research: connecting environmental and infrastructure evidence to network-level planning and operational decisions at larger scales.
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Scalable Stochastic Optimization</h5>
+      <p class="mb-0">
+        SPAR-OPF: scenario-efficient planning demonstrated
+        on a 9,500-node distribution network
+        with 1,200 uncertainty scenarios.
+      </p>
+    </div>
+  </div>
 
-**Ongoing**
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Regional Grid Analytics</h5>
+      <p class="mb-0">
+        Pacific Northwest research testbed:
+        approximately 3,823 buses, 5,100 transmission lines,
+        and 8,760 hourly operating states.
+      </p>
+    </div>
+  </div>
 
-- **Spokane Connected Communities Project**  
-  U.S. Department of Energy, through Avista Utilities. WSU PI. March 2023–December 2026.
+</div>
 
-**Completed**
+**Risk-informed resilience planning.** Our research demonstrates that the value of resilience investments depends on both the hazards being managed and the system's ability to respond after disruptions. By integrating risk measures such as Conditional Value-at-Risk (CVaR) with network-constrained operations, we evaluate trade-offs among infrastructure hardening, distributed generation, and operational flexibility. In a representative study, changing risk preferences under the same $1 million investment budget shifted the optimal portfolio from one to five distributed generators while reducing switching investments. These results demonstrate why resilience investments must be evaluated through their system-level consequences rather than component reliability alone.
 
-- **Enabling Operational Resilience in Decentralized Electric Power Distribution Systems**  
-  National Science Foundation CAREER Award. Lead PI. February 2020–January 2026.  
-  [NSF Project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1944142)
+**Scalable stochastic optimization.** To address the computational burden of scenario-based planning, our group developed **SPAR-OPF**, which replaces explicit scenario enumeration with compact, separable approximations of expected operating costs. The framework learns these approximations from sampled OPF solutions and their sensitivities and provides statistical bounds for assessing solution quality. On a 9,500-node distribution system with 1,200 scenarios, SPAR-OPF produced high-quality solutions in approximately five minutes, with reported statistical bound gaps below 3% in the larger-sample experiments, while conventional extensive formulations and progressive hedging could not solve the corresponding problem in the reported computational environment.
 
-- **AGGREGATE: Data-Driven Models for Outage Management and Resilience**  
-  U.S. Department of Energy. Co-PI. October 2017–June 2021.
+**Extending decisions to regional power systems.** We are expanding these methods from individual distribution feeders to regional transmission networks, where generation availability, transmission constraints, environmental hazards, and rapidly growing electricity demand interact. Our group has developed a planning-scale Pacific Northwest transmission research testbed spanning Washington, Oregon, Idaho, and part of Montana, with 8,760 hourly operating states. Current studies examine the network-wide consequences of localized disruptions, including wildfires, and evaluate how resource flexibility, transmission constraints, and infrastructure upgrades influence the region's ability to accommodate new electricity demand.
 
-**Prior Project**
+**Selected research contributions:** [Risk-Based Resilience Planning (IEEE TSTE, 2023)](https://doi.org/10.1109/TSTE.2022.3220561) · [SPAR-OPF: Scalable Stochastic Optimization (2025 preprint)](https://arxiv.org/abs/2504.13933) · [Stochastic DG Siting and Sizing (EPSR, 2026)](https://doi.org/10.1016/j.epsr.2026.113689)
 
-- **Resilient Communities via Risk-Driven Infrastructure Planning and Automated Restoration (Recuperat)**  
-  U.S. Department of Energy, Solar Energy Technologies Office. Lead PI. Initiated August 2023; *project cancelled in November 2025*.  
-  [Program Background](https://www.energy.gov/eere/solar/renewables-advancing-community-energy-resilience-racer-funding-program)
+#### Research Leadership and Funded Programs
+
+This research program integrates foundational stochastic optimization, network-level resilience planning, and large-scale grid analytics through federally funded and utility-partnered projects.
+
+- **NSF CAREER — Lead PI (2020–2026):** Enabling operational resilience in decentralized electric power distribution systems. [NSF Award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1944142)
+
+- **U.S. DOE / Avista Utilities — WSU PI (2023–2026):** Spokane Connected Communities, developing coordinated grid and community energy solutions.
+
+- **U.S. DOE AGGREGATE — Co-PI (2017–2021):** Data-driven models for outage management and resilience.
 
 ---
 
