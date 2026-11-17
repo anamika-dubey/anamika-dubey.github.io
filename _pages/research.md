@@ -25,6 +25,17 @@ nav_order: 4
   }
 </style>
 
+<style>
+h3.research-section-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+</style>
+
 The electric grid faces growing exposure to high-consequence disruptions while becoming increasingly complex to operate and plan. Despite richer observations of weather, outages, and system conditions, a fundamental challenge remains: **how can we translate uncertain and incomplete information into reliable engineering decisions?**
 
 At SCALE Lab, we advance the analytical and computational foundations for addressing this challenge. Our research integrates network physics, empirical evidence of infrastructure vulnerability, and scalable optimization to understand how uncertain conditions affect grid performance and which operational and planning interventions offer measurable benefits.
@@ -47,7 +58,9 @@ Our research spans three interconnected directions:
    Translating infrastructure vulnerability and network consequences into effective operational strategies and planning investments.
 
 ---
-### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
+<h3 class="research-section-title">
+  1. Physics-Consistent Optimization as a Foundation for Grid Decisions
+</h3>
 
 Reliable grid decisions require optimization methods that respect network physics while remaining computationally tractable at scale. Our research has advanced **three-phase unbalanced optimal power flow (D-OPF)**, network-level approximations and relaxations, and distributed optimization methods for coordinating distributed energy resources and flexible demand.
 
