@@ -47,40 +47,62 @@ Our research spans three interconnected directions:
    Translating infrastructure vulnerability and network consequences into effective operational strategies and planning investments.
 
 ---
-
 ### 1. Physics-Consistent Optimization as a Foundation for Grid Decisions
 
-A central challenge in electric power distribution systems is developing computationally tractable optimization methods that accurately represent nonlinear, unbalanced, three-phase network physics. Simplified models can improve computational efficiency but may compromise the accuracy of operational constraints and the decisions derived from them. We develop optimization methods that faithfully represent the physical constraints of electric networks while remaining computationally tractable. Our work includes three-phase unbalanced optimal power flow, scalable network approximations and decompositions, and distributed coordination of flexible grid resources. These methods provide a foundation for grid operations and planning as distributed energy resources, variable generation, storage, and flexible demand become increasingly important.
+Reliable grid decisions require optimization methods that respect network physics while remaining computationally tractable at scale. Our research has advanced **three-phase unbalanced optimal power flow (D-OPF)**, network-level approximations and relaxations, and distributed optimization methods for coordinating distributed energy resources and flexible demand.
 
-To support reproducible research and broader adoption of these methods, we co-developed **DistOPF**, an open-source computational platform for developing, validating, and benchmarking distribution optimal power flow algorithms.
+Our contributions span three connected areas:
 
-**Ongoing and Recent**
+<div class="row text-center my-4">
 
-- **Accelerating Electromagnetic Transient Analysis through Physics-Informed Scalable AI Models for Rapid Load Growth**  
-  U.S. Department of Energy Genesis Program, through PNNL. WSU PI. September 2026–April 2027.
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Physical Fidelity</h5>
+      <p class="mb-0">
+        Three-phase unbalanced OPF, network-level formulations,
+        and feasibility-aware approximations.
+      </p>
+    </div>
+  </div>
 
-- **Adaptive, Human-Centric Demand-Side Flexibility Coordination at Scale in Electric Power Networks**  
-  National Science Foundation, Cyber-Physical Systems Program. Lead PI. September 2022–August 2026. *Completed.*  
-  [NSF Project](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208783)
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Scalable Coordination</h5>
+      <p class="mb-0">
+        Distributed optimization using reduced network equivalents,
+        evaluated on IEEE 123-bus and 8,500-node feeders.
+      </p>
+    </div>
+  </div>
 
-**Completed**
+  <div class="col-md-4 mb-3">
+    <div class="border rounded p-3 h-100">
+      <h5 class="font-weight-bold">Open-Source Tools</h5>
+      <p class="mb-0">
+        DistOPF: a computational platform for distribution OPF
+        formulation, benchmarking, and validation.
+      </p>
+    </div>
+  </div>
 
-- **GridAPPS-D: Layered Architecture for Distributed Applications**  
-  U.S. Department of Energy, through PNNL. WSU PI. March 2021–August 2023.
+</div>
 
-- **CITADELS**  
-  U.S. Department of Energy, through PNNL. WSU PI. January 2020–July 2023.
+Our work has established computational methods for solving network-constrained optimization problems with improved physical fidelity and scalability. In particular, our distributed optimization methods leverage reduced network equivalents to coordinate resources across large distribution networks. These advances have been demonstrated on benchmark systems containing thousands of nodes and extended to unbalanced multi-phase networks.
 
-- **Robust Distributed Control for Power Sharing in Islanded Industrial Microgrids**  
-  Schweitzer Engineering Laboratories. Lead PI. May 2019–December 2022.
+**Selected research contributions:** [Unbalanced three-phase OPF (IEEE TPWRS, 2021)](https://doi.org/10.1109/TPWRS.2021.3066146) · [Distributed optimization using network equivalents (IEEE TPWRS, 2021)](https://arxiv.org/abs/2012.02473) · [Scalable renewable energy coordination (IEEE TSTE, 2026)](https://doi.org/10.1109/TSTE.2024.3492976) · [DistOPF open-source software](https://github.com/GRIDAPPSD/distopf)
 
-- **Bilateral Contract Design and Retail Market Development for Flexible Electric Power Systems with Residential Demand-Side Participation**  
-  Alfred P. Sloan Foundation. Lead PI. January 2019–August 2022.
+#### Research Leadership and Funded Programs
 
-- **Development of an Open-Source Advanced Distribution Management System (ADMS)**  
-  U.S. Department of Energy, through PNNL. WSU PI. August 2016–December 2020.
+Our research is supported through federally funded, industry-sponsored, and national laboratory collaborations, connecting foundational optimization advances with practical grid applications.
+
+- **NSF Cyber-Physical Systems — Lead PI (2022–2026):** Adaptive, human-centric demand-side flexibility coordination at scale. [NSF Award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208783)
+
+- **U.S. DOE / PNNL — WSU PI (2016–2027):** Research spanning GridAPPS-D, CITADELS, open-source advanced distribution management systems, and physics-informed electromagnetic transient analysis for rapid load growth.
+
+- **Industry and Foundation Research — Lead PI (2019–2022):** Robust distributed control of industrial microgrids (Schweitzer Engineering Laboratories) and market mechanisms for coordinating residential flexibility (Alfred P. Sloan Foundation).
 
 ---
+
 
 ## 2. Data-Driven Infrastructure Vulnerability and Risk Modeling
 
