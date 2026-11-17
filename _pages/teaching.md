@@ -8,6 +8,15 @@ nav_order: 5
 ---
 
 <style>
+  /* Main page title: teaching */
+  .post-header .post-title {
+    font-size: 2.15rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+  }
+</style>
+
+<style>
   .teaching-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
