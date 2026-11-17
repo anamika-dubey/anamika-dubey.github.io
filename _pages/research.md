@@ -104,8 +104,6 @@ Our work has established computational methods for solving network-constrained o
 
 **Selected research contributions:** [Unbalanced three-phase OPF (IEEE TPWRS, 2021)](https://doi.org/10.1109/TPWRS.2021.3066146) · [Distributed optimization using network equivalents (IEEE TPWRS, 2021)](https://arxiv.org/abs/2012.02473) · [Scalable renewable energy coordination (IEEE TSTE, 2026)](https://doi.org/10.1109/TSTE.2024.3492976) · [DistOPF open-source software](https://github.com/GRIDAPPSD/distopf)
 
-#### Research Leadership and Funded Programs
-
 Our research is supported through federally funded, industry-sponsored, and national laboratory collaborations, connecting foundational optimization advances with practical grid applications.
 
 - **NSF Cyber-Physical Systems — Lead PI (2022–2026):** Adaptive, human-centric demand-side flexibility coordination at scale. [NSF Award](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2208783)
@@ -116,7 +114,9 @@ Our research is supported through federally funded, industry-sponsored, and nati
 
 ---
 
-## 2. Data-Driven Infrastructure Vulnerability and Risk Modeling
+<h3 class="research-section-title">
+  2. Data-Driven Infrastructure Vulnerability and Risk Modeling
+</h3>
 
 Resilience assessments often rely on assumed component-failure probabilities that do not adequately capture how infrastructure responds to actual environmental hazards. Our research addresses this limitation by **learning infrastructure vulnerability from observed disruptions**. We combine weather, outage, and operating data with statistical and Bayesian inference to estimate how failure likelihood, severity, and duration vary across hazards, geographic regions, and infrastructure characteristics.
 
@@ -162,8 +162,6 @@ To make these analyses reproducible, our group contributed to the **Weather-Outa
 
 **Selected research contributions:** [Topology- and voltage-aware fragility (IEEE PES GM, 2026)](https://doi.org/10.1109/PESGM58988.2026.11693233) · [Statistical and Bayesian resilience modeling (2025 preprint)](https://arxiv.org/abs/2511.03043) · [Extreme-winter generator vulnerability (2026 preprint)](https://arxiv.org/abs/2610.04368) · [WORD data-processing repository](https://github.com/arslangit1/eagleiDataProcessor)
 
-#### Research Leadership and Funded Programs
-
 This research brings together power systems, climate and weather analysis, statistical learning, and infrastructure resilience through multi-institutional collaborations.
 
 - **NSF RAISE — Co-PI (2025–2030):** Wildfire-resilient power infrastructure planning, integrating technical resilience with energy and health equity.
@@ -174,7 +172,9 @@ This research brings together power systems, climate and weather analysis, stati
 
 ---
 
-### 3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
+<h3 class="research-section-title">
+  3. From Infrastructure Vulnerability to Risk-Informed Grid Decisions
+</h3>
 
 Understanding infrastructure vulnerability is only the first step. The more consequential question is **how system operators and planners should respond to uncertain disruptions**. Our research develops risk-informed optimization frameworks that connect hazard-dependent vulnerability, network constraints, and feasible system responses to decisions about infrastructure investments, resource allocation, and restoration.
 
@@ -224,8 +224,6 @@ Our contributions span three interconnected areas:
 **Extending decisions to regional power systems.** We are expanding these methods from individual distribution feeders to regional transmission networks, where generation availability, transmission constraints, environmental hazards, and rapidly growing electricity demand interact. Our group has developed a planning-scale Pacific Northwest transmission research testbed spanning Washington, Oregon, Idaho, and part of Montana, with 8,760 hourly operating states. Current studies examine the network-wide consequences of localized disruptions, including wildfires, and evaluate how resource flexibility, transmission constraints, and infrastructure upgrades influence the region's ability to accommodate new electricity demand.
 
 **Selected research contributions:** [Risk-Based Resilience Planning (IEEE TSTE, 2023)](https://doi.org/10.1109/TSTE.2022.3220561) · [SPAR-OPF: Scalable Stochastic Optimization (2025 preprint)](https://arxiv.org/abs/2504.13933) · [Stochastic DG Siting and Sizing (EPSR, 2026)](https://doi.org/10.1016/j.epsr.2026.113689)
-
-#### Research Leadership and Funded Programs
 
 This research program integrates foundational stochastic optimization, network-level resilience planning, and large-scale grid analytics through federally funded and utility-partnered projects.
 
