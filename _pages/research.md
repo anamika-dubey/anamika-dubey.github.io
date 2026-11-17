@@ -230,6 +230,15 @@ Our contributions span three interconnected areas:
 
 **Extending decisions to regional power systems.** We are expanding these methods from individual distribution feeders to regional transmission networks, where generation availability, transmission constraints, environmental hazards, and rapidly growing electricity demand interact. Our group has developed a planning-scale Pacific Northwest transmission research testbed spanning Washington, Oregon, Idaho, and part of Montana, with 8,760 hourly operating states. Current studies examine the network-wide consequences of localized disruptions, including wildfires, and evaluate how resource flexibility, transmission constraints, and infrastructure upgrades influence the region's ability to accommodate new electricity demand.
 
+<div style="margin: 1.5rem 0 1.75rem; text-align: center;">
+  <a href="https://pnwgridmodel.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore the PNW-GRID regional grid platform">
+    <img src="{{ '/assets/img/pnw-grid-transmission-map.png' | relative_url }}" alt="Pacific Northwest regional transmission network testbed showing interconnected transmission lines and substations across Washington, Oregon, Idaho, and neighboring areas" style="display: block; width: 100%; max-width: 850px; height: auto; margin: 0 auto; border-radius: 5px;" loading="lazy">
+  </a>
+  <p style="font-size: 0.95rem; margin: 0.65rem 0 0;">
+    <strong>PNW-GRID</strong> &nbsp;|&nbsp; <a href="https://pnwgridmodel.com/" target="_blank" rel="noopener noreferrer">Explore the Pacific Northwest Regional Grid Platform &rarr;</a>
+  </p>
+</div>
+
 **Selected research contributions:** [Risk-Based Resilience Planning (IEEE TSTE, 2023)](https://doi.org/10.1109/TSTE.2022.3220561) · [SPAR-OPF: Scalable Stochastic Optimization (2025 preprint)](https://arxiv.org/abs/2504.13933) · [Stochastic DG Siting and Sizing (EPSR, 2026)](https://doi.org/10.1016/j.epsr.2026.113689)
 
 This research program integrates foundational stochastic optimization, network-level resilience planning, and large-scale grid analytics through federally funded and utility-partnered projects.
