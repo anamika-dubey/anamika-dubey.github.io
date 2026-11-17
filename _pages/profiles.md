@@ -89,7 +89,7 @@ profiles:
     image_circular: false # crops the image to make it circular
   # Alumni: newest graduation first; former postdocs use their lab departure.
   # Keep the existing order within the same semester when exact dates are unknown.
-  - section: Alumni
+  - section: alumni
     align: left
     image: Daniel_Pic.jfif
     content: Daniel.md
