@@ -11,6 +11,16 @@ nav_order: 3
 # Update this date when publication records in _bibliography/papers.bib change.
 publications_updated: 2026-10-05
 ---
+
+<style>
+  /* Main page title: publications */
+  .post-header .post-title {
+    font-size: 2.15rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+  }
+</style>
+
 <!-- _pages/publications.md -->
 <p class="small">Publications last updated: <time datetime="{{ page.publications_updated | date: '%Y-%m-%d' }}">{{ page.publications_updated | date: '%B %-d, %Y' }}</time>. Maintained manually.</p>
 
