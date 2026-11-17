@@ -7,48 +7,6 @@ nav: true
 nav_order: 5
 ---
 
-# Add the corresponding course-specific GitHub Pages URLs below.
-# For example: https://YOUR-USERNAME.github.io/EE361/
-# Keep a URL blank until the page exists; its link will be hidden.
-courses:
-  - code: "EE 361"
-    title: "Electric Power Systems"
-    description: "Fundamentals of electric power systems, including generators, transformers, electric machines, transmission lines, and power-system operation."
-    syllabus_url: ""
-    materials_url: ""
-
-  - code: "EE 485"
-    title: "Electric Power Distribution Systems"
-    description: "Analysis, design, and operation of electric distribution networks, with practical modeling and computational tools for modern distribution systems."
-    syllabus_url: ""
-    materials_url: ""
-
-  - code: "EE 529"
-    title: "Power Quality Analysis"
-    description: "Graduate-level analysis of power-quality phenomena, modeling techniques, and mitigation methods, supported by programming assignments and projects."
-    note: "Previously offered as EE 582.01"
-    syllabus_url: ""
-    materials_url: ""
-
-  - code: "EE 221"
-    title: "Numerical Computing for Engineers"
-    description: "Numerical methods for engineering problems, with an emphasis on mathematical foundations and practical implementation through programming."
-    syllabus_url: ""
-    materials_url: ""
-
-  - code: "EE 582.02"
-    title: "Reliability Assessment of Complex Systems"
-    description: "Graduate-level methods for quantitative reliability analysis, including generation adequacy and composite power-system reliability assessment."
-    syllabus_url: ""
-    materials_url: ""
-
-  - code: "EE 483.03"
-    title: "Reliability Assessment of Complex Systems"
-    description: "Undergraduate introduction to probabilistic reliability modeling and system-level reliability assessment, with applications to electric power distribution."
-    syllabus_url: ""
-    materials_url: ""
----
-
 <style>
   .teaching-grid {
     display: grid;
@@ -107,23 +65,52 @@ courses:
 I have developed and taught undergraduate and graduate courses in power systems, electric distribution networks, power quality, reliability, and numerical methods at Washington State University.
 
 <div class="teaching-grid">
-{% for course in page.courses %}
   <div class="teaching-card">
-    <span class="course-code">{{ course.code }}</span>
-    <h3 class="course-title">{{ course.title }}</h3>
-    <p class="course-description">{{ course.description }}</p>
-    {% if course.note %}<p class="course-note">{{ course.note }}</p>{% endif %}
-    {% if course.syllabus_url != blank or course.materials_url != blank %}
+    <span class="course-code">EE 361</span>
+    <h3 class="course-title">Electric Power Systems</h3>
+    <p class="course-description">Fundamentals of electric power systems, including generators, transformers, electric machines, transmission lines, and power-system operation.</p>
+    <!-- When ready, add syllabus and materials links here:
     <div class="course-links">
-      {% if course.syllabus_url != blank %}
-        <a href="{{ course.syllabus_url }}" target="_blank" rel="noopener noreferrer">Syllabus ↗</a>
-      {% endif %}
-      {% if course.materials_url != blank %}
-        <a href="{{ course.materials_url }}" target="_blank" rel="noopener noreferrer">Course materials ↗</a>
-      {% endif %}
+      <a href="https://YOUR-COURSE-SITE/syllabus/">Syllabus ↗</a>
+      <a href="https://YOUR-COURSE-SITE/">Course materials ↗</a>
     </div>
-    {% endif %}
+    -->
   </div>
-{% endfor %}
+
+  <div class="teaching-card">
+    <span class="course-code">EE 485</span>
+    <h3 class="course-title">Electric Power Distribution Systems</h3>
+    <p class="course-description">Analysis, design, and operation of electric distribution networks, with practical modeling and computational tools for modern distribution systems.</p>
+    <!-- Add links when your EE 485 course website is available. -->
+  </div>
+
+  <div class="teaching-card">
+    <span class="course-code">EE 529</span>
+    <h3 class="course-title">Power Quality Analysis</h3>
+    <p class="course-description">Graduate-level analysis of power-quality phenomena, modeling techniques, and mitigation methods, supported by programming assignments and projects.</p>
+    <p class="course-note">Previously offered as EE 582.01</p>
+    <!-- Add links when your EE 529 course website is available. -->
+  </div>
+
+  <div class="teaching-card">
+    <span class="course-code">EE 221</span>
+    <h3 class="course-title">Numerical Computing for Engineers</h3>
+    <p class="course-description">Numerical methods for engineering problems, with an emphasis on mathematical foundations and practical implementation through programming.</p>
+    <!-- Add links when your EE 221 course website is available. -->
+  </div>
+
+  <div class="teaching-card">
+    <span class="course-code">EE 582.02</span>
+    <h3 class="course-title">Reliability Assessment of Complex Systems</h3>
+    <p class="course-description">Graduate-level methods for quantitative reliability analysis, including generation adequacy and composite power-system reliability assessment.</p>
+    <!-- Add links when your EE 582.02 course website is available. -->
+  </div>
+
+  <div class="teaching-card">
+    <span class="course-code">EE 483.03</span>
+    <h3 class="course-title">Reliability Assessment of Complex Systems</h3>
+    <p class="course-description">Undergraduate introduction to probabilistic reliability modeling and system-level reliability assessment, with applications to electric power distribution.</p>
+    <!-- Add links when your EE 483.03 course website is available. -->
+  </div>
 </div>
 
