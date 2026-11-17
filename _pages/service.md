@@ -7,6 +7,15 @@ nav: true
 nav_order: 6
 ---
 
+<style>
+  /* Main page title: service */
+  .post-header .post-title {
+    font-size: 2.15rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+  }
+</style>
+
 ## Professional Service
 
 Global Distribution Circuit Catalogue Task Force 
