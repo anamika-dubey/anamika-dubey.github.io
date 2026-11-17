@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: Research
+title: research
 description: From Risk to Reliable Grid Decisions
 nav: true
 nav_order: 4
