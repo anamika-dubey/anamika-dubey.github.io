@@ -10,11 +10,12 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><strong>Director: Anamika Dubey</strong></p>
+    <p><strong>Anamika Dubey</strong></p>
     <p>Professor, Washington State University</p>
+    <p>Co-Director, <a href='https://natlab.wsu.edu/grid/'>WSU-PNNL Advanced Grid Institute (AGI)</a></p>
     <p><a href='https://esic.wsu.edu/'>Energy Systems Innovation Center</a></p>
-    <p>EME 23, 355 NE Spokane St</p>
-    <p>Pullman, WA 99164</p> 
+    
+     
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
