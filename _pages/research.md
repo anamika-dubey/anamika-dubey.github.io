@@ -167,7 +167,7 @@ Our research has advanced three complementary areas:
 
 To make these analyses reproducible, our group contributed to the **Weather-Outage Resilience Dataset (WORD)**, an open data-processing framework that integrates weather and electricity outage records for systematic resilience research.
 
-**Selected research contributions:** [Topology- and voltage-aware fragility (IEEE PES GM, 2026)](https://doi.org/10.1109/PESGM58988.2026.11693233) · [Statistical and Bayesian resilience modeling (2025 preprint)](https://arxiv.org/abs/2511.03043) · [Extreme-winter generator vulnerability (2026 preprint)](https://arxiv.org/abs/2610.04368) · [WORD data-processing repository](https://github.com/arslangit1/eagleiDataProcessor](https://ieee-dataport.org/documents/word-weather-outage-resilience-dataset)
+**Selected research contributions:** [Topology- and voltage-aware fragility (IEEE PES GM, 2026)](https://doi.org/10.1109/PESGM58988.2026.11693233) · [Statistical and Bayesian resilience modeling (2025 preprint)](https://arxiv.org/abs/2511.03043) · [Extreme-winter generator vulnerability (2026 preprint)](https://arxiv.org/abs/2610.04368) · [WORD data-processing repository](https://ieee-dataport.org/documents/word-weather-outage-resilience-dataset)
 
 This research brings together power systems, climate and weather analysis, statistical learning, and infrastructure resilience through multi-institutional collaborations.
 
