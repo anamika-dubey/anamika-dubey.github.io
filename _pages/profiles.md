@@ -91,7 +91,7 @@ profiles:
   # Keep the existing order within the same semester when exact dates are unknown.
   - section: alumni
     align: left
-    image: Daniel_Pic.jfif
+    image: daniel-glover.png
     content: Daniel.md
     career: Lead Engineer, Eaton Research Labs, Eaton; working remotely on advanced computational methods for power systems.
     updates:
