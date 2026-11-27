@@ -9,7 +9,7 @@ reference_title: Anamika Dubey's Google Scholar profile and citation information
 nav: true
 nav_order: 3
 # Update this date when publication records in _bibliography/papers.bib change.
-publications_updated: 2026-10-05
+publications_updated: 2026-11-26
 ---
 
 <style>
